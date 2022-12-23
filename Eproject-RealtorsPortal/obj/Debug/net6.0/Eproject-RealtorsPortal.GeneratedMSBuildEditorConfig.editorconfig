@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\APTECH\SEM3-Eproject\eProject-RealtorsPortal\Eproject-RealtorsPortal
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/APTECH/SEM3-Eproject/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/FAQ/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFRXGluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/APTECH/SEM3-Eproject/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
