@@ -36,7 +36,7 @@ namespace Eproject_RealtorsPortal.Controllers
             }
             return View();
         }
-
+        
         [HttpPost]
         public IActionResult Login(User model)
         {
