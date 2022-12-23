@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Pt9ZhdHCG3GmD+GbfqAl9chH0+Wb68Y6yLJeELxB5/Q=",
+  "Hash": "cc9zeMJZjmE2wmjAYDuIEQgd+jgZJPpUpMOO0Z4lMfw=",
   "Source": "Eproject-RealtorsPortal",
   "BasePath": "_content/Eproject-RealtorsPortal",
   "Mode": "Default",
@@ -1477,6 +1477,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\faq_page.jpg",
+      "SourceId": "Eproject-RealtorsPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "BasePath": "_content/Eproject-RealtorsPortal",
+      "RelativePath": "Image/faq_page.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\faq_page.jpg"
     },
     {
       "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\logo_small.png",
