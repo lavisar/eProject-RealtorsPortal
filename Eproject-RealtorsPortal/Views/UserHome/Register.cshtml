@@ -1,0 +1,103 @@
+﻿@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-gray text-black" style="border-radius: 1rem;">
+                    <div class="card-body p-3">
+                        <div class="mb-md-3 mt-md-2 pb-2">
+                            <div class="app-brand justify-content-center">
+                                <a href="index.html" class="app-brand-link gap-2">
+                                    <div class="app-brand demo">
+                                        <a href="@Url.Action("Index","Home")" class="app-brand-link">
+                                            <svg width="150" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none"
+                                                      stroke="lightgrey"
+                                                      d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+
+                                                <circle r="4" fill="red">
+                                                    <animateMotion dur="10s"
+                                                                   repeatCount="indefinite"
+                                                                   path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+                                                </circle>
+                                                <text x="65" y="55" class="Rrrrr">LQHV</text>
+                                            </svg>
+                                        </a>
+
+                                        <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                                            <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+                            <form>
+                                <h2 class="fw-bold mb-2 text-center text-uppercase">Register</h2>
+                                <div class="row gx-3">
+                                    <div class="col mb-4">
+                                        <label class="form-label"> <i class="fa fa-user me-2 "></i>Full name <small class="required">*</small></label>
+                                        <input type="text" class="form-control" @*placeholder="Ex: Huyen Le"*@>
+                                    </div> <!-- col end.// -->
+                                </div> <!-- row end.// -->
+                                <div class="row gx-3">
+                                    <div class="col mb-3">
+                                        <label class="form-label"> <i class="fas fa-envelope me-2"></i>Email <small class="required">*</small></label>
+                                        <input type="email" class="form-control" @*placeholder="Ex: HuyenLe0210@gmail.com"*@>
+                                    </div> <!-- col end.// -->
+                                </div>
+                                <div class="row gx-3">
+                                    <div class="col-6 mb-3">
+                                        <label class="form-label"><i class="fas fa-phone me-2"></i>Phone</label>
+                                        <input type="number" class="form-control" @*placeholder="Ex: +084 123 1572"*@ min="9" maxlength="12">
+                                    </div> <!-- col end.// -->
+                                    <div class="col-6 mb-3">
+                                        <label class="form-label"><i class="fas fa-transgender me-2"></i>Gender</label>
+                                        <div class="row gx-2">
+                                            <div class="col">
+                                                <label class="form-check">
+                                                    <input class="form-check-input" type="radio" name="choose_a">
+                                                    <span class="form-check-label"> Male </span>
+                                                </label>
+                                            </div>
+                                            <div class="col">
+                                                <label class="form-check">
+                                                    <input class="form-check-input" type="radio" name="choose_a">
+                                                    <span class="form-check-label"> Fmale </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div> <!-- col end.// -->
+                                    <div class="col mb-3">
+                                        <label class="form-label"><i class="fas fa-regular fa-lock me-2"></i>Create password <small class="required">*</small></label>
+                                        <input class="form-control" type="password">
+                                    </div> <!-- col end.// -->
+                                    <div class="col mb-3">
+                                        <label class="form-label"><i class="fas fa-key me-2"></i>Repeat password <small class="required">*</small></label>
+                                        <input class="form-control" type="password">
+                                    </div> <!-- col end.// -->
+                                    <div class="col-12 mb-3">
+                                        <label class="form-label"><i class="fas fa-map-marker-alt me-2"></i></i>Address</label>
+                                        <textarea type="text" class="form-control" @*placeholder="Ex: Ho Chi Minh City, Vietnam....."*@></textarea>
+                                    </div> <!-- col end.// -->
+                                </div> <!-- row end.// -->
+                                <div class="row mt-3 mb-4 align-items-center">
+                                    <div class="col-auto">
+                                        <button class="btn btn-primary btn-lg px-2" type="button">Register now</button>
+                                    </div>
+                                    <div class="col">
+                                        <span class="float-end">Already have an account?<a class="text-primary fw-bold" href="@Url.Action("Login","UserHome")">Log in</a></span>
+                                    </div>
+                                </div>
+                            </form> <!-- form end.// -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

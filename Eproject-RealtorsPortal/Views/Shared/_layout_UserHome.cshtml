@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html lang="en"
+      class="light-style layout-menu-fixed"
+      dir="ltr"
+      data-theme="theme-default"
+      data-assets-path="../assets/"
+      data-template="vertical-menu-template-free">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Eproject_RealtorsPortal</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../Image/logo_small.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet" />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+</head>
+<body>
+
+    <header class="section-header">
+        <section class="header-main border-bottom">
+            <div class="container-fluid">
+                <div class="row gy-3 align-items-center">
+                    <div class="col-lg-2 col-md-3 col-4 p2">
+                        <a href="@Url.Action("Index","Home")" class="brand-wrap"> <img class="logo" height="85" src="../Image/logo1.png"> </a>
+                    </div>
+                    <div class="order-md-last col-lg-3 col-md-5 col-8">
+                        <!-- Right elements -->
+                        <div class="d-flex float-end align-items-center">
+                            <!-- Avatar -->
+                            <ul class="navbar-nav align-items-center ms-auto pe-3">
+                                <!-- User -->
+                                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                    <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                        <div class="avatar avatar-online">
+                                            <img src="../assets/img/avatars/1.png" alt="avatars" class="w-px-40 h-auto rounded-circle" />
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="../assets/img/avatars/1.png" alt="avatars" class="w-px-40 h-auto rounded-circle" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span class="fw-semibold d-block">John Doe</span>
+                                                        <small class="text-muted">Admin</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="@Url.Action("AccountProfile","UserHome")">
+                                                <i class="bx bx-user me-2"></i>
+                                                <span class="align-middle">My Profile</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="bx bx-cog me-2"></i>
+                                                <span class="align-middle">Settings</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="d-flex align-items-center align-middle">
+                                                    <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                                                    <span class="flex-grow-1 align-middle">Billing</span>
+                                                    <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="auth-login-basic.html">
+                                                <i class="bx bx-power-off me-2"></i>
+                                                <span class="align-middle">Log Out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--/ User -->
+                            </ul>
+
+                            <ul class="navbar-nav align-items-center ms-auto pe-3">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-plus-circle fa-lg"></i>
+                                    Post ads
+                                </a>
+                            </ul>
+                        </div>
+
+                    </div> <!-- col end.// -->
+                    <div class="col-lg-7 col-md-4 col-12">
+                        <nav class="navbar navbar-light navbar-expand-lg ">
+                            <div class="container">
+                                <button class="navbar-toggler border collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_main7" aria-expanded="false"> <span class="navbar-toggler-icon"> </span> </button>
+                                <div class="navbar-collapse collapse" id="navbar_main7" style="">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item  me-4"> <a class="nav-link" href="#">Home</a> </li>
+                                        <li class="nav-item  me-4"> <a class="nav-link" href="#">Buy</a> </li>
+                                        <li class="nav-item  me-4"> <a class="nav-link" href="#">Rent</a> </li>
+                                        <li class="nav-item  me-4"> <a class="nav-link" href="#">FAQs</a> </li>
+                                        <li class="nav-item  me-4"> <a class="nav-link" href="#">News</a> </li>
+                                        <li class="nav-item  me-4"> <a class="nav-link" href="#">About Us</a> </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Other </a>
+                                            <ul class="dropdown-menu">
+                                                <li> <a class="dropdown-item" href="#">Featured real estate</a> </li>
+                                                <li> <a class="dropdown-item" href="#">Real estate agent</a> </li>
+                                                <li> <a class="dropdown-item" href="#">Contact advertising</a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div> <!-- collapse end.// -->
+                            </div> <!-- container end.// -->
+                        </nav> <!-- navbar end.// -->
+                    </div> <!-- col end.// -->
+                </div> <!-- row end.// -->
+            </div> <!-- container end.// -->
+        </section> <!-- header-main end.// -->
+        <!-- nếu có user đăng nhập account -->
+        <!-- Navbar -->
+    </header>
+
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <!-- Menu -->
+        <aside id="layout-menu" class="menu-vertical menu bg-menu-theme">
+            <div class="app-brand demo">
+                <a href="@Url.Action("Index","Home")" class="app-brand-link">
+                    <svg width="200" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none"
+                              stroke="lightgrey"
+                              d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+
+                        <circle r="4" fill="red">
+                            <animateMotion dur="10s"
+                                           repeatCount="indefinite"
+                                           path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+                        </circle>
+                        <text x="65" y="55" class="Rrrrr">LQHV</text>
+                    </svg>
+                </a>
+
+                <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                    <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                </a>
+            </div>
+
+            <div class="menu-inner-shadow"></div>
+
+            <ul class="menu-inner py-1">
+                <!-- Dashboard -->
+                <li class="menu-item">
+                    <a href="@Url.Action("Index","UserHome")" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                        <div data-i18n="Analytics">Dashboard</div>
+                    </a>
+                </li>
+
+                <li class="menu-header small text-uppercase"><span class="menu-header-text">Account</span></li>
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                        <div data-i18n="Pro account">Pro account</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="forms-basic-inputs.html" class="menu-link">
+                                <i class='menu-icon tf-icons bx bxs-package'></i>
+                                <div data-i18n="Basic Inputs">Account packages</div>
+                            </a>
+                        </li>
+
+                    </ul>
+                <li class="menu-item">
+                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bxs-user-account"></i>
+                        <div data-i18n="My account">My account</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="@Url.Action("AccountProfile","UserHome")" class="menu-link">
+                                <i class='menu-icon tf-icons bx bxs-user-detail'></i>
+                                <div data-i18n="Profile">Profile</div>
+                            </a>
+                        </li>
+
+                        <li class="menu-item">
+                            <a href="@Url.Action("ChangePassword","UserHome")" class="menu-link">
+                                <i class='menu-icon tf-icons bx bxs-lock'></i>
+                                <div data-i18n="Change Password">Change Password</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+
+                <li class="menu-header small text-uppercase">
+                    <span class="menu-header-text">Manage</span>
+                </li>
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                        <div data-i18n="Manage Posts">Manage Posts</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="pages-account-settings-account.html" class="menu-link">
+                                <i class='menu-icon tf-icons bx bx-edit'></i>
+                                <div data-i18n="New post">New post</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="pages-account-settings-notifications.html" class="menu-link">
+                                <i class='menu-icon tf-icons bx bxs-book-bookmark'></i>
+                                <div data-i18n="List of postings">List of postings</div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-line-chart"></i>
+                        <div data-i18n="Financial management">Financial management</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="forms-basic-inputs.html" class="menu-link">
+                                <i class='menu-icon tf-icons bx bx-history pe-1'></i>
+                                <div data-i18n="Transaction history">Transaction history</div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </aside>
+        <!-- / Menu -->
+        <!-- Content wrapper -->
+        <div class="content-wrapper ps-1 pb-2 pt-2">
+
+
+            <!-- Content -->
+            <main role="main">
+                @RenderBody()
+            </main>
+            <!-- / Content -->
+
+
+            <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
+    </div>
+    <!-- / Layout wrapper -->
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white mp-4">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-5 col-xl-5 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i>Realtors Portal LQHV
+                            </h6>
+                            <p>
+                                Coming to the online brokerage portal, you can actively search, expand the market, exploit potential customers
+                                and experience service packages that meet all customer requirements with attractive and reputable buying / selling policies.
+                            </p>
+                            <form action="">
+                                <!--Grid row-->
+                                <!--Grid column-->
+                                <div class="col-auto mb- mb-md-0">
+                                    <p>
+                                        <strong>Sign up for our newsletter</strong>
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 col-8">
+                                        <div class="form-file-input">
+                                            <input type="email" id="" class="form-control" placeholder="Email address" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-4">
+                                        <!-- Submit button -->
+                                        <button type="submit" class="btn btn-warning text-uppercase">
+                                            Submit
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <!--Grid row-->
+                            </form>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Featured real estate</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Real estate for sale</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Real estate for rent</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Real Estate News</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Advertising service</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">help </a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4 none">Contact Us</h6>
+                            <p><i class="bx bx-home me-3 text-secondary"></i> 590 CMT8, Ward 11, District 3, Ho Chi Minh City </p>
+                            <p>
+                                <i class="bx bx-envelope me-3 text-secondary"></i>
+                                contact@fpt.edu.vn
+                            </p>
+                            <p><i class="bx bx-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                            <p><i class="bx bx-printer me-3 text-secondary"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        </div>
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1"
+                   style="background-color: #3b5998;"
+                   href="#!"
+                   role="button">
+                    <i class='bx bxl-facebook-square'></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1"
+                   style="background-color: #55acee;"
+                   href="#!"
+                   role="button">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1"
+                   style="background-color: #dd4b39;"
+                   href="#!"
+                   role="button">
+                    <i class='bx bxl-google'></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1"
+                   style="background-color: #ac2bac;"
+                   href="#!"
+                   role="button">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1"
+                   style="background-color: #0082ca;"
+                   href="#!"
+                   role="button">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1"
+                   style="background-color: #333333;"
+                   href="#!"
+                   role="button">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            <a class="text-white text-uppercase">Realtors Portal LQHV</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+    <!-- Vendors JS -->
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

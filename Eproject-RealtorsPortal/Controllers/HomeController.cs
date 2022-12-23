@@ -17,6 +17,11 @@ namespace Eproject_RealtorsPortal.Controllers
         {
             return View();
         }
+        public IActionResult UserHome()
+        {
+            return View();
+        }
+
 
         public IActionResult Privacy()
         {
