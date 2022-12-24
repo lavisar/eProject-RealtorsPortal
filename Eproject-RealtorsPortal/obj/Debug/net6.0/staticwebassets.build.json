@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cc9zeMJZjmE2wmjAYDuIEQgd+jgZJPpUpMOO0Z4lMfw=",
+  "Hash": "ReBhax0U0Cfej/hYVUKcGFjCU2vXB2MYDYE1tRYYtMA=",
   "Source": "Eproject-RealtorsPortal",
   "BasePath": "_content/Eproject-RealtorsPortal",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Eproject-RealtorsPortal\\wwwroot",
       "Source": "Eproject-RealtorsPortal",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Eproject-RealtorsPortal.styles.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Eproject-RealtorsPortal.styles.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "Eproject-RealtorsPortal.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Eproject-RealtorsPortal.styles.css"
+      "OriginalItemSpec": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Eproject-RealtorsPortal.styles.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Eproject-RealtorsPortal.bundle.scp.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Eproject-RealtorsPortal.bundle.scp.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "Eproject-RealtorsPortal.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Eproject-RealtorsPortal.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Eproject-RealtorsPortal.bundle.scp.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\css\\demo.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\css\\demo.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/css/demo.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\demo.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\avatars\\1.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\avatars\\1.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/avatars/1.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\avatars\\1.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\avatars\\5.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\avatars\\5.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/avatars/5.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\avatars\\5.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\avatars\\6.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\avatars\\6.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/avatars/6.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\avatars\\6.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\avatars\\7.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\avatars\\7.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/avatars/7.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\avatars\\7.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\backgrounds\\18.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\backgrounds\\18.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/backgrounds/18.jpg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\backgrounds\\18.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\1.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\1.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/1.jpg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\1.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\11.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\11.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/11.jpg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\11.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\12.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\12.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/12.jpg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\12.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\13.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\13.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/13.jpg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\13.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\17.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\17.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/17.jpg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\17.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\18.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\18.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/18.jpg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\18.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\19.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\19.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/19.jpg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\19.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\2.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\2.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/2.jpg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\2.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\20.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\20.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/20.jpg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\20.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\3.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\3.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/3.jpg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\3.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\4.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\4.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/4.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\4.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\5.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\5.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/5.jpg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\5.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\7.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\elements\\7.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/elements/7.jpg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\elements\\7.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\favicon\\favicon.ico",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\favicon\\favicon.ico",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/favicon/favicon.ico",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\favicon\\favicon.ico"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\asana.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\asana.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/brands/asana.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\asana.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\behance.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\behance.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/brands/behance.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\behance.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\dribbble.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\dribbble.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/brands/dribbble.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\dribbble.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\facebook.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\facebook.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/brands/facebook.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\facebook.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\github.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\github.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/brands/github.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\github.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\google.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\google.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/brands/google.png",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\google.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\instagram.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\instagram.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/brands/instagram.png",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\instagram.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\mailchimp.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\mailchimp.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/brands/mailchimp.png",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\mailchimp.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\slack.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\slack.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/brands/slack.png",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\slack.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\twitter.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\brands\\twitter.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/brands/twitter.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\twitter.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\cc-primary.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\cc-primary.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/unicons/cc-primary.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\unicons\\cc-primary.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\cc-success.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\cc-success.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/unicons/cc-success.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\unicons\\cc-success.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\cc-warning.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\cc-warning.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/unicons/cc-warning.png",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\unicons\\cc-warning.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\chart.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\chart.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/unicons/chart.png",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\unicons\\chart.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\chart-success.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\chart-success.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/unicons/chart-success.png",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\unicons\\chart-success.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\paypal.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\paypal.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/unicons/paypal.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\unicons\\paypal.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\wallet.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\wallet.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/unicons/wallet.png",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\unicons\\wallet.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\wallet-info.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\icons\\unicons\\wallet-info.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/icons/unicons/wallet-info.png",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\unicons\\wallet-info.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\illustrations\\girl-doing-yoga-light.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\illustrations\\girl-doing-yoga-light.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/illustrations/girl-doing-yoga-light.png",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\illustrations\\girl-doing-yoga-light.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\illustrations\\man-with-laptop-light.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\illustrations\\man-with-laptop-light.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/illustrations/man-with-laptop-light.png",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\illustrations\\man-with-laptop-light.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\illustrations\\page-misc-error-light.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\illustrations\\page-misc-error-light.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/illustrations/page-misc-error-light.png",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\illustrations\\page-misc-error-light.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\layouts\\layout-container-light.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\layouts\\layout-container-light.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/layouts/layout-container-light.png",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\layouts\\layout-container-light.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\layouts\\layout-fluid-light.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\layouts\\layout-fluid-light.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/layouts/layout-fluid-light.png",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\layouts\\layout-fluid-light.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\layouts\\layout-without-menu-light.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\layouts\\layout-without-menu-light.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/layouts/layout-without-menu-light.png",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\layouts\\layout-without-menu-light.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\layouts\\layout-without-navbar-light.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\img\\layouts\\layout-without-navbar-light.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/img/layouts/layout-without-navbar-light.png",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\layouts\\layout-without-navbar-light.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\config.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\config.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/js/config.js",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\config.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\dashboards-analytics.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\dashboards-analytics.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/js/dashboards-analytics.js",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\dashboards-analytics.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\extended-ui-perfect-scrollbar.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\extended-ui-perfect-scrollbar.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/js/extended-ui-perfect-scrollbar.js",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\extended-ui-perfect-scrollbar.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\form-basic-inputs.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\form-basic-inputs.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/js/form-basic-inputs.js",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\form-basic-inputs.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\main.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\main.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/js/main.js",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\main.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\pages-account-settings-account.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\pages-account-settings-account.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/js/pages-account-settings-account.js",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\pages-account-settings-account.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\ui-modals.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\ui-modals.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/js/ui-modals.js",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\ui-modals.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\ui-popover.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\ui-popover.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/js/ui-popover.js",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\ui-popover.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\ui-toasts.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\js\\ui-toasts.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/js/ui-toasts.js",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\ui-toasts.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\core.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\core.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/css/core.css",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\core.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\pages\\page-account-settings.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\pages\\page-account-settings.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/css/pages/page-account-settings.css",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-account-settings.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\pages\\page-auth.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\pages\\page-auth.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/css/pages/page-auth.css",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-auth.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\pages\\page-icons.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\pages\\page-icons.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/css/pages/page-icons.css",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-icons.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\pages\\page-misc.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\pages\\page-misc.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/css/pages/page-misc.css",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-misc.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\theme-default.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\css\\theme-default.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/css/theme-default.css",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\theme-default.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/fonts/boxicons.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\boxicons.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.eot",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.eot",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/fonts/boxicons/boxicons.eot",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.eot"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.svg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.svg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/fonts/boxicons/boxicons.svg",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.svg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.ttf",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.ttf",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/fonts/boxicons/boxicons.ttf",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.ttf"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.woff",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.woff",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/fonts/boxicons/boxicons.woff",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.woff"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.woff2",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.woff2",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/fonts/boxicons/boxicons.woff2",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.woff2"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\js\\bootstrap.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/js/bootstrap.js",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\js\\helpers.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\js\\helpers.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/js/helpers.js",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\js\\helpers.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\js\\menu.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\js\\menu.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/js/menu.js",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\js\\menu.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\apex-charts\\apex-charts.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\apex-charts\\apex-charts.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/libs/apex-charts/apex-charts.css",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\apex-charts\\apex-charts.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\apex-charts\\apexcharts.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\apex-charts\\apexcharts.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/libs/apex-charts/apexcharts.js",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\apex-charts\\apexcharts.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/libs/highlight/highlight.css",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\highlight\\highlight.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/libs/highlight/highlight.js",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\highlight\\highlight.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight-github.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight-github.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/libs/highlight/highlight-github.css",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\highlight\\highlight-github.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/libs/jquery/jquery.js",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\masonry\\masonry.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\masonry\\masonry.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/libs/masonry/masonry.js",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\masonry\\masonry.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\popper\\popper.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\assets\\vendor\\libs\\popper\\popper.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "assets/vendor/libs/popper/popper.js",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\popper\\popper.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\css\\core.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\css\\core.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "css/core.css",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\css\\core.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\css\\demo.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\css\\demo.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "css/demo.css",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\css\\demo.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\css\\site.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\css\\theme-default.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\css\\theme-default.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "css/theme-default.css",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\css\\theme-default.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\favicon.ico",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\faq_page.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\faq_page.jpg",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "Image/faq_page.jpg",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\Image\\faq_page.jpg"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\logo_small.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\logo_small.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "Image/logo_small.png",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\Image\\logo_small.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\logo1.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\logo1.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "Image/logo1.png",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\Image\\logo1.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\logo2.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\logo2.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "Image/logo2.png",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\Image\\logo2.png"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\js\\site.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
       "BasePath": "_content/Eproject-RealtorsPortal",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

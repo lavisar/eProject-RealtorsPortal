@@ -33,5 +33,13 @@ namespace Eproject_RealtorsPortal.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult FAQ()
+        {
+            return View("index","FAQ");
+        }
+        public IActionResult AboutUs()
+        {
+            return View("Index", "AboutUs");
+        }
     }
 }

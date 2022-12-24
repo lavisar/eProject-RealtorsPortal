@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj": {}
+    "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj": {
+    "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
         "projectName": "Eproject-RealtorsPortal",
-        "projectPath": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

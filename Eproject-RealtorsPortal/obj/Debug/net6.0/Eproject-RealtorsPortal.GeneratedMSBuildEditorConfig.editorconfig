@@ -8,73 +8,89 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Eproject_RealtorsPortal
 build_property.RootNamespace = Eproject_RealtorsPortal
-build_property.ProjectDir = C:\Users\ADMIN\Source\eProject-RealtorsPortal\Eproject-RealtorsPortal\
+build_property.ProjectDir = C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ADMIN\Source\eProject-RealtorsPortal\Eproject-RealtorsPortal
+build_property.MSBuildProjectDirectory = C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/FAQ/index.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/AboutUs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Box.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXEJveC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Rent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXFJlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Sell.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXFNlbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/FAQ/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFRXGluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/Index.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/Privacy.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/Error.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/_layout_UserHome.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/_layout_UserHome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sYXlvdXRfVXNlckhvbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/AccountProfile.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/AccountProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcQWNjb3VudFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/AuthenticationForm.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/AuthenticationForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcQXV0aGVudGljYXRpb25Gb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/ChangePassword.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/ForgotPassword.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcRm9yZ290UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/Index.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/Login.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/Register.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/_ViewImports.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/_ViewStart.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/_Layout.cshtml]
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4wimllx6hz
