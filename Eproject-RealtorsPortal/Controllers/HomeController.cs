@@ -35,11 +35,11 @@ namespace Eproject_RealtorsPortal.Controllers
         }
         public IActionResult FAQ()
         {
-            return View("index","FAQ");
+            return View("FAQ");
         }
         public IActionResult AboutUs()
         {
-            return View("Index", "AboutUs");
+            return View("AboutUS");
         }
     }
 }
