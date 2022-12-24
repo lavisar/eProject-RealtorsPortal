@@ -15,8 +15,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\APTECH\SEM3-Eproject\Eproject-RealtorsPortal\Eproject-RealtorsPortal
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/FAQ/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFRXGluZGV4LmNzaHRtbA==
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Box.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXEJveC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Rent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXFJlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Sell.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXFNlbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/Index.cshtml]
