@@ -39,7 +39,7 @@ namespace Eproject_RealtorsPortal.Controllers
         }
         public IActionResult AboutUs()
         {
-            return View("AboutUS");
+            return View("AboutUs");
         }
     }
 }
