@@ -3,205 +3,211 @@
     ViewData["Title"] = "FAQs";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<section class="pb-4 mt-0 container">
-   <img src="~/Image/faq_page.jpg" class="img-fluid" alt="bulding"/>
-   <h3 style="font-family: Poppins; font-size: 35px; font-weight: 100!important; color: #3c3950;"><strong><b>FAQs on Real Estate</b></strong></h3>
+<div style="background-color: rgb(239,239,239);">
+   <img src="~/Image/FAQ.png" class="img-fluid" alt="bulding" style="height:70%"/>
+   <section class="pb-4 mt-3 container">    
+    @*<h3 style="font-family: Poppins; font-size: 22px; color: black;"> <b>FAQs on Real Estate</b> </h3>*@
      <div class="bg-white border rounded-5 border-white">
-    
-      <section class="p-4 d-flex"
-        style="border-radius: .5rem .5rem 0 0; background-color: #f2f2f2;">
-        <!--Section: FAQ-->
-        <div class="row">
-          <div class="col-lg-12 col-md-12 mb-4">
-            <!-- ===================================== Questions ===================================== -->
-              <!--Question 1-->
-              <div>
-                <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#q1" role="button" aria-expanded="false" aria-controls="q1">
-                    <strong>Why Should I Pay, Instead Of Rent <i class="fa fa-question" aria-hidden="true"></i> </strong>
-                  </a>
-                </p>
-                <div class="collapse" id="q1">
-                  <div class="card card-body">
-                    <p class="mb-1">
-                        <b>A home is an investment.</b>
-                        When you rent, you write your monthly check and that money is gone forever. 
-                        But when you own your home, you can deduct the cost of your mortgage loan interest from your income taxes,
-                        and usually from your taxable income. This will save you a lot each year, 
-                        because the interest you pay will make up most of your monthly payment for most of the years of your mortgage. 
-                        In addition, the value of your home may go up over the years. Finally,
-                        you’ll enjoy having something that’s all yours – a home where your own personal style will tell the world who you are.
-                    </p>                    
-                  </div>
-                </div>
-              </div>
-              <!--Question 2-->
-              <div>
-                <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#q2" role="button" aria-expanded="false" aria-controls="q2">
-                    <strong>What Are The Tax Advantages Of Buying A House <i class="fa fa-question" aria-hidden="true"></i> </strong>
-                  </a>
-                </p>
-                <div class="collapse" id="q2">
-                  <div class="card card-body">
-                    <p class="mb-1">
-                      In most cases, the mortgage interest (and property tax) may be itemized and deducted from your taxable income, 
-                      lowering your overall tax bill. This can make your after-tax cost of home ownership lower than renting.
-                      However, there may be tax implications if you later sell the home at a profit. 
-                      Please consult your tax adviser regarding interest deductibility.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!--Question 3-->
-              <div>
-                <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#q3" role="button" aria-expanded="false" aria-controls="q3">
-                    <strong>What if my offer is rejected <i class="fa fa-question" aria-hidden="true"></i> </strong>
-                  </a>
-                </p>
-                <div class="collapse" id="q3">
-                  <div class="card card-body">
-                    <p class="mb-1">
-                      They often are!
-                      But don’t let that stop you. Now you begin negotiating. Your broker will help you. 
-                      You may have to offer more money, 
-                      but you may ask the seller to cover some or all of your closing costs or to make repairs that wouldn’t normally be expected. 
-                      Often, negotiations on a price go back and forth several times before a deal is made. 
-                      Just remember – don’t get so caught up in negotiations that you lose sight of what you really want and can afford!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!--Question 4-->              
-              <div>
-                <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#q4" role="button" aria-expanded="false" aria-controls="q4">
-                    <strong>How Much Is My House Worth <i class="fa fa-question" aria-hidden="true"></i> </strong>
-                  </a>
-                </p>
-                <div class="collapse" id="q4">
-                  <div class="card card-body">
-                    <p class="mb-1">
-                      The big question. You can’t get too far selling your home if you can’t put a price on it. 
-                      If you hire a full-service real estate agent, they will use “comps”, short for comparables,
-                      to help draw an accurate picture of what your home is currently worth.
-                      Agents also draw upon years of experience and local, neighborhood insight to price your home.
-                    </p>
-                    <p class="mb-1">
-                      If you’re a FSBO (For Sale By Owner), you can do some homework online and come up with a listing price on your own.
-                      Visit sites such as MagicBricks, 99Acres, CommonFloor and search for homes in your neighborhood or town. 
-                      Compare your home to the homes for sale or recently sold, and make your own valuation based on square footage. 
-                      You can also spend a few bucks and hire a home appraiser, who will give you a full report and a number.
-                    </p>
-                  </div>
-                </div>
-              </div>       
-              <!--Question 5-->
-              <div>
-                <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#q5" role="button" aria-expanded="false" aria-controls="q5">
-                    <strong>The Difference Between A List Price And Sale Price <i class="fa fa-question" aria-hidden="true"></i> </strong>
-                  </a>
-                </p>
-                <div class="collapse" id="q5">
-                  <div class="card card-body">
-                    <p class="mb-1">
-                      A list price is how much the seller lists the home for, also referred to as their “asking price.” The sale price is the amount the home actually sells for.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!--Question 6-->
-              <div>
-                <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#q6" role="button" aria-expanded="false" aria-controls="q6">
-                    <strong>What Do Seller's Agent Do <i class="fa fa-question" aria-hidden="true"></i> </strong>
-                  </a>
-                </p>
-                <div class="collapse" id="q6">
-                  <div class="card card-body">
-                    <p class="mb-1">
-                     Bottom line, if you’re a home seller, you want a real estate agent who sells your home as quickly as possible for as much as possible. But what specific actions does the agent take to achieve that goal?
-                    </p>
-                    <p class="mb-1">
-                     An agent or Realtor’s first step is to price your home correctly. Next, they will help the seller with recommendations on decluttering, curb appeal and small repairs. Then they will list the home and market the home through a mix of traditional and digital channels. Staging and showing the home comes next, followed by (hopefully!) helping the seller negotiate with buyers.
-                    </p>
-                    <p class="mb-1">
-                     Of course, the above list is a highlight of the main things a seller’s agent will do in any successful transaction. However, there are many other details and duties an agent will complete on your behalf.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!--Question 7-->
-              <div>
-                <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#q7" role="button" aria-expanded="false" aria-controls="q7">
-                    <strong>How To Increase Home Value <i class="fa fa-question" aria-hidden="true"></i> </strong>
-                  </a>
-                </p>
-                <div class="collapse" id="q7">
-                  <div class="card card-body">
-                    <p class="mb-1">
-                     There are many ways to add to your home’s value, including simply making your monthly mortgage payments!
-                    </p>
-                    <p class="mb-1">
-                     Some of the more popular moves to make include making small upgrades to the bathroom and kitchen: change out handles and fixtures, put in low-flow toilets, and paint or stain cabinets.
-                    </p>
-                    <p class="mb-1">
-                     Go green by adding solar panels and consider putting in a tankless water heater. A relatively cheap way to spruce up your landscaping is to revive your lawn by laying new sod. A fresh coat of paint and new flooring will also go a long way in justifying your asking price.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!--Question 8-->
-              <div>
-                <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#q8" role="button" aria-expanded="false" aria-controls="q8">
-                    <strong>How Long Does It Take To Sale A House <i class="fa fa-question" aria-hidden="true"></i> </strong>
-                  </a>
-                </p>
-                <div class="collapse" id="q8">
-                  <div class="card card-body">
-                <p class="mb-1">
-                  The un-official, the statistical answer is 65-90 days. However, this is one of those questions where more than one answer applies. The best of those being, “it depends.”
-                </p>
-                  </div>
-                </div>
-              </div>
+        
+         <!--Section: FAQ-->    
+          <section class="p-4 d-flex" style="border-radius: .5rem .5rem 0 0;">
 
-          </div>
-
-          @*<div class="col-lg-6 col-md-12">*@
-              <!-- ===================================== Contact ===================================== -->                           
-
-@*            <!--Section: Contact Form-->
-            <section>
-              <p>
-                <span class="fw-bold">
-                  Still Have Any Questions? Contact Us To Get Your Answer!</span>
-              </p>
-              <form action="" method="POST" class="faq-contact-form">
-                <!-- Email input -->
-                <div class="mb-3">
-                  <label for="InputEmailFAQ" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="InputEmailFAQ" placeholder="name@example.com">
+                <div class="row">
+                  <!-- ===================================== Questions ===================================== -->
+                  <div class="col-lg-12 col-md-12 mb-4">                            
+                      <h2 class="mt-2"> <b>Buyer FAQs</b> </h2>
+                      <!--Question 1 ok-->                     
+                      <div>
+                        <p>
+                          <a class="btn" data-bs-toggle="collapse" href="#q1" role="button" aria-expanded="false" aria-controls="q1">
+                            <i class="fa-solid fa-plus"></i> <strong>Why Should I Pay, Instead Of Rent <i class="fa fa-question" aria-hidden="true"></i> </strong>
+                          </a>
+                        </p>
+                        <div class="collapse" id="q1">
+                          <div class="card card-body">
+                            <p class="mb-1">
+                                <b>A home is an investment.</b>
+                                When you rent, you write your monthly check and that money is gone forever. 
+                                But when you own your home, you can deduct the cost of your mortgage loan interest from your income taxes,
+                                and usually from your taxable income. This will save you a lot each year, 
+                                because the interest you pay will make up most of your monthly payment for most of the years of your mortgage. 
+                                In addition, the value of your home may go up over the years. Finally,
+                                you’ll enjoy having something that’s all yours – a home where your own personal style will tell the world who you are.
+                            </p>                    
+                          </div>
+                        </div>
+                      </div>
+                      <!--Question 2 ok-->
+                      <div>
+                        <p>
+                          <a class="btn " data-bs-toggle="collapse" href="#q2" role="button" aria-expanded="false" aria-controls="q2">
+                            <i class="fa-solid fa-plus"></i> <strong>What Are The Tax Advantages Of Buying A House <i class="fa fa-question" aria-hidden="true"></i> </strong>
+                          </a>
+                        </p>
+                        <div class="collapse" id="q2">
+                          <div class="card card-body">
+                            <p class="mb-1">
+                              In most cases, the mortgage interest (and property tax) may be itemized and deducted from your taxable income, 
+                              lowering your overall tax bill. This can make your after-tax cost of home ownership lower than renting.
+                              However, there may be tax implications if you later sell the home at a profit. 
+                              Please consult your tax adviser regarding interest deductibility.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Question 3 ok-->
+                      <div>
+                        <p>
+                          <a class="btn" data-bs-toggle="collapse" href="#q3" role="button" aria-expanded="false" aria-controls="q3">
+                            <i class="fa-solid fa-plus"></i> <strong>What if my offer is rejected <i class="fa fa-question" aria-hidden="true"></i> </strong>
+                          </a>
+                        </p>
+                        <div class="collapse" id="q3">
+                          <div class="card card-body">
+                            <p class="mb-1">
+                              They often are!
+                              But don’t let that stop you. Now you begin negotiating. Your broker will help you. 
+                              You may have to offer more money, 
+                              but you may ask the seller to cover some or all of your closing costs or to make repairs that wouldn’t normally be expected. 
+                              Often, negotiations on a price go back and forth several times before a deal is made. 
+                              Just remember – don’t get so caught up in negotiations that you lose sight of what you really want and can afford!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Question 4 ok -->              
+                      <div>
+                        <p>
+                          <a class="btn " data-bs-toggle="collapse" href="#q4" role="button" aria-expanded="false" aria-controls="q4">
+                            <i class="fa-solid fa-plus"></i> <strong>What Is A Title Search <i class="fa fa-question" aria-hidden="true"></i> </strong>
+                          </a>
+                        </p>
+                        <div class="collapse" id="q4">
+                          <div class="card card-body">
+                            <p class="mb-1">
+                                A title search is typically conducted by an advocate, via the buyer and their agent. The main goal of doing a title search is to let the buyer (and their lender) know that the seller is indeed the rightful property owner and has the right to sell the property.
+                            </p>
+                            <p class="mb-1">
+                                Title searches involve looking at the history of the home and the owner and determining if any liens or encumbrances have been placed on the property. A lien is a type of hold, placed on the property to ensure payment for one of several things, refinanced mortgages, etc. Most of these types of issues are cleared up when the home sells and the liens are paid off or they’re removed entirely
+                            </p>
+                          </div>
+                        </div>
+                      </div>       
+                      <!--Question 5 ok-->
+                      <div>
+                        <p>
+                          <a class="btn " data-bs-toggle="collapse" href="#q5" role="button" aria-expanded="false" aria-controls="q5">
+                            <i class="fa-solid fa-plus"></i> <strong>The Difference Between A List Price And Sale Price <i class="fa fa-question" aria-hidden="true"></i> </strong>
+                          </a>
+                        </p>
+                        <div class="collapse" id="q5">
+                          <div class="card card-body">
+                            <p class="mb-1">
+                              A list price is how much the seller lists the home for, also referred to as their “asking price.” The sale price is the amount the home actually sells for.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Question 6-->
+                      <div>
+                        <p>
+                          <a class="btn " data-bs-toggle="collapse" href="#q6" role="button" aria-expanded="false" aria-controls="q6">
+                            <i class="fa-solid fa-plus"></i> <strong>What Do Seller's Agent Do <i class="fa fa-question" aria-hidden="true"></i> </strong>
+                          </a>
+                        </p>
+                        <div class="collapse" id="q6">
+                          <div class="card card-body">
+                            <p class="mb-1">
+                             Bottom line, if you’re a home seller, you want a real estate agent who sells your home as quickly as possible for as much as possible. But what specific actions does the agent take to achieve that goal?
+                            </p>
+                            <p class="mb-1">
+                             An agent or Realtor’s first step is to price your home correctly. Next, they will help the seller with recommendations on decluttering, curb appeal and small repairs. Then they will list the home and market the home through a mix of traditional and digital channels. Staging and showing the home comes next, followed by (hopefully!) helping the seller negotiate with buyers.
+                            </p>
+                            <p class="mb-1">
+                             Of course, the above list is a highlight of the main things a seller’s agent will do in any successful transaction. However, there are many other details and duties an agent will complete on your behalf.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="mt-2"> <b>Seller FAQs</b> </h2>
+                      <!--Question 7-->
+                      <div>
+                        <p>
+                          <a class="btn " data-bs-toggle="collapse" href="#q7" role="button" aria-expanded="false" aria-controls="q7">
+                            <i class="fa-solid fa-plus"></i> <strong>How To Increase Home Value <i class="fa fa-question" aria-hidden="true"></i> </strong>
+                          </a>
+                        </p>
+                        <div class="collapse" id="q7">
+                          <div class="card card-body">
+                            <p class="mb-1">
+                             There are many ways to add to your home’s value, including simply making your monthly mortgage payments!
+                            </p>
+                            <p class="mb-1">
+                             Some of the more popular moves to make include making small upgrades to the bathroom and kitchen: change out handles and fixtures, put in low-flow toilets, and paint or stain cabinets.
+                            </p>
+                            <p class="mb-1">
+                             Go green by adding solar panels and consider putting in a tankless water heater. A relatively cheap way to spruce up your landscaping is to revive your lawn by laying new sod. A fresh coat of paint and new flooring will also go a long way in justifying your asking price.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Question 8-->
+                      <div>
+                        <p>
+                          <a class="btn " data-bs-toggle="collapse" href="#q8" role="button" aria-expanded="false" aria-controls="q8">
+                            <i class="fa-solid fa-plus"></i> <strong>How Long Does It Take To Sale A House <i class="fa fa-question" aria-hidden="true"></i> </strong>
+                          </a>
+                        </p>
+                        <div class="collapse" id="q8">
+                          <div class="card card-body">
+                        <p class="mb-1">
+                          The un-official, the statistical answer is 65-90 days. However, this is one of those questions where more than one answer applies. The best of those being, “it depends.”
+                        </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Question 9 ok-->
+                      <div>
+                        <p>
+                          <a class="btn" data-bs-toggle="collapse" href="#q9" role="button" aria-expanded="false" aria-controls="q9">
+                            <i class="fa-solid fa-plus"></i> <strong>How Much Is My House Worth <i class="fa fa-question" aria-hidden="true"></i> </strong>
+                          </a>
+                        </p>
+                        <div class="collapse" id="q9">
+                          <div class="card card-body">
+                            <p class="mb-1">
+                              The big question. You can’t get too far selling your home if you can’t put a price on it. 
+                              If you hire a full-service real estate agent, they will use “comps”, short for comparables,
+                              to help draw an accurate picture of what your home is currently worth.
+                              Agents also draw upon years of experience and local, neighborhood insight to price your home.
+                            </p>
+                            <p class="mb-1">
+                              If you’re a FSBO (For Sale By Owner), you can do some homework online and come up with a listing price on your own.
+                              Visit sites such as MagicBricks, 99Acres, CommonFloor and search for homes in your neighborhood or town. 
+                              Compare your home to the homes for sale or recently sold, and make your own valuation based on square footage. 
+                              You can also spend a few bucks and hire a home appraiser, who will give you a full report and a number.
+                            </p>
+                          </div>
+                        </div>
+                      </div> 
+                      <!--Question 10 ok-->
+                      <div>
+                        <p>
+                          <a class="btn" data-bs-toggle="collapse" href="#q10" role="button" aria-expanded="false" aria-controls="q10">
+                            <i class="fa-solid fa-plus"></i> <strong>Should I Present Whent Buyers View My Hous <i class="fa fa-question" aria-hidden="true"></i> </strong>
+                          </a>
+                        </p>
+                        <div class="collapse" id="q10">
+                          <div class="card card-body">
+                            <p class="mb-1">
+                            “NO!” says Johnson. (Hey, no need to shout. We’re right here!) “There is not any situation in which this is appropriate. Having the owner in the house makes the buyers uncomfortable. They feel as though they can’t make comments or ask questions that could be offensive. The owner—who has a history and attachment to the house—has the tendency to argue if a potential buyer makes a comment that could be a little negative. This can turn off buyers and lose you offers.” Got it.
+                            </p>
+                          </div>
+                        </div>
+                      </div> 
+                  </div>
                 </div>
-                <!-- Message input -->
-                <div class="mb-3">
-                  <label for="InputMessageFAQ" class="form-label">Your question</label>
-                  <textarea class="form-control" id="InputMessageFAQ" rows="3"></textarea>
-                </div>
-                <!-- Submit button -->
-                  <input type="submit" class="btn btn-primary btn-block mb-4 faq-contact-form-submit" value="SEND">
-                  <input type="hidden" name="recaptcha-response" id="recaptchaFaqForm">
-              </form>
-
-            </section>*@
-          </div>
-        <!--Section: FAQ-->
-      </section>        
-      
-  </div>
-</section>
+          </section>
+      </div>
+</section>        
+</div>      
