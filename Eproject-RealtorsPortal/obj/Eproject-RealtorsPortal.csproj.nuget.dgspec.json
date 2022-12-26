@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj": {}
   },
   "projects": {
@@ -13,6 +14,19 @@
         "projectPath": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\",
+=======
+    "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj": {}
+  },
+  "projects": {
+    "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
+        "projectName": "Eproject-RealtorsPortal",
+        "projectPath": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
+        "packagesPath": "C:\\Users\\SARLAVI\\.nuget\\packages\\",
+        "outputPath": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\",
+>>>>>>> 6b52a43ffabee792c2d95a6fa63282677055a536
 =======
     "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj": {}
   },

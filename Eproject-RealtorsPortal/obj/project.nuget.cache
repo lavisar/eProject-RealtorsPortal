@@ -1,9 +1,15 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "Ii1/5nAu48YG4Qv/UYKfRaMppPPXNbJYKcEGMOlXXitW/jcMwvV+1ybnA+j57Js5uImrVT8GAamPzK4o9H1EAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
+=======
+  "dgSpecHash": "jtr6lKDqE0S35eqlvhZSi9MOTfafE+HBhRWnk3s6EpzRR+/d3vNpjzUwxKdfRg3+uzPy31PuXcp/oDT8g0QSGA==",
+  "success": true,
+  "projectFilePath": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
+>>>>>>> 6b52a43ffabee792c2d95a6fa63282677055a536
 =======
   "dgSpecHash": "jtr6lKDqE0S35eqlvhZSi9MOTfafE+HBhRWnk3s6EpzRR+/d3vNpjzUwxKdfRg3+uzPy31PuXcp/oDT8g0QSGA==",
   "success": true,
