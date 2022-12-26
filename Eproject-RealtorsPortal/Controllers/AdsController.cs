@@ -82,6 +82,9 @@ namespace Eproject_RealtorsPortal.Controllers
 
             return View("Rent", rent);
         }
+       public void UpAds()
+        {
 
+        }
     }
 }
