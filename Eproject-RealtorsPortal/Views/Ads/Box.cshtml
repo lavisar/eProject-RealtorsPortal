@@ -1,7 +1,7 @@
 ﻿@{
     Layout = null;
 }
-@model Product
+@model Eproject_RealtorsPortal.Models.Product
 <div class="col mb-5">
     <div class="card h-100">
         <!-- Product image-->
@@ -12,10 +12,10 @@
                 <!-- Product name-->
                 <h5 class="fw-bolder">@Model.ProductTitle</h5>
                 <!-- Product price-->
-                @*@if (Model.Category.BusinessTypes.BusinessTypesId == 1)*@
-                    @string.Format("{0:n}", Model.ProductPrice) / tháng
-                @*@if (Model.Category.BusinessTypes.BusinessTypesId == 2)*@
-                    @string.Format("{0:n}", Model.ProductPrice)|@Model.ProductArea / m &sup2;
+                @if (@Model.GetBusinessTypeID(Model) == 1)
+                    @string.Format("{0:n}", @Model.ProductPrice) / tháng
+                @if (@Model.GetBusinessTypeID(Model) == 2)
+                    @string.Format("{0:n}", @Model.ProductPrice)|@Model.ProductArea / m &sup2;
                 </div>
             </div>
             <!-- Product actions-->
