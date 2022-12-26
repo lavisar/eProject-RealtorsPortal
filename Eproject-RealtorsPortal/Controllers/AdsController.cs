@@ -8,35 +8,79 @@ namespace Eproject_RealtorsPortal.Controllers
     public class AdsController : Controller
     {
         LQHVContext LQHVContext = new LQHVContext();
-        List<Product> rent,sell;
+        List<ProductBox> rent, sell;
 
-        //public IActionResult Sell()
-        //{
-        //    sell = LQHVContext.Products;
-        //        .Join(
-        //        LQHVContext.Categories,
-        //        p => p.CategoryId,
-        //        c => c.CategoryId,
-        //        (p, c) => new
-        //        {
-        //            ProductTitle = p.ProductTitle,
-        //            ProductPrice = p.ProductPrice,
-        //            ProductImage = p.ProductImage,
-        //            CategoryID = c.CategoryId
-        //        })
-        //    .Join(
-        //        LQHVContext.BusinessTypes.Where(s => s.BusinessTypesId == 2),
-
-        //    )
-        //    .Select;
-        //    return View("Sell", sell);
-        //}
+        public IActionResult Sell()
+        {
+            sell = LQHVContext.Products
+                .Join(
+                LQHVContext.Categories,
+                p => p.CategoryId,
+                c => c.CategoryId,
+                (p, c) => new
+                {
+                    Product = p,
+                    Category = c
+                })
+            .Join(
+                LQHVContext.BusinessTypes.Where(s => s.BusinessTypesId == 2),
+                ca => ca.Category.BusinessTypesId,
+                bu => bu.BusinessTypesId,
+                (ca, bu) => new
+                {
+                    ca.Product,
+                    ca.Category,
+                    BusinessTypeID = bu.BusinessTypesId
+                }
+            )
+            .Select(s => new ProductBox
+            {
+                ProductID = s.Product.ProductId,
+                ProductTitle = s.Product.ProductTitle,
+                ProductPrice = s.Product.ProductPrice,
+                ProductArea = s.Product.ProductArea,
+                ProductAddress = s.Product.ProductAddress,
+                BusinessTypeID = s.BusinessTypeID
+            })
+            .ToList();
+            return View("Sell", sell);
+        }
 
         public IActionResult Rent()
         {
-            rent = LQHVContext.Products.Where(s => s.Category.BusinessTypes.BusinessTypesId == 1).ToList();
-            
-            return View("Rent",rent);
+            rent = LQHVContext.Products
+                .Join(
+                LQHVContext.Categories,
+                p => p.CategoryId,
+                c => c.CategoryId,
+                (p, c) => new
+                {
+                    Product = p,
+                    Category = c
+                })
+            .Join(
+                LQHVContext.BusinessTypes.Where(s => s.BusinessTypesId == 1),
+                ca => ca.Category.BusinessTypesId,
+                bu => bu.BusinessTypesId,
+                (ca, bu) => new
+                {
+                    ca.Product,
+                    ca.Category,
+                    BusinessTypeID = bu.BusinessTypesId
+                }
+            )
+            .Select(s => new ProductBox
+            {
+                ProductID = s.Product.ProductId,
+                ProductTitle = s.Product.ProductTitle,
+                ProductPrice = s.Product.ProductPrice,
+                ProductArea = s.Product.ProductArea,
+                ProductAddress = s.Product.ProductAddress,
+                BusinessTypeID = s.BusinessTypeID
+            })
+            .ToList(); ;
+
+            return View("Rent", rent);
         }
 
     }

@@ -121,4 +121,14 @@ namespace Eproject_RealtorsPortal.Models
         //    return BusinessTypeID.BusinessTypesId;
         //}
     }
+    public class ProductBox
+    {
+        public long ProductID { get; set; }
+        public string ProductTitle { get; set; }
+        public string ProductImage { get; set; }
+        public decimal ProductPrice { get; set; }
+        public decimal ProductArea { get; set; }
+        public string ProductAddress { get; set; }
+        public long BusinessTypeID { get; set; }
+    }
 }
