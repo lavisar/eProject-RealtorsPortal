@@ -16,13 +16,8 @@
         display: inline-block;
     }
 
-    .product {
-        width: 320px;
-        display: inline-block;
-        margin-left: 60px;
-    }
-
     #products {
+        display: flex,
         position: relative;
         width: 1200px;
     }
@@ -142,9 +137,8 @@
 
 <div id="products">
     <h1>Trang hiển thị gói nâng cấp - đang cập nhật</h1>
-    <div class="product">
         @foreach (var item in Model)
         {
             @Html.Partial("Box", item)
         }
-    </div>
+</div>
