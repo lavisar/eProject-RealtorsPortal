@@ -10024,35 +10024,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
       "projectName": "Eproject-RealtorsPortal",
       "projectPath": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\",
-=======
-      "projectUniqueName": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
-      "projectName": "Eproject-RealtorsPortal",
-      "projectPath": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
-      "packagesPath": "C:\\Users\\SARLAVI\\.nuget\\packages\\",
-      "outputPath": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\",
->>>>>>> 6b52a43ffabee792c2d95a6fa63282677055a536
-=======
-      "projectUniqueName": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
-      "projectName": "Eproject-RealtorsPortal",
-      "projectPath": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
-      "packagesPath": "C:\\Users\\SARLAVI\\.nuget\\packages\\",
-      "outputPath": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\",
->>>>>>> 6b52a43ffabee792c2d95a6fa63282677055a536
-=======
-      "projectUniqueName": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
-      "projectName": "Eproject-RealtorsPortal",
-      "projectPath": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
-      "packagesPath": "C:\\Users\\SARLAVI\\.nuget\\packages\\",
-      "outputPath": "D:\\APTECH\\SEM3-Eproject\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\",
->>>>>>> 6b52a43ffabee792c2d95a6fa63282677055a536
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10128,5 +10104,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
