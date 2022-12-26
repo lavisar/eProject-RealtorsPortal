@@ -78,7 +78,7 @@ namespace Eproject_RealtorsPortal.Controllers
                 ProductAddress = s.Product.ProductAddress,
                 BusinessTypeID = s.BusinessTypeID
             })
-            .ToList(); ;
+            .ToList();
 
             return View("Rent", rent);
         }
