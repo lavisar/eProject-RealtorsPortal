@@ -13,14 +13,12 @@
                 <h5 class="fw-bolder">@Model.ProductTitle</h5>
                 <!-- Product price-->
                 @if (@Model.BusinessTypeID == 1){
-                    <p> (@string.Format("{0:n}", @Model.ProductPrice))/tháng</p>
+                    <p>(@string.Format("{0:n}", Model.ProductPrice))/tháng</p>
+                }
+                @if (@Model.BusinessTypeID == 2){
+                    <p>@string.Format("{0:n}", Model.ProductPrice)|@Model.ProductArea/m &sup2;</p>
 
                 }
-
-                @if (@Model.BusinessTypeID == 1){
-                    <p>(@string.Format("{0:n}", @Model.ProductPrice)) |@Model.ProductArea / m &sup2;</p>
-                }
-
                 </div>
         </div>
             <!-- Product actions-->
