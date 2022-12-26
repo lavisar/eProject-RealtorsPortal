@@ -12,15 +12,10 @@
                 <!-- Product name-->
                 <h5 class="fw-bolder">@Model.ProductTitle</h5>
                 <!-- Product price-->
-                @if (@Model.BusinessTypeID == 1){
-                    <p> (@string.Format("{0:n}", @Model.ProductPrice))/tháng</p>
-
-                }
-
-                @if (@Model.BusinessTypeID == 1){
-                    <p>(@string.Format("{0:n}", @Model.ProductPrice)) |@Model.ProductArea / m &sup2;</p>
-                }
-
+@*                @if (@Model.GetBusinessTypeID(Model) == 1)
+*@                    @string.Format("{0:n}", @Model.ProductPrice) / tháng
+@*                @if (@Model.GetBusinessTypeID(Model) == 2)
+*@                    @string.Format("{0:n}", @Model.ProductPrice)|@Model.ProductArea / m &sup2;
                 </div>
         </div>
             <!-- Product actions-->
