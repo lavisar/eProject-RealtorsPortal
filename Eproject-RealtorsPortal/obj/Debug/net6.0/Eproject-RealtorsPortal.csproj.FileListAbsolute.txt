@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\bin\Debug\net6.0\appsettings.json
 C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\bin\Debug\net6.0\Eproject-RealtorsPortal.staticwebassets.runtime.json
@@ -268,6 +269,8 @@ C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\obj\Debug\
 =======
 =======
 >>>>>>> 6b52a43ffabee792c2d95a6fa63282677055a536
+=======
+>>>>>>> 6b52a43ffabee792c2d95a6fa63282677055a536
 D:\APTECH\SEM3-Eproject\eProject-RealtorsPortal\Eproject-RealtorsPortal\bin\Debug\net6.0\appsettings.Development.json
 D:\APTECH\SEM3-Eproject\eProject-RealtorsPortal\Eproject-RealtorsPortal\bin\Debug\net6.0\appsettings.json
 D:\APTECH\SEM3-Eproject\eProject-RealtorsPortal\Eproject-RealtorsPortal\bin\Debug\net6.0\Eproject-RealtorsPortal.staticwebassets.runtime.json
@@ -534,6 +537,9 @@ D:\APTECH\SEM3-Eproject\eProject-RealtorsPortal\Eproject-RealtorsPortal\obj\Debu
 D:\APTECH\SEM3-Eproject\eProject-RealtorsPortal\Eproject-RealtorsPortal\obj\Debug\net6.0\Eproject-RealtorsPortal.genruntimeconfig.cache
 D:\APTECH\SEM3-Eproject\eProject-RealtorsPortal\Eproject-RealtorsPortal\obj\Debug\net6.0\ref\Eproject-RealtorsPortal.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6b52a43ffabee792c2d95a6fa63282677055a536
+=======
 >>>>>>> 6b52a43ffabee792c2d95a6fa63282677055a536
 =======
 >>>>>>> 6b52a43ffabee792c2d95a6fa63282677055a536
