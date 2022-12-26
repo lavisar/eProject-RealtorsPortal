@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Eproject_RealtorsPortal.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Eproject_RealtorsPortal.Models
@@ -108,5 +109,26 @@ namespace Eproject_RealtorsPortal.Models
         public virtual ICollection<Image> Images { get; set; }
         [InverseProperty("Product")]
         public virtual ICollection<Payment> Payments { get; set; }
+
+
+
+
+        //LQHVContext LQHVContext = new LQHVContext();
+        //BusinessType BusinessTypeID;
+        //public long GetBusinessTypeID(Product model)
+        //{
+        //    BusinessTypeID = LQHVContext.BusinessTypes.Find(Category.BusinessTypes.BusinessTypesId);
+        //    return BusinessTypeID.BusinessTypesId;
+        //}
+    }
+    public class ProductBox
+    {
+        public long ProductID { get; set; }
+        public string ProductTitle { get; set; }
+        public string ProductImage { get; set; }
+        public decimal ProductPrice { get; set; }
+        public decimal ProductArea { get; set; }
+        public string ProductAddress { get; set; }
+        public long BusinessTypeID { get; set; }
     }
 }
