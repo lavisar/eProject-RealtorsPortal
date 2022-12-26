@@ -1,5 +1,209 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+	ViewData["Title"] = "News";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<style>
+	.section {
+		clear: both;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.group:before, .group:after {
+		content: "";
+		display: table;
+	}
+
+	.group:after {
+		clear: both;
+	}
+
+	.group {
+		zoom: 1;
+	}
+
+	.col {
+		display: block;
+		float: left;
+		margin: 0% 0 1% 1.6%;
+	}
+
+		.col:first-child {
+			margin-left: 0;
+		}
+
+	.span_2_of_3 {
+		width: 63.1%;
+		padding: 1.5%;
+	}
+
+	.span_1_of_3 {
+		width: 29.2%;
+		padding: 1.5%;
+	}
+
+		.span_2_of_3 h2, .span_1_of_3 h2 {
+			margin-bottom: 0.5em;
+			line-height: 1.2;
+			font-family: 'ambleregular';
+			font-weight: normal;
+			margin-top: 0px;
+		}
+
+	.contact-form {
+		position: relative;
+		padding-bottom: 30px;
+	}
+
+		.contact-form div {
+			padding: 5px 0;
+		}
+
+		.contact-form span {
+			display: block;
+			font-size: 0.8125em;
+			color: #757575;
+			padding-bottom: 5px;
+			font-family: verdana, arial, helvetica, helve, sans-serif;
+		}
+
+		.contact-form input[type="text"], .contact-form textarea {
+			padding: 8px;
+			display: block;
+			width: 98%;
+			background: none;
+			border: 1px solid #CACACA;
+			outline: none;
+			color: #464646;
+			font-size: 1em;
+			font-weight: bold;
+			font-family: Arial, Helvetica, sans-serif;
+			-webkit-appearance: none;
+		}
+
+		.contact-form textarea {
+			resize: none;
+			height: 120px;
+		}
+
+		.contact-form input[type="submit"] {
+			font-size: 1em;
+			padding: 10px 15px;
+			font-family: 'ambleregular';
+			background: #CD1F25;
+			color: #FFF;
+			border: none;
+			text-decoration: none;
+			outline: 0;
+			cursor: pointer;
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+			position: absolute;
+			right: 0;
+		}
+
+			.contact-form input[type="submit"]:hover {
+				text-shadow: 0px 0px 1px #000;
+				background: #292929;
+			}
+
+	.company_address p {
+		font-size: 0.8125em;
+		color: #757575;
+		padding: 0.2em 0;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+		.company_address p span, .company_address p span a {
+			text-decoration: underline;
+			color: #444;
+			cursor: pointer;
+		}
+
+	.map {
+		border: 1px solid #C7C7C7;
+		margin-bottom: 15px;
+	}
+</style>
+
+<div style="background-color: rgb(239,239,239);">
+	<img src="~/Image/ContactUs.png" class="img-fluid" alt="bulding" style="height:300" />
+	<section class="pb-4 mt-3 container">
+		<div class="bg-white border rounded-5 border-white">
+			<div class="main">
+				<div class="content">
+					<div class="section group">
+						<div class="col span_2_of_3">
+							<div class="contact-form">
+								<h1 style="text-align: center; color:#006600; font-weight: bolder; text-shadow: 1px 0px 1px rgb(10, 2, 32);">
+									<b>Contact Us</b>
+								</h1>
+								<form>
+									<div>
+										<label class="h4" style="color: black; font-style: italic;">
+											<i class="fa fa-user me-2 "></i>
+											Name
+											<small class="required">*</small>
+										</label>
+										<input type="text" class="form-control">
+									</div>
+
+									<div>
+										<label class="h4" style="color: black; font-style: italic;">
+											<i class="fas fa-envelope me-2"></i>
+											E-mail
+											<small class="required">*</small>
+										</label>
+										<input type="email" class="form-control">
+									</div>
+
+									<div>
+										<label class="h4" style="color: black; font-style: italic;">
+											<i class="fas fa-phone me-2"></i>
+											Phone Number
+											<small class="required">*</small>
+										</label>
+										<input type="number" class="form-control" min="9" maxlength="12">
+									</div>
+
+									<div>
+										<label class="h4" style="color: black; font-style: italic;">
+											<i class="fa-sharp fa-solid fa-pen"></i>
+											Content
+											<small class="required">*</small>
+										</label>
+										<textarea type="textarea" class="form-control" height="400"></textarea>
+									</div>
+									<div>
+										<input type="submit" class="btn btn-primary btn-block mb-4 faq-contact-form-submit" value="SEND">
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col span_1_of_3">
+							<div class="contact_info">
+								<h3>Find Us Here</h3>
+								<div class="map">
+									<iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3193500366883!2d106.66408561394566!3d10.786834792314448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2s!4v1605550165904!5m2!1sen!2s"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:12px">View Larger Map</a></small>
+								</div>
+							</div>
+							<div class="company_address">
+								<h3>Company Information :</h3>
+								<p>590 CMT8, Ward 11, District 3, Ho Chi Minh City</p>
+								<p>VietNam</p>
+								<p>Phone:(00) 222 666 444</p>
+								<p>Fax: (000) 000 00 00 0</p>
+								<p>Email: <span><a href="#">info@mycompany.com</a></span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+</div>
+</section>
+</div>      

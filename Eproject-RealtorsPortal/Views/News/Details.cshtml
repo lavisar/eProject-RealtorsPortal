@@ -1,0 +1,48 @@
+﻿@{
+	ViewData["Title"] = "NewsDetails";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model News
+
+<section class="content container light-grey" style="padding-top: 70px; padding-bottom: 70px;">
+	<div class="w3-content" style="max-width:1400px">
+		<br>
+		<div class="w3-row" class="w3-card-4 w3-margin w3-white ">
+			<div class="container-fluid">
+				<div class="row content">
+					<div class="col-sm-12 " style="background-color: whitesmoke">
+						<div class="w3-card-4 w3-margin w3-white">
+							<h3>
+								<span class="w3-opacity" style="text-align: left;">@Html.DisplayFor(model=>model.NewsDate)</span>
+							</h3>
+						</div>
+
+						<div class="w3-container  text-center">
+							<h1 style="text-align: center; color:#006600; font-weight: bolder; text-shadow: 1px 0px 1px rgb(10, 2, 32);">
+								<b>@Html.DisplayFor(model=>model.NewsTitle)</b>
+							</h1>
+							<h2 style="text-align: justify, padding-left: 70px;">
+								@Html.DisplayFor(model=>model.NewsDesc)
+							</h2>
+
+						</div>
+
+						<div class="w3-container">
+							<p style="text-align: left;">
+								<b>@Html.DisplayFor(model=>model.NewsContent)</b>
+							</p>
+							<div class="w3-row">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-sm-2 ">
+				</div>
+			</div>
+			<!-- END GRID -->
+		</div><br>
+		<!-- END w3-content -->
+	</div>
+</section>
