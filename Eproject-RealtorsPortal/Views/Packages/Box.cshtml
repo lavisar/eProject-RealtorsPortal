@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+@model Package
+<div class="col mb-5">
+    <div class="card h-100">        
+
+        <div class="card-body p-4">
+            <!-- Package Name (co ban/ nang cao)-->
+            <h3 class="">@Model.PackagesName</h3>
+            <div class="text-center">
+                <!-- Package price-->
+                <h5 class="fw-bolder">@Model.PackagesPrice</h5> <br />
+                every month <br /> (included VAT) <br />
+                <!-- Package Desc-->
+                @string.Format("{0:n}", Model.PackagesDesc)
+                <!-- Button BUY NOW-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-danger mt-auto" href="@Url.Action("Detail", "Product", new {id = Model.PackagesId})">Buy now</a></div>
+                </div>
+                <!-- Button VIEW DETAIL-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="@Url.Action("Detail", "Product", new {id = Model.PackagesId})">View details</a></div>
+                </div>
+
+                <!-- Package Duration-->
+                 Duration: @string.Format("{0:n}", Model.PackagesDuration) month           
+                </div>
+        </div>
+    </div>
+</div>
