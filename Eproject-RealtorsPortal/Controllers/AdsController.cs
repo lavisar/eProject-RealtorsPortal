@@ -9,6 +9,8 @@ namespace Eproject_RealtorsPortal.Controllers
     {
         LQHVContext LQHVContext = new LQHVContext();
         List<ProductBox> rent, sell;
+        List<Product> products;
+        Product product;
 
         public IActionResult Sell()
         {
@@ -82,6 +84,20 @@ namespace Eproject_RealtorsPortal.Controllers
 
             return View("Rent", rent);
         }
-
+        public IActionResult CreateAds()
+        {
+            return View(new Product());
+        }
+        [HttpPost]
+        public IActionResult CreateAds(Product model)
+        {
+            LQHVContext.Products.Add(model);
+            return View("Create", model);
+        }
+        public IActionResult Details(long ID)
+        {
+            product = LQHVContext.Products.Where(s => s.ProductId == ID).FirstOrDefault();
+            return View("Details", product);
+        }
     }
 }
