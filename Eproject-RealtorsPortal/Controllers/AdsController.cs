@@ -86,16 +86,6 @@ namespace Eproject_RealtorsPortal.Controllers
 
             return View("Rent", rent);
         }
-        public IActionResult CreateAds()
-        {
-            return View(new Product());
-        }
-        [HttpPost]
-        public IActionResult CreateAds(Product model)
-        {
-            LQHVContext.Products.Add(model);
-            return View("Create", model);
-        }
         public IActionResult Details(long ID)
         {
             product = LQHVContext.Products
@@ -143,6 +133,16 @@ namespace Eproject_RealtorsPortal.Controllers
                 BusinessTypeID = s.BusinessTypeID
             }).FirstOrDefault();
             return View("Details", product);
+        }
+        public IActionResult CreateAds()
+        {
+            return View(new Product());
+        }
+        [HttpPost]
+        public IActionResult CreateAds(Product model)
+        {
+            LQHVContext.Products.Add(model);
+            return View("Create", model);
         }
     }
 }
