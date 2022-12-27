@@ -1,29 +1,6 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
 }
 @model ProductDetail
-@*<section class="py-5">
-    <div class="container px-4 px-lg-5 my-5">
-        <div class="row gx-4 gx-lg-5 align-items-center">
-            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="~/Image/(@Model.Images)" alt="..." /></div>
-            <div class="col-md-6">
-                <input type="hidden" id="id" value="@Model.ProductId" />
-                <h1 class="display-5 fw-bolder">@Model.ProductTitle</h1>
-                <div class="fs-5 mb-5">
-                        <span>@(string.Format("{0:n} đồng", Model.ProductPrice))</span>
-                </div>
-               <p class="lead">@Model.ProductDesc</p>
-            </div>
-        </div>
-    </div>
-    <center>
-        <div class="d-flex">
-            <p class="lead">@Model.ProductDesc</p>
-        </div>
-    </center>
-</section>*@
 <div class="card">
     <div class="card-body">
         <div class="row">
@@ -33,7 +10,7 @@
                         <img class="rounded" height="400"
                              src="~/Ads/@(Model.ProductImage).jpg">
                     </div>
-                    @*                    <!-- img-big-wrap.// -->
+                    @*<!-- img-big-wrap.// -->
                     <div class="mb-4 d-flex justify-content-between overflow-hidden">
                     <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
                     <img class="rounded" height="96"
@@ -71,7 +48,7 @@
                     <p>
                         @Model.ProductDesc
                     </p>
-                    <div class="mb-3">
+@*                    <div class="mb-3">
                         <span class="tag">
                             <i class="me-2 text-success fa fa-check"></i>
                             Parking places
@@ -79,7 +56,7 @@
                             <i class="me-2 text-success fa fa-check"></i> Security
                         </span>
                         <span class="tag"> <i class="me-2 text-success fa fa-check"></i> Internet </span>
-                    </div>
+                    </div>*@
                     <table class="table table-striped">
                         <tbody>
                             <tr>
@@ -123,7 +100,7 @@
                     @if (@Model.BusinessTypeID == 1)
                     {
                         <p>
-                            @(@Model.ProductPrice) VND/tháng
+                            @(@Model.ProductPrice) USD/Month
                         </p>
 
                         <br />
@@ -131,7 +108,7 @@
                     @if (@Model.BusinessTypeID == 2)
                     {
                         <p>
-                            @(@Model.ProductPrice) VND<br>@(Model.ProductArea)/m&sup2;
+                            @(@Model.ProductPrice) USD<br>@(Model.ProductArea)/m&sup2;
                         </p>
                     }
                 </div>
@@ -140,37 +117,42 @@
                     @if (!String.IsNullOrEmpty(Model.HomeOrientation))
                     {
                         <p>
-                            Hướng nhà: @Model.HomeOrientation
+                            Home Orientation: @Model.HomeOrientation
                         </p>
                     }
                     @if (!String.IsNullOrEmpty(Model.BalconyOrientation))
                     {
                         <p>
-                            Hướng ban công: @Model.BalconyOrientation
+                            &nbsp;&nbsp;&nbsp;&nbsp;Balcony Orientation: @Model.BalconyOrientation
                         </p>
                     }
                 </h6>
                 <hr>
                 <p> <i class="fa fa-map-marker-alt text-muted"></i> @Model.ProductAddress </p>
-                <article class="bg-gray overflow-hidden position-relative rounded" style="height: 130px">
-                    <img src="./Ecommerce templates for Figma and Sketch_files/map.webp"
-                         class="img-fluid opacity"> <a href="" class="center-xy btn btn-light">Show on map</a>
+                <article class="bg-gray overflow-hidden position-relative rounded" style="height: 130px"> <a href="https://www.google.com/maps/place/@Model.ProductAddress" class="center-xy btn btn-light" target="_blank">Show on map</a>
+                    <img src="~/Ads/map.webp" class="img-fluid opacity">
                 </article> <br>
                 <article class="box">
                     <div class="icontext mb-3 w-100">
                         <div class="text">
-                            <h6 class="title">@Model.ContactName</h6>
+                            <h6 class="title">Contact Name: @Model.ContactName</h6>
                         </div>
                     </div>
                     <div>
-                        <a href="https://bootstrap-ecommerce.com/components.html#"
-                           class="btn w-100 btn-lg btn-success mb-2">
-                            <i class="fa fa-phone me-2"></i> Show phone
-                        </a> <button href="https://bootstrap-ecommerce.com/components.html#"
-                                class="btn w-100 btn-lg btn-warning">
-                            <i class="fa fa-comment-dots me-2"></i>
-                            Message author
-                        </button>
+                        @if (!String.IsNullOrEmpty(Model.PhoneNumber))
+                        {
+                            <button class="btn w-100 btn-lg btn-success">
+                                <i class="fa fa-phone me-2"></i> Show phone
+                            </button>
+                            <input class="btn w-100 btn-lg" id="phoneNum" type="tel" value="@Model.PhoneNumber" readonly />
+                        }
+                        @if (!String.IsNullOrEmpty(Model.ContactEmail)){
+
+                            <button class="btn w-100 btn-lg btn-warning">
+                                <i class="fa fa-comment-dots me-2"></i>Message author
+                            </button>
+                            <input class="btn w-100 btn-lg" id="emailCon" type="email" value="@Model.ContactEmail" readonly />
+                        }
                     </div>
                 </article>
             </aside> <!-- col.// -->
@@ -178,5 +160,9 @@
     </div> <!-- card-body.// -->
 </div>
 <script>
+    $(document).ready(function () {
+        $.('#emailCon').hide()
+        $.('phoneNum').hide()
+    }
 
 </script>
