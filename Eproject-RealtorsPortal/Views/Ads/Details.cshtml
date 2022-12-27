@@ -3,20 +3,18 @@
 *@
 @{
 }
-@model Product
-<section class="py-5">
+@model ProductDetail
+@*<section class="py-5">
     <div class="container px-4 px-lg-5 my-5">
         <div class="row gx-4 gx-lg-5 align-items-center">
             <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="~/Image/(@Model.Images)" alt="..." /></div>
             <div class="col-md-6">
                 <input type="hidden" id="id" value="@Model.ProductId" />
-@*                <div class="small mb-1"></div>
-*@                <h1 class="display-5 fw-bolder">@Model.ProductTitle</h1>
+                <h1 class="display-5 fw-bolder">@Model.ProductTitle</h1>
                 <div class="fs-5 mb-5">
                         <span>@(string.Format("{0:n} đồng", Model.ProductPrice))</span>
                 </div>
-@*                Các phần chi tiết của nơi
-*@                <p class="lead">@Model.ProductDesc</p>
+               <p class="lead">@Model.ProductDesc</p>
             </div>
         </div>
     </div>
@@ -25,4 +23,160 @@
             <p class="lead">@Model.ProductDesc</p>
         </div>
     </center>
-</section>
+</section>*@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="gallery-wrap">
+                    <div class="img-big-wrap" style="height: auto;">
+                        <img class="rounded" height="400"
+                             src="~/Ads/@(Model.ProductImage).jpg">
+                    </div>
+                    @*                    <!-- img-big-wrap.// -->
+                    <div class="mb-4 d-flex justify-content-between overflow-hidden">
+                    <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
+                    <img class="rounded" height="96"
+                    src="./Ecommerce templates for Figma and Sketch_files/thumb1(3).webp">
+                    </a>
+                    <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
+                    <img class="rounded" height="96"
+                    src="./Ecommerce templates for Figma and Sketch_files/thumb2(3).webp">
+                    </a>
+                    <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
+                    <img class="rounded" height="96"
+                    src="./Ecommerce templates for Figma and Sketch_files/thumb3(3).webp">
+                    </a>
+                    <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
+                    <img class="rounded" height="96"
+                    src="./Ecommerce templates for Figma and Sketch_files/thumb4(3).webp">
+                    </a>
+                    <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
+                    <img class="rounded" height="96"
+                    src="./Ecommerce templates for Figma and Sketch_files/thumb5.webp">
+                    </a> <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
+                    <img class="rounded" height="96"
+                    src="./Ecommerce templates for Figma and Sketch_files/thumb6.webp">
+                    </a> <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
+                    <img class="rounded" height="96"
+                    src="./Ecommerce templates for Figma and Sketch_files/thumb5.webp">
+                    </a> <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
+                    <img class="rounded" height="96"
+                    src="./Ecommerce templates for Figma and Sketch_files/thumb6.webp">
+                    </a>
+                    </div>*@ <!-- thumbs-wrap.// -->
+                </article> <!-- gallery-wrap .end// -->
+                <article>
+                    <h5>Detailed info</h5>
+                    <p>
+                        @Model.ProductDesc
+                    </p>
+                    <div class="mb-3">
+                        <span class="tag">
+                            <i class="me-2 text-success fa fa-check"></i>
+                            Parking places
+                        </span> <span class="tag">
+                            <i class="me-2 text-success fa fa-check"></i> Security
+                        </span>
+                        <span class="tag"> <i class="me-2 text-success fa fa-check"></i> Internet </span>
+                    </div>
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td width="200">
+                                    <i class="fa-fw me-2 text-muted fa fa-home"></i> <b class="text-dark">Certification</b>
+                                </td>
+                                <td> @Model.ProductLegal </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa-fw me-2 text-muted fa fa-building"></i> <b class="text-dark">Floor</b>
+                                </td>
+                                <td> @Model.NumOfFloors</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa-fw me-2 text-muted fa fa-ruler-combined"></i> <b class="text-dark">Area Size</b>
+                                </td>
+                                <td> @(Model.ProductArea)m&sup2; </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa-fw me-2 text-muted fa fa-couch"></i> <b class="text-dark">Funiture</b>
+                                </td>
+                                <td> @Model.ProductInterior </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa-fw me-2 text-muted fas fa-bath"></i><b>Toilet</b>
+                                </td>
+                                <td>@Model.NumToilets</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div> <!-- col.// -->
+            <aside class="col-lg-4">
+                @*<a href="https://bootstrap-ecommerce.com/components.html#"
+                class="btn btn-light float-end"> <i class="fa fa-heart me-2"></i> Save </a> <time datetime="2022-02-14 20:00" class="text-muted"> 12 Sept Tue, </time> *@<b class="clearfix"></b>
+                <div class="price mt-2 h5">
+                    @if (@Model.BusinessTypeID == 1)
+                    {
+                        <p>
+                            @(@Model.ProductPrice) VND/tháng
+                        </p>
+
+                        <br />
+                    }
+                    @if (@Model.BusinessTypeID == 2)
+                    {
+                        <p>
+                            @(@Model.ProductPrice) VND<br>@(Model.ProductArea)/m&sup2;
+                        </p>
+                    }
+                </div>
+
+                <h6>
+                    @if (!String.IsNullOrEmpty(Model.HomeOrientation))
+                    {
+                        <p>
+                            Hướng nhà: @Model.HomeOrientation
+                        </p>
+                    }
+                    @if (!String.IsNullOrEmpty(Model.BalconyOrientation))
+                    {
+                        <p>
+                            Hướng ban công: @Model.BalconyOrientation
+                        </p>
+                    }
+                </h6>
+                <hr>
+                <p> <i class="fa fa-map-marker-alt text-muted"></i> @Model.ProductAddress </p>
+                <article class="bg-gray overflow-hidden position-relative rounded" style="height: 130px">
+                    <img src="./Ecommerce templates for Figma and Sketch_files/map.webp"
+                         class="img-fluid opacity"> <a href="" class="center-xy btn btn-light">Show on map</a>
+                </article> <br>
+                <article class="box">
+                    <div class="icontext mb-3 w-100">
+                        <div class="text">
+                            <h6 class="title">@Model.ContactName</h6>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://bootstrap-ecommerce.com/components.html#"
+                           class="btn w-100 btn-lg btn-success mb-2">
+                            <i class="fa fa-phone me-2"></i> Show phone
+                        </a> <button href="https://bootstrap-ecommerce.com/components.html#"
+                                class="btn w-100 btn-lg btn-warning">
+                            <i class="fa fa-comment-dots me-2"></i>
+                            Message author
+                        </button>
+                    </div>
+                </article>
+            </aside> <!-- col.// -->
+        </div> <!-- row.// -->
+    </div> <!-- card-body.// -->
+</div>
+<script>
+
+</script>

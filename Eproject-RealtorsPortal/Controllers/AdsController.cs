@@ -9,8 +9,8 @@ namespace Eproject_RealtorsPortal.Controllers
     {
         LQHVContext LQHVContext = new LQHVContext();
         List<ProductBox> rent, sell;
-        List<Product> products;
-        Product product;
+        //List<Product> products;
+        ProductDetail product;
 
         public IActionResult Sell()
         {
@@ -98,7 +98,50 @@ namespace Eproject_RealtorsPortal.Controllers
         }
         public IActionResult Details(long ID)
         {
-            product = LQHVContext.Products.Where(s => s.ProductId == ID).FirstOrDefault();
+            product = LQHVContext.Products
+                .Where(s => s.ProductId == ID)
+                .Join(
+                LQHVContext.Categories,
+                p => p.CategoryId,
+                c => c.CategoryId,
+                (p, c) => new
+                {
+                    Product = p,
+                    Category = c
+                })
+            .Join(
+                LQHVContext.BusinessTypes,
+                ca => ca.Category.BusinessTypesId,
+                bu => bu.BusinessTypesId,
+                (ca, bu) => new
+                {
+                    ca.Product,
+                    ca.Category,
+                    BusinessTypeID = bu.BusinessTypesId
+                }
+            )
+            .Select(s => new ProductDetail
+            {
+                ProductID = s.Product.ProductId,
+                ProductTitle = s.Product.ProductTitle,
+                ProductDesc = s.Product.ProductDesc,
+                ProductPrice = s.Product.ProductPrice,
+                ProductArea = s.Product.ProductArea,
+                ProductAddress = s.Product.ProductAddress,
+                ProductImage = s.Product.ProductImage,
+                ProductInterior = s.Product.ProductInterior,
+                ProductLegal = s.Product.ProductLegal,
+                PhoneNumber = s.Product.PhoneNumber,
+                NumToilets = s.Product.NumToilets,
+                NumBedrooms = s.Product.NumBedrooms,
+                NumOfFloors = s.Product.NumOfFloors,
+                ContactName = s.Product.ContactName,
+                ContactAddress = s.Product.ContactAddress,
+                ContactEmail = s.Product.ContactEmail,
+                BalconyOrientation = s.Product.BalconyOrientation,
+                HomeOrientation = s.Product.HomeOrientation,
+                BusinessTypeID = s.BusinessTypeID
+            }).FirstOrDefault();
             return View("Details", product);
         }
     }

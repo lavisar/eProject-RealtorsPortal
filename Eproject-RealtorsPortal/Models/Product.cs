@@ -131,4 +131,26 @@ namespace Eproject_RealtorsPortal.Models
         public string ProductAddress { get; set; }
         public long BusinessTypeID { get; set; }
     }
+    public class ProductDetail
+    {
+        public long ProductID { get; set; }
+        public string ProductTitle { get; set; }
+        public string ProductDesc { get; set; } = null!;
+        public string ProductImage { get; set; }
+        public decimal ProductPrice { get; set; }
+        public decimal ProductArea { get; set; }
+        public string ProductAddress { get; set; }
+        public long BusinessTypeID { get; set; }
+        public string? ProductLegal { get; set; }
+        public string? ProductInterior { get; set; }
+        public int? NumToilets { get; set; }
+        public int? NumBedrooms { get; set; }
+        public string? HomeOrientation { get; set; }
+        public string? BalconyOrientation { get; set; }
+        public int? NumOfFloors { get; set; }
+        public string ContactName { get; set; } = null!;
+        public string PhoneNumber { get; set; } = null!;
+        public string? ContactAddress { get; set; }
+        public string ContactEmail { get; set; } = null!;
+    }
 }
