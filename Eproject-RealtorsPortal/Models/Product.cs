@@ -152,5 +152,6 @@ namespace Eproject_RealtorsPortal.Models
         public string PhoneNumber { get; set; } = null!;
         public string? ContactAddress { get; set; }
         public string ContactEmail { get; set; } = null!;
+
     }
 }

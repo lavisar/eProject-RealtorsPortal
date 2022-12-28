@@ -136,6 +136,7 @@ namespace Eproject_RealtorsPortal.Controllers
         }
         public IActionResult CreateAds()
         {
+
             return View(new Product());
         }
         [HttpPost]
