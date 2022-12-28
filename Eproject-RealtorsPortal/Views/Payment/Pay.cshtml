@@ -1,0 +1,66 @@
+﻿@model Eproject_RealtorsPortal.Models.Payment
+
+@{
+    ViewData["Title"] = "Pay";
+    Layout = "~/Views/Shared/_layout_UserHome.cshtml";
+}
+
+<h1>Pay</h1>
+
+<h4>Payment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Pay">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PaymentId" class="control-label"></label>
+                <input asp-for="PaymentId" class="form-control" />
+                <span asp-validation-for="PaymentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymentPrice" class="control-label"></label>
+                <input asp-for="PaymentPrice" class="form-control" />
+                <span asp-validation-for="PaymentPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymentQty" class="control-label"></label>
+                <input asp-for="PaymentQty" class="form-control" />
+                <span asp-validation-for="PaymentQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymentTotal" class="control-label"></label>
+                <input asp-for="PaymentTotal" class="form-control" />
+                <span asp-validation-for="PaymentTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymentDatetime" class="control-label"></label>
+                <input asp-for="PaymentDatetime" class="form-control" />
+                <span asp-validation-for="PaymentDatetime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductId" class="control-label"></label>
+                <input asp-for="ProductId" class="form-control" />
+                <span asp-validation-for="ProductId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsersId" class="control-label"></label>
+                <input asp-for="UsersId" class="form-control" />
+                <span asp-validation-for="UsersId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymentStatus" class="control-label"></label>
+                <input asp-for="PaymentStatus" class="form-control" />
+                <span asp-validation-for="PaymentStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
