@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/AllOwnAds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXEFsbE93bkFkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Box.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXEJveC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

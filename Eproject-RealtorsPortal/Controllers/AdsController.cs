@@ -51,7 +51,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
         public IActionResult Rent()
         {
-            rent = LQHVContext.Products
+            rent = LQHVContext.Products.Where(d=>d.StartDate > DateTime.Today && d.EndDate < DateTime.Today)
                 .Join(
                 LQHVContext.Categories,
                 p => p.CategoryId,
@@ -148,6 +148,10 @@ namespace Eproject_RealtorsPortal.Controllers
                 return RedirectToAction("Index", "Home");
             }
             return View("CreateAds", model);
+        }
+        public IActionResult AllOwnAds()
+        {
+            return View();
         }
     }
 }
