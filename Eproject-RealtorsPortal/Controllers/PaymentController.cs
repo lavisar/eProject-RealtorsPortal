@@ -4,9 +4,9 @@ namespace Eproject_RealtorsPortal.Controllers
 {
     public class PaymentController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Pay()
         {
-            return View("Payment");
+            return View("Pay");
         }
         public IActionResult TransactionHistory()
         {
