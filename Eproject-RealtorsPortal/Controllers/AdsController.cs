@@ -142,7 +142,11 @@ namespace Eproject_RealtorsPortal.Controllers
         public IActionResult CreateAds(Product model)
         {
             LQHVContext.Products.Add(model);
-            return View("Create", model);
+            if (LQHVContext.SaveChanges() == 1)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            return View("CreateAds", model);
         }
     }
 }

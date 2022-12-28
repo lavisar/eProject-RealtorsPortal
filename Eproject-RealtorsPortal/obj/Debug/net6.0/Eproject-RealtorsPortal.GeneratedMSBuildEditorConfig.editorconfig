@@ -35,6 +35,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXFNlbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/UpdateAds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXFVwZGF0ZUFkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -75,8 +79,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Payment/TransactionHistory.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxUcmFuc2FjdGlvbkhpc3RvcnkuY3NodG1s
+[C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Payment/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ADMIN/source/eProject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/Error.cshtml]
