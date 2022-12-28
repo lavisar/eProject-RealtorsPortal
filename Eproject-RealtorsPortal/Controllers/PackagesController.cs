@@ -8,6 +8,7 @@ namespace Eproject_RealtorsPortal.Controllers
     {
         LQHVContext LQHVContext = new LQHVContext();
         List<Package> indexBox;
+        Package package;
         public IActionResult Index()
         {
             //Hiển thị trạng thái khi trạng thái == true / đã kích hoạt
@@ -15,5 +16,11 @@ namespace Eproject_RealtorsPortal.Controllers
             return View("Index", indexBox);
         }
 
+        public IActionResult packageDetails(long ID)
+        {
+            //Link qua trang details dựa theo ID
+            package = LQHVContext.Packages.Where(s => s.PackagesId == ID).FirstOrDefault();
+            return View("packageDetails", package);
+        }
     }
 }
