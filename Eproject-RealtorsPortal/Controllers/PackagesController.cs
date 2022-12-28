@@ -16,11 +16,11 @@ namespace Eproject_RealtorsPortal.Controllers
             return View("Index", indexBox);
         }
 
-        public IActionResult Details(long ID)
+        public IActionResult packageDetails(long ID)
         {
             //Link qua trang details dựa theo ID
             package = LQHVContext.Packages.Where(s => s.PackagesId == ID).FirstOrDefault();
-            return View("Details", package);
+            return View("packageDetails", package);
         }
     }
 }

@@ -71,12 +71,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNcQm94LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Packages/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Packages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Packages/packageDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNccGFja2FnZURldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Payment/Pay.cshtml]

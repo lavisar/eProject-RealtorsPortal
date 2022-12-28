@@ -1,0 +1,58 @@
+﻿@model Eproject_RealtorsPortal.Models.Package
+
+@{
+    ViewData["Title"] = "packageDetails";
+    Layout = "~/Views/Shared/_layout_UserHome.cshtml";
+}
+
+<h1>Package Details</h1>
+
+<div>
+    <h4>Your are choosing: @Html.DisplayFor(model => model.PackagesName) package</h4>
+    <hr />
+    <dl class="row">
+
+        <dt class = "col-sm-2">
+            @*@Html.DisplayNameFor(model => model.PackagesName)*@
+            Name: 
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PackagesName)
+        </dd>
+
+        <dt class = "col-sm-2">
+            @*@Html.DisplayNameFor(model => model.PackagesDuration)*@
+            Duration:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PackagesDuration) month
+        </dd>
+
+        <dt class = "col-sm-2">
+            @*@Html.DisplayNameFor(model => model.PackagesPrice)*@
+            Price:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PackagesPrice)$/month
+        </dd>
+
+        <dt class = "col-sm-2">
+            @*@Html.DisplayNameFor(model => model.PackagesDesc)*@
+            Description:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PackagesDesc)
+        </dd>
+
+    </dl>
+</div>
+                
+<div>
+    <!-- Button BUY NOW-->
+    <a class="btn btn-outline-danger mt-auto" href="#LinkToPaymentPage">Buy now</a> 
+    <br />
+    <!-- Back To packages list for user -->
+    <div class="mt-1">
+        <a asp-action="Index"> ↩ Back</a>
+    </div>
+</div>

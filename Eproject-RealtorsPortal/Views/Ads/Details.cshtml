@@ -1,19 +1,5 @@
 ﻿@{
 }
-<<<<<<< HEAD
-@model Product
-
-<section class="py-5">
-    <div class="container px-4 px-lg-5 my-5">
-        <div class="row gx-4 gx-lg-5 align-items-center">
-            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="~/Image/(@Model.Images)" alt="..." /></div>
-            <div class="col-md-6">
-                <input type="hidden" id="id" value="@Model.ProductId" />
-@*                <div class="small mb-1"></div>
-*@                <h1 class="display-5 fw-bolder">@Model.ProductTitle</h1>
-                <div class="fs-5 mb-5">
-                        <span>@(string.Format("{0:n} đồng", Model.ProductPrice))</span>
-=======
 @model ProductDetail
 <div class="card">
     <div class="card-body">
@@ -63,7 +49,7 @@
                         @Model.ProductDesc
                     </p>
 @*                    <div class="mb-3">
-                        <span class="tag">
+<span class="tag">
                             <i class="me-2 text-success fa fa-check"></i>
                             Parking places
                         </span> <span class="tag">
@@ -122,10 +108,9 @@
                     @if (@Model.BusinessTypeID == 2)
                     {
                         <p>
-                            @(@Model.ProductPrice) USD<br>@(Model.ProductArea)/m&sup2;
+@(@Model.ProductPrice) USD<br>@(Model.ProductArea)/m&sup2;
                         </p>
                     }
->>>>>>> ae98710b64dc01baa50691f72dad90f08f97497f
                 </div>
 
                 <h6>

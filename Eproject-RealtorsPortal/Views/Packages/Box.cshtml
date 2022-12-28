@@ -6,25 +6,27 @@
     <div class="card h-100">        
 
         <div class="card-body p-4">
-            <!-- Package Name (co ban/ nang cao)-->
-            <h3 class="">@Model.PackagesName</h3>
             <div class="text-center">
+                <!-- Package Name (co ban/ nang cao)-->
+                <h3 class="">@Model.PackagesName</h3>
                 <!-- Package price-->
-                <h5 class="fw-bolder">@Model.PackagesPrice</h5> <br />
+                @*<h5 class="fw-bolder">@Model.PackagesPrice</h5>*@
+                <h6 class="fw-bolder">@Html.DisplayFor(model => model.PackagesPrice)$</h6>                
                 every month <br /> (included VAT) <br />
                 <!-- Package Desc-->
-                @string.Format("{0:n}", Model.PackagesDesc)
+                @string.Format("{0:n}", Model.PackagesDesc) <br />
                 <!-- Button BUY NOW-->
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                     <div class="text-center"><a class="btn btn-outline-danger mt-auto" href="#LinkToPaymentPage">Buy now</a></div>
                 </div>
                 <!-- Button VIEW DETAIL-->
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="@Url.Action("Details", "Packages", new {id = Model.PackagesId})">View details</a></div>
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="@Url.Action("packageDetails", "Packages", new {id = Model.PackagesId})">View details</a></div>
                 </div>
 
                 <!-- Package Duration-->
-                 Duration: @string.Format("{0:n}", Model.PackagesDuration) month           
+                 @*Duration: @string.Format("{0:n}", Model.PackagesDuration) month         *@  
+                 Duration: @Html.DisplayFor(model => model.PackagesDuration) month
                 </div>
         </div>
     </div>
