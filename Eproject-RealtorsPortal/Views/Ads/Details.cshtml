@@ -1,6 +1,9 @@
 ﻿@{
 }
 @model ProductDetail
+<style>
+
+</style>
 <div class="card">
     <div class="card-body">
         <div class="row">
@@ -48,14 +51,14 @@
                     <p>
                         @Model.ProductDesc
                     </p>
-@*                    <div class="mb-3">
-                        <span class="tag">
-                            <i class="me-2 text-success fa fa-check"></i>
-                            Parking places
-                        </span> <span class="tag">
-                            <i class="me-2 text-success fa fa-check"></i> Security
-                        </span>
-                        <span class="tag"> <i class="me-2 text-success fa fa-check"></i> Internet </span>
+                    @*                    <div class="mb-3">
+                    <span class="tag">
+                    <i class="me-2 text-success fa fa-check"></i>
+                    Parking places
+                    </span> <span class="tag">
+                    <i class="me-2 text-success fa fa-check"></i> Security
+                    </span>
+                    <span class="tag"> <i class="me-2 text-success fa fa-check"></i> Internet </span>
                     </div>*@
                     <table class="table table-striped">
                         <tbody>
@@ -129,7 +132,8 @@
                 </h6>
                 <hr>
                 <p> <i class="fa fa-map-marker-alt text-muted"></i> @Model.ProductAddress </p>
-                <article class="bg-gray overflow-hidden position-relative rounded" style="height: 130px"> <a href="https://www.google.com/maps/place/@Model.ProductAddress" class="center-xy btn btn-light" target="_blank">Show on map</a>
+                <article class="bg-gray overflow-hidden position-relative rounded" style="height: 130px">
+                    <a href="https://www.google.com/maps/place/@Model.ProductAddress" class="center-xy btn btn-light" target="_blank">Show on map</a>
                     <img src="~/Ads/map.webp" class="img-fluid opacity">
                 </article> <br>
                 <article class="box">
@@ -138,31 +142,47 @@
                             <h6 class="title">Contact Name: @Model.ContactName</h6>
                         </div>
                     </div>
-                    <div>
-                        @if (!String.IsNullOrEmpty(Model.PhoneNumber))
-                        {
-                            <button class="btn w-100 btn-lg btn-success">
-                                <i class="fa fa-phone me-2"></i> Show phone
-                            </button>
-                            <input class="btn w-100 btn-lg" id="phoneNum" type="tel" value="@Model.PhoneNumber" readonly />
-                        }
-                        @if (!String.IsNullOrEmpty(Model.ContactEmail)){
+                    <div id="Contact">
+                        <button class="btn w-100 btn-lg btn-success contactBtnPhone">
+                            <i class="fa fa-phone me-2"></i> Show phone
+                        </button>
+                        <div class="hidePhone" id="collapsePhone" style="display:none">
+                            <input class="btn w-100 btn-lg" type="tel" value="@Model.PhoneNumber" readonly />
+                        </div>
 
-                            <button class="btn w-100 btn-lg btn-warning">
-                                <i class="fa fa-comment-dots me-2"></i>Message author
-                            </button>
-                            <input class="btn w-100 btn-lg" id="emailCon" type="email" value="@Model.ContactEmail" readonly />
-                        }
+                        <button class="btn w-100 btn-lg btn-warning contactBtnEmail">
+                            <i class="fa fa-comment-dots me-2"></i>Message author
+
+                        </button>
+
+                        <div class="hideEmail" id="collapseEmail" style="display:none">
+                            <input class="btn w-100 btn-lg" id="collapseEmail" type="email" value="@Model.ContactEmail" readonly />
+                        </div>
                     </div>
                 </article>
             </aside> <!-- col.// -->
         </div> <!-- row.// -->
     </div> <!-- card-body.// -->
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 <script>
     $(document).ready(function () {
-        $.('#emailCon').hide()
-        $.('phoneNum').hide()
-    }
-
+        $(".contactBtnPhone").click(function () {
+            if (!$(".hidePhone").is(":visible")) {
+                $(".hidePhone").show()
+            }
+            else {
+                $(".hidePhone").hide()
+            }
+        })
+        $(".contactBtnEmail").click(function () {
+            if (!$(".hideEmail").is(":visible")) {
+                $(".hideEmail").show()
+            }
+            else {
+                $(".hideEmail").hide()
+            }
+        })
+    })
 </script>
