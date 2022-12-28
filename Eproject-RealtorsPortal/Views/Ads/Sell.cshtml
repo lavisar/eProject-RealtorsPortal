@@ -11,15 +11,8 @@
         display: inline-block;
     }
 
-    .product {
-        width: 320px;
-        display: inline-block;
-        margin-left: 60px;
-    }
-
     #products {
         position: relative;
-        width: 1200px;
     }
 
         #products .card {
@@ -187,7 +180,9 @@
                     </div>
                 </div>*@
 <div id="products">
-    <h1>Tất cả sản phẩm</h1>
+    <center>
+        <h1 id="All_product">Tất cả sản phẩm</h1>
+    </center> 
     <div class="product">
     @foreach(var item in Model){
             @Html.Partial("Box", item)
