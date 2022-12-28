@@ -1,0 +1,68 @@
+﻿@model Eproject_RealtorsPortal.Models.Package
+
+@{
+    ViewData["Title"] = "createPackage";
+    Layout = "~/Views/Shared/_layout_UserHome.cshtml";
+}
+
+<h1>createPackage page</h1>
+
+<h4>Package</h4>
+<hr />
+<div class="row ">
+    <div class="col-md-4">
+        <form asp-action="createPackage">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <!--Input Name-->
+            <div class="form-group">
+                @*<label asp-for="PackagesName" class="control-label"></label>*@
+                Package Name: 
+                <input asp-for="PackagesName" class="form-control" required/>
+                <span asp-validation-for="PackagesName" class="text-danger"></span>
+            </div>
+            <!--Input Duration-->
+            <div class="form-group">
+                @*<label asp-for="PackagesDuration" class="control-label"></label>*@
+                Package Duration:
+                <input asp-for="PackagesDuration" class="form-control" required/>
+                <span asp-validation-for="PackagesDuration" class="text-danger"></span>
+            </div>
+            <!--Input Price-->
+            <div class="form-group">
+                @*<label asp-for="PackagesPrice" class="control-label"></label>*@
+                Package Price:
+                <input asp-for="PackagesPrice" class="form-control" required/>
+                <span asp-validation-for="PackagesPrice" class="text-danger"></span>
+            </div>
+            <!--Input Description-->
+            <div class="form-group">
+                @*<label asp-for="PackagesDesc" class="control-label"></label>*@
+                Package Description:
+                <input asp-for="PackagesDesc" class="form-control" required/>
+                <span asp-validation-for="PackagesDesc" class="text-danger"></span>
+            </div>
+            <!--Input Package Type-->
+            <div class="form-group">
+                @*<label asp-for="PackageTypeId" class="control-label"></label>*@
+                Package Type (1 = Basic/ 2 = Pro):
+                <input asp-for="PackageTypeId" class="form-control" required/>
+                <span asp-validation-for="PackageTypeId" class="text-danger"></span>
+            </div>
+            <!--Input Status (true/false)-->
+            <div class="form-group">
+                @*<label asp-for="PackagesStatus" class="control-label"></label>*@
+                Package Status (True = Active/ False = Inactive)
+                <input asp-for="PackagesStatus" class="form-control" required/>
+                <span asp-validation-for="PackagesStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-1">
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="#"> ↩ Back to List</a>
+</div>
+

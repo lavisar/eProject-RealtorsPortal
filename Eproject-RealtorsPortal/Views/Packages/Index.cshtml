@@ -137,6 +137,10 @@
 
 <div id="products">
     <h1>Trang hiển thị gói nâng cấp - đang cập nhật</h1>
+    <!--FOR TEST CREATE PAGE ONLY-->
+    <b>FOR TEST CREATE PAGE ONLY</b>
+    <a class="" href="@Url.Action("createPackage", "Packages")">CREATE</a> 
+
         @foreach (var item in Model)
         {
             @Html.Partial("Box", item)
