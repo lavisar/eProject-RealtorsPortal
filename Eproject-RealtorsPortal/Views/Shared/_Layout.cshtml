@@ -18,44 +18,141 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
 
-
-
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Eproject_RealtorsPortal.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header class="section-header">
-        <section class="header-main border-bottom">
-            <div class="container-fluid">
-                <div class="row gy-3 align-items-center">
-                    <div class="col-lg-2 col-md-3 col-4 p2">
-                        <a href="@Url.Action("Index","Home")" class="brand-wrap"> <img class="logo" height="85" src="/Image/logo1.png"> </a>
-                    </div>
-                    <div class="order-md-last col-lg-5 col-md-5 col-8">
-                        <div class="float-end">
-                            <a href="#" class="btn btn-light">
-                                <i class="fa me-lg-1 fa-phone text-primary"></i>
-                                <span class="text-primary d-none d-lg-inline-block">+01 23456670</span>
-                            </a>
-                            <a href="@Url.Action("Login","UserHome")" class="ms-md-2 btn btn-outline-primary">
-                                <i class="fa fa-user text-primary"></i>
-                                Log in
-                            </a>
-                            <a href="@Url.Action("Register","UserHome")" class="btn btn-primary">
-                                <i class="fas fa-user-plus"></i>
-                                Sign up
+        @if (Context.Session.GetString("UserId") == null)
+        {
+            <section class="header-main border-bottom">
+                <div class="container-fluid">
+                    <div class="row gy-3 align-items-center">
+                        <div class="col-lg-2 col-md-3 col-4 p2">
+                            <a href="@Url.Action("Index","Home")" class="brand-wrap"> <img class="logo" height="85" src="/Image/logo1.png"> </a>
+                        </div>
+                        <div class="order-md-last col-lg-5 col-md-5 col-8">
+                            <div class="float-end">
+                                <a href="#" class="btn btn-light">
+                                    <i class="fa me-lg-1 fa-phone text-primary"></i>
+                                    <span class="text-primary d-none d-lg-inline-block">+01 23456670</span>
+                                </a>
+                                <a href="@Url.Action("Login","UserHome")" class="ms-md-2 btn btn-outline-primary">
+                                    <i class="fa-regular fa-user"></i>
+                                    Log in
+                                </a>
+                                <a href="@Url.Action("Register","UserHome")" class="btn btn-primary">
+                                    <i class="fas fa-user-plus"></i>
+                                    Sign up
+                                </a>
+                            </div>
+                        </div> <!-- col end.// -->
+                        <div class="col-lg-5 col-md-4 col-12">
+                            <form action="#">
+                                <div class="input-group w-100"> <input type="text" class="form-control" placeholder="Search" style="width:55%;"> <button class="btn btn-outline-primary"> <i class="fa fa-search"></i> </button> </div> <!-- input-group end.// -->
+                            </form> <!-- search-wrap end.// -->
+                        </div> <!-- col end.// -->
+                    </div> <!-- row end.// -->
+                </div> <!-- container end.// -->
+            </section> <!-- header-main end.// -->
+        }
+        else
+        {
+            <section class="header-main border-bottom">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-3  p2">
+                            <a href="@Url.Action("Index","Home")" class="brand-wrap">
+                                <img class="logo" height="85" src="/Image/logo1.png">
                             </a>
                         </div>
-                    </div> <!-- col end.// -->
-                    <div class="col-lg-5 col-md-4 col-12">
-                        <form action="#">
-                            <div class="input-group w-100"> <input type="text" class="form-control" placeholder="Search" style="width:55%;"> <button class="btn btn-outline-primary"> <i class="fa fa-search"></i> </button> </div> <!-- input-group end.// -->
-                        </form> <!-- search-wrap end.// -->
-                    </div> <!-- col end.// -->
-                </div> <!-- row end.// -->
-            </div> <!-- container end.// -->
-        </section> <!-- header-main end.// -->
+                        <div class="col-lg-5 col-md-5 ">
+                            <form action="#">
+                                <div class="input-group w-100">
+                                    <input type="text" class="form-control" placeholder="Search"
+                                       style="width:55%;"> <button class="btn btn-outline-primary"> <i class="fa fa-search"></i> </button>
+                                </div>
+                                <!-- input-group end.// -->
+                            </form> <!-- search-wrap end.// -->
+                        </div> <!-- col end.// -->
+                        <div class="order-md-last col-lg-5 col-md-4">
+                            <div class="d-flex float-end align-items-center">
+                                <ul class="navbar-nav align-items-center ms-auto pe-3">
+                                    <li class="nav-item dropdown">
+                                        @if (Context.Session.GetString("UserImage") != null)
+                                        {
+                                            string UsersImage = Context.Session.GetString("UserImage");
 
+                                            <a class="dropdown-toggle text-primary nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                                <img src="../Image/User/@UsersImage" class="rounded-circle" height="40"
+                                             alt="Black and White Portrait of a Man" loading="lazy" />
+
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <div class="d-flex">
+                                                            <div class="flex-shrink-0 me-3">
+                                                                <div class="avatar avatar-online">
+                                                                    <img src="../Image/User/@UsersImage" alt="avatars" class="rounded-circle" height="40" />
+                                                                </div>
+                                                            </div>
+                                                            @if (Context.Session.GetString("UserImage") != null)
+                                                            {
+                                                                string UsersFullname = Context.Session.GetString("UserName");
+                                                                <div class="flex-grow-1"><span class="fw-semibold d-block">@UsersFullname</span></div>
+                                                            }
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <div class="dropdown-divider"></div>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="@Url.Action("ViewAccountProfile","UserHome")">
+                                                        <i class="fa fa-user-circle me-2"></i>
+                                                        <span class="align-middle">My Profile</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="@Url.Action("ChangePassword","UserHome")">
+                                                        <span class="d-flex align-items-center align-middle">
+                                                            <i class="fa fa-lock me-2"></i>
+                                                            <span class="flex-grow-1 align-middle">Change Password</span>
+                                                            <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <div class="dropdown-divider"></div>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="@Url.Action("Logout","UserHome")">
+                                                        <i class="fa fa-power-off me-2"></i>
+                                                        <span class="align-middle">Log Out</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        }
+                                    </li>
+                                </ul> 
+                                <ul class="navbar-nav align-items-center ms-auto pe-3">
+                                    <li>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class=" fa-regular fa-file-plus"></i>
+                                            Post Ads
+                                        </a>
+                                    <li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- col end.// -->
+
+                </div> <!-- row end.// -->
+
+            </section> <!-- header-main end.// -->
+        }
         <nav class="navbar navbar-light navbar-expand-lg border-bottom">
             <div class="container">
                 <button class="navbar-toggler border collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_main7" aria-expanded="false"> <span class="navbar-toggler-icon"> </span> </button>

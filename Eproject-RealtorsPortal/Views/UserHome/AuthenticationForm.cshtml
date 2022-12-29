@@ -10,27 +10,28 @@
                         <a href="#" class="app-brand-link gap-2">
                             <div class="row gy-3 align-items-center">
                                 <div class="col-lg-2 col-md-3 col-4 p2">
-                                    <a href="@Url.Action("Index","Home")" class="brand-wrap"> <img class="logo" height="85" src="~/Image/logo1.png"> </a>
+                                    <a href="@Url.Action("Index","Home")" class="brand-wrap"> <img class="logo" height="85" src="../Image/logo1.png"> </a>
                                 </div>
                             </div>
-
                         </a>
                     </div>
                     <!-- /Logo -->
                     <h4 class="mb-2">Account Verification? 🔒</h4>
+
                     <p class="mb-4">Please check your email and enter the verification code below</p>
-                    <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+
+                    <form asp-controller="UserHome" asp-action="AuthenticationForm" method="POST">
+
                         <div class="mb-3">
-                            <label for="code" class="form-label">Code</label>
-                            <input type="text"
-                                   class="form-control"
-                                   id="code"
-                                   name="code"
-                                   placeholder="Enter your code"
-                                   autofocus />
+                            <label for="code" class="form-label">Code <small class="required">*</small></label>
+                            <input type="text" class="form-control" name="ConfirmEmail" placeholder="Enter your code" autofocus />
                         </div>
+                        @if (@ViewBag.msg != null)
+                        {
+                            <p style="color: red;">@ViewBag.msg</p>
+                        }
                         <div class="d-grid gap-2 col-lg-3 mx-auto">
-                            <button class="btn btn-primary d-grid w-100">Send</button>
+                            <button class="btn btn-primary d-grid w-100" type="submit">Send</button>
                         </div>
                     </form>
                     <div class="text-center">
@@ -45,6 +46,3 @@
         </div>
     </div>
 </div>
-
-
-

@@ -84,7 +84,7 @@
                 </li>
                 <li class="nav navbar-nav flex-row justify-content-between ml-auto">
                     <a class="btn btn-outline-dark" href="#">
-                        <i class="ion-log-out text-uppercase"></i> Logout
+                        <i class="ion-log-out text-uppercase"></i> Log Out
                     </a>
                 </li>
             </ul>
@@ -123,8 +123,8 @@
                 </div>
 
                 <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <nav class="mt-2 pb-5">
+                    <ul class="nav nav-pills nav-sidebar pb-2 flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                              with font-awesome or any other icon font library -->
                         <li class="nav-item menu-open">
@@ -136,8 +136,15 @@
                                 </p>
                             </a>
                         </li>
-
-                        <li class="nav-item">
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <p>
+                                    Report
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-user-tie"></i>
                                 <p>
@@ -194,7 +201,7 @@
                                 </li>
                             </ul>
                         </li>
-                       
+
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-edit"></i>
@@ -396,7 +403,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item user-panel mt-2 pb-2 mb-2">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-bell"></i>
                                 <p>
@@ -413,15 +420,39 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+
+                        <li class="nav-header user-panel mt-2 pb-2 mb-2 pe-2">ACCOUNT</li>
+
+                        <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <i class="nav-icon fas fa-user-circle pe-2"></i>
                                 <p>
-                                    Repost
+                                    My account
+                                    <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
-                        </li>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/mailbox.html" class="nav-link">
+                                        <i class="fas fa-list-alt pe-2 pl-2"></i>
+                                        <p class="pl-2">Profile</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/compose.html" class="nav-link">
+                                        <i class="fas fa-user-lock pe-2 pl-2"></i>
+                                        <p class="pl-2">Change Password</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                        <i class="fas fa-sign-out-alt pe-2 pl-2"></i>
+                                        <p class="pl-2">Log out</p>
+                                    </a>
+                                </li>
 
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -431,30 +462,7 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1 class="m-0">Dashboard</h1>
-                        </div><!-- /.col -->
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Dashboard v1</li>
-                            </ol>
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
-            </div>
-            <!-- /.content-header -->
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
-                    @RenderBody()
-                </div>
-            </section>
-            <!-- /.content -->
+            @RenderBody()
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
