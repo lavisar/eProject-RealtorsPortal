@@ -26,7 +26,7 @@
           rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="~/assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
     <link rel="stylesheet" href="~/assets/vendor/css/core.css" class="template-customizer-core-css" />
@@ -40,11 +40,10 @@
     <!-- Helpers -->
     <script src="~/assets/vendor/js/helpers.js"></script>
 
-    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="~/assets/js/config.js"></script>
 </head>
 <body>
+
 
     <header class="section-header">
         <section class="header-main border-bottom">
@@ -60,69 +59,66 @@
                             <ul class="navbar-nav align-items-center ms-auto pe-3">
                                 <!-- User -->
                                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                                    <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                                        <div class="avatar avatar-online">
-                                            <img src="~/assets/img/avatars/1.png" alt="avatars" class="w-px-40 h-auto rounded-circle" />
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 me-3">
-                                                        <div class="avatar avatar-online">
-                                                            <img src="~/assets/img/avatars/1.png" alt="avatars" class="w-px-40 h-auto rounded-circle" />
+                                    @if (Context.Session.GetString("UserId") != null)
+                                    {
+                                        string UsersImage = Context.Session.GetString("UserImage");
+                                        string UsersFullname = Context.Session.GetString("UserName");
+
+                                        <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                            <div class="avatar avatar-online">
+                                                <img src="~/Image/User/@UsersImage" alt="avatars" class="w-px-40 h-auto rounded-circle" />
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 me-3">
+                                                            <div class="avatar avatar-online">
+                                                                <img src="~/Image/User/@UsersImage" alt="avatars" class="w-px-40 h-auto rounded-circle" />
+                                                            </div>
                                                         </div>
+                                                        <div class="flex-grow-1"><span class="fw-semibold d-block">@UsersFullname</span></div>
                                                     </div>
-                                                    <div class="flex-grow-1">
-                                                        <span class="fw-semibold d-block">John Doe</span>
-                                                        <small class="text-muted">Admin</small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <div class="dropdown-divider"></div>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="@Url.Action("AccountProfile","UserHome")">
-                                                <i class="bx bx-user me-2"></i>
-                                                <span class="align-middle">My Profile</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="bx bx-cog me-2"></i>
-                                                <span class="align-middle">Settings</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <span class="d-flex align-items-center align-middle">
-                                                    <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                                                    <span class="flex-grow-1 align-middle">Billing</span>
-                                                    <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <div class="dropdown-divider"></div>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="auth-login-basic.html">
-                                                <i class="bx bx-power-off me-2"></i>
-                                                <span class="align-middle">Log Out</span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="dropdown-divider"></div>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="@Url.Action("ViewAccountProfile","UserHome")">
+                                                    <i class="bx bx-user me-2"></i>
+                                                    <span class="align-middle">My Profile</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="d-flex align-items-center align-middle">
+                                                        <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                                                        <span class="flex-grow-1 align-middle">Billing</span>
+                                                        <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="dropdown-divider"></div>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="@Url.Action("Logout","UserHome")">
+                                                    <i class="bx bx-power-off me-2"></i>
+                                                    <span class="align-middle">Log Out</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    }
                                 </li>
                                 <!--/ User -->
                             </ul>
-
                             <ul class="navbar-nav align-items-center ms-auto pe-3">
-                                <li><a href="#" class="btn btn-primary">
-                                    <i class="fas fa-plus-circle fa-lg"></i>
-                                    Post ads
+                                <li>
+                                    <a href="#" class="btn btn-primary">
+                                        <i class="fas fa-plus-circle fa-lg"></i>
+                                        Post ads
                                     </a>
                                 </li>
                             </ul>
@@ -138,7 +134,7 @@
                                         <li class="nav-item  me-4"> <a class="nav-link" href="@Url.Action("Index","Home")">Home</a> </li>
                                         <li class="nav-item  me-4"> <a class="nav-link" href="@Url.Action("Sell","Ads")">Sell</a> </li>
                                         <li class="nav-item  me-4"> <a class="nav-link" href="@Url.Action("Rent","Ads")">Rent</a> </li>
-                                        <li class="nav-item  me-4"> <a class="nav-link" href="@Url.Action("index","FAQ")">FAQs</a> </li>
+                                        <li class="nav-item  me-4"> <a class="nav-link" href="@Url.Action("FAQ","Home")">FAQs</a> </li>
                                         <li class="nav-item  me-4"> <a class="nav-link" href="@Url.Action("Index","News")">News</a> </li>
                                         <li class="nav-item  me-4"> <a class="nav-link" href="@Url.Action("AboutUs","Home")">About Us</a> </li>
                                         <li class="nav-item dropdown">
@@ -146,18 +142,17 @@
                                             <ul class="dropdown-menu">
                                                 <li> <a class="dropdown-item" href="#">Featured real estate</a> </li>
                                                 <li> <a class="dropdown-item" href="#">Real estate agent</a> </li>
-                                                <li> <a class="dropdown-item" href="#">Contact advertising</a> </li>
+                                                <li> <a class="dropdown-item" href="@Url.Action("AboutUs","Home")">Contact advertising</a></li>
                                             </ul>
                                         </li>
                                     </ul>
-                                </div> <!-- collapse end.// -->
-                            </div> <!-- container end.// -->
-                        </nav> <!-- navbar end.// -->
-                    </div> <!-- col end.// -->
-                </div> <!-- row end.// -->
-            </div> <!-- container end.// -->
-        </section> <!-- header-main end.// -->
-        <!-- nếu có user đăng nhập account -->
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Navbar -->
     </header>
 
@@ -219,7 +214,7 @@
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="@Url.Action("AccountProfile","UserHome")" class="menu-link">
+                            <a href="@Url.Action("ViewAccountProfile","UserHome")" class="menu-link">
                                 <i class='menu-icon tf-icons bx bxs-user-detail'></i>
                                 <div data-i18n="Profile">Profile</div>
                             </a>
@@ -270,10 +265,8 @@
                                 <div data-i18n="Transaction history">Transaction history</div>
                             </a>
                         </li>
-
                     </ul>
                 </li>
-
             </ul>
         </aside>
         <!-- / Menu -->
@@ -306,7 +299,7 @@
                         <div class="col-md-3 col-lg-5 col-xl-5 mx-auto mb-4">
                             <!-- Content -->
                             <h6 class="text-uppercase fw-bold mb-4">
-                                <i class="fas fa-gem me-3 text-secondary"></i>Realtors Portal LQHV
+                                <i class='bx bxl-sketch me-3 text-secondary'></i>Realtors Portal LQHV
                             </h6>
                             <p>
                                 Coming to the online brokerage portal, you can actively search, expand the market, exploit potential customers
@@ -357,7 +350,7 @@
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-">
+                            <h6 class="text-uppercase fw-bold mb-4">
                                 Useful links
                             </h6>
                             <p>

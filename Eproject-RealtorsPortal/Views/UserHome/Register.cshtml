@@ -34,58 +34,60 @@
                                     </div>
                                 </a>
                             </div>
-                            <form>
+                            <form asp-controller="UserHome" asp-action="Register" method="POST">
                                 <h2 class="fw-bold mb-2 text-center text-uppercase">Register</h2>
                                 <div class="row gx-3">
                                     <div class="col mb-4">
                                         <label class="form-label"> <i class="fa fa-user me-2 "></i>Full name <small class="required">*</small></label>
-                                        <input type="text" class="form-control" @*placeholder="Ex: Huyen Le"*@>
+                                        <input type="text" class="form-control" name="UsersFullname" required>
                                     </div> <!-- col end.// -->
                                 </div> <!-- row end.// -->
                                 <div class="row gx-3">
                                     <div class="col mb-3">
                                         <label class="form-label"> <i class="fas fa-envelope me-2"></i>Email <small class="required">*</small></label>
-                                        <input type="email" class="form-control" @*placeholder="Ex: HuyenLe0210@gmail.com"*@>
+                                        <input type="email" class="form-control" name="UsersEmail" required>
                                     </div> <!-- col end.// -->
                                 </div>
                                 <div class="row gx-3">
                                     <div class="col-6 mb-3">
                                         <label class="form-label"><i class="fas fa-phone me-2"></i>Phone</label>
-                                        <input type="number" class="form-control" @*placeholder="Ex: +084 123 1572"*@ min="9" maxlength="12">
+                                        <input type="number" class="form-control" name="UsersPhone" min="9" maxlength="13">
                                     </div> <!-- col end.// -->
                                     <div class="col-6 mb-3">
                                         <label class="form-label"><i class="fas fa-transgender me-2"></i>Gender</label>
                                         <div class="row gx-2">
                                             <div class="col">
                                                 <label class="form-check">
-                                                    <input class="form-check-input" type="radio" name="choose_a">
+                                                    <input class="form-check-input" type="radio" value="true" name="UsersGender">
                                                     <span class="form-check-label"> Male </span>
                                                 </label>
                                             </div>
                                             <div class="col">
                                                 <label class="form-check">
-                                                    <input class="form-check-input" type="radio" name="choose_a">
+                                                    <input class="form-check-input" type="radio" value="false" name="UsersGender">
                                                     <span class="form-check-label"> Fmale </span>
                                                 </label>
                                             </div>
                                         </div>
                                     </div> <!-- col end.// -->
                                     <div class="col mb-3">
-                                        <label class="form-label"><i class="fas fa-regular fa-lock me-2"></i>Create password <small class="required">*</small></label>
-                                        <input class="form-control" type="password">
-                                    </div> <!-- col end.// -->
-                                    <div class="col mb-3">
-                                        <label class="form-label"><i class="fas fa-key me-2"></i>Repeat password <small class="required">*</small></label>
-                                        <input class="form-control" type="password">
+                                        <label class="form-label"><i class="fas fa-regular fa-lock me-2"></i>Password <small class="required">*</small></label>
+                                        <input class="form-control" type="password" name="UsersPassword" required>
                                     </div> <!-- col end.// -->
                                     <div class="col-12 mb-3">
                                         <label class="form-label"><i class="fas fa-map-marker-alt me-2"></i></i>Address</label>
-                                        <textarea type="text" class="form-control" @*placeholder="Ex: Ho Chi Minh City, Vietnam....."*@></textarea>
+                                        <textarea type="text" class="form-control" name="UsersAddress"></textarea>
                                     </div> <!-- col end.// -->
                                 </div> <!-- row end.// -->
+                                @if (@ViewBag.msg != null)
+                                {
+
+                                    <p style="color: red;">@ViewBag.msg</p>
+
+                                }
                                 <div class="row mt-3 mb-4 align-items-center">
                                     <div class="col-auto">
-                                        <button class="btn btn-primary btn-lg px-2" type="button">Register now</button>
+                                        <button class="btn btn-primary btn-lg px-2" type="submit">Register now</button>
                                     </div>
                                     <div class="col">
                                         <span class="float-end">Already have an account?<a class="text-primary fw-bold" href="@Url.Action("Login","UserHome")">Log in</a></span>
@@ -99,5 +101,3 @@
         </div>
     </div>
 </section>
-
-

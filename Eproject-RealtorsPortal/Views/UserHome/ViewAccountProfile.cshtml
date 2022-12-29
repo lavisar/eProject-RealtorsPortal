@@ -1,0 +1,154 @@
+﻿@{
+    ViewData["Title"] = "ViewAccountProfile";
+    Layout = "~/Views/Shared/_layout_UserHome.cshtml";
+}
+
+@using Eproject_RealtorsPortal.Models;
+@using Eproject_RealtorsPortal.Data;
+
+@using (var connect = new LQHVContext())
+{
+    User user = ViewBag.users;
+
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="fw-bold py-1 mb-1"><span class="text-muted fw-light">User /</span>Account Profile</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-pills flex-column flex-md-row mb-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="@Url.Action("ViewAccountProfiles","UserHome")"><i class="bx bx-user me-1"></i> Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("ChangePassword","UserHome")"><i class='bx bx-lock-alt'></i>Change Password</a>
+                    </li>
+                </ul>
+                <div class="card mb-4">
+                    <h5 class="card-header text-primarytext-uppercase fw-bold">@user.UsersFullname</h5>
+                    <form asp-controller="UserHome" asp-action="ChangeInfor" asp-route-id="@user.UsersId" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="UsersId" value="@user.UsersId" />
+                        <!-- Account -->
+                        <div class="card-body">
+                            <div class="d-flex align-items-start align-items-sm-center gap-4">
+                                <img src="~/Image/User/@user.UsersImage" alt="user-avatar" class="d-block rounded" height="150" width="150" id="uploadedAvatar" />
+                                <div class="button-wrapper">
+                                    <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                                        <span class="d-none d-sm-block">Upload new photo</span>
+                                        <i class="bx bx-upload d-block d-sm-none"></i>
+                                        <input type="file" id="upload" name="UsersImage" class="account-file-input" hidden accept="image/png, image/jpeg" />
+                                    </label>
+                                    @*<p class="text-muted mb-0">Allowed JPG, JPEG or PNG</p>
+                                    @if (@ViewBag.errorImage != null)
+                                    {
+                                        <p style="color: red">@ViewBag.errorImage</p>
+                                    }*@
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-0" />
+                        <div class="card-body">
+                            <div class="col-xxl">
+                                <div class="card mb-4">
+                                    <div class="card-header d-flex align-items-center justify-content-between">
+                                        <h5 class="mb-0 text-primary fw-bold">My profile - @user.UsersFullname</h5>
+                                        <small class="text-muted float-end">Manage profile information for account security</small>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row mb-3">
+                                            <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Full Name</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group input-group-merge">
+                                                    <span id="basic-icon-default-fullname2" class="input-group-text">
+                                                        <i class="bx bx-user"></i>
+                                                    </span>
+                                                    <input type="text" name="UsersFullname" class="form-control" id="basic-icon-default-fullname" value="@user.UsersFullname" aria-describedby="basic-icon-default-fullname2" required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Gender</label>
+                                            <div class="col-sm-10">
+                                                @if (@user.UsersGender != null)
+                                                {
+                                                    @if (@user.UsersGender == true)
+                                                    {
+                                                        <div class="form-check mt-3 pb-1">
+                                                            <input name="UsersGender" class="form-check-input" type="radio" checked value="true" />
+                                                            <label class="form-check-label" for="defaultRadio1"> Male</label>
+                                                        </div>
+                                                        <div class="form-check mt-3 pb-1">
+                                                            <input name="UsersGender" class="form-check-input" type="radio" value="false" />
+                                                            <label class="form-check-label" for="defaultRadio1"> FMale</label>
+                                                        </div>
+                                                    }
+                                                    else
+                                                    {
+                                                        <div class="form-check mt-3 pb-1">
+                                                            <input name="UsersGender" class="form-check-input" type="radio" value="true" />
+                                                            <label class="form-check-label" for="defaultRadio1"> Male</label>
+                                                        </div>
+                                                        <div class="form-check mt-3 pb-1">
+                                                            <input name="UsersGender" class="form-check-input" type="radio" checked value="false" />
+                                                            <label class="form-check-label" for="defaultRadio1"> FMale</label>
+                                                        </div>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <div class="form-check mt-3 pb-1">
+                                                        <input name="UsersGender" class="form-check-input" type="radio" value="true" />
+                                                        <label class="form-check-label" for="defaultRadio1"> Male</label>
+                                                    </div>
+                                                    <div class="form-check mt-3 pb-1">
+                                                        <input name="UsersGender" class="form-check-input" type="radio" value="false" />
+                                                        <label class="form-check-label" for="defaultRadio1"> FMale</label>
+                                                    </div>
+                                                }
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group input-group-merge">
+                                                    <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                                                    <input type="email" readonly id="basic-icon-default-email" class="form-control" value="@user.UsersEmail" name="UsersEmail" aria-describedby="basic-icon-default-email2" />
+                                                    @*       <span id="basic-icon-default-email2" class="input-group-text">&commat;gmail.com</span>*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-2 form-label" for="basic-icon-default-phone">Phone Number</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group input-group-merge">
+                                                    <span id="basic-icon-default-phone2" class="input-group-text"><i class="bx bx-phone"></i></span>
+                                                    <input type="number" id="basic-icon-default-phone" name="UsersPhone" value="@user.UsersPhone" maxlength="13" min="9" class="form-control phone-mask" aria-describedby="basic-icon-default-phone2" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-2 form-label" for="basic-icon-default-message">Address</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group input-group-merge">
+                                                    <span id="basic-icon-default-message2" class="input-group-text"><i class="bx bx-map"></i></span>
+                                                    <textarea id="basic-icon-default-message" name="UsersAddress" class="form-control" aria-describedby="basic-icon-default-message2">@user.UsersAddress</textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-sm-10">
+                                                <button type="submit" name="btnUpdate" class="btn btn-primary me-2">Save changes</button>
+                                                <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Account -->
+}
