@@ -186,7 +186,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
 
         [HttpPost] 
-        public async Task<IActionResult> ChangeInfor(long UsersId, string UsersFullname, string UsersPhone, string UsersAddress, bool UsersGender, IFormFile UsersImage)
+        public async Task<IActionResult> ChangeInfor(long UsersId, string UsersFullname, string UsersPhone, string UsersAddress, bool? UsersGender, IFormFile UsersImage)
         {
             if (HttpContext.Session.GetString("UserId") == null)
             {
@@ -211,7 +211,14 @@ namespace Eproject_RealtorsPortal.Controllers
                 {
                     await UsersImage.CopyToAsync(stream);
                 }
-                ViewBag.user = user.ChangeInfor(UsersId, UsersFullname, UsersPhone, UsersAddress, UsersGender, fileName);
+                if(UsersGender != null)
+                {
+                    ViewBag.user = user.ChangeInfor(UsersId, UsersFullname, UsersPhone, UsersAddress, UsersGender, fileName);
+                }
+                else
+                {
+                    ViewBag.user = user.ChangeInfor(UsersId, UsersFullname, UsersPhone, UsersAddress, null, fileName);
+                }
                 HttpContext.Session.SetString("UserId", UsersId.ToString());
                 HttpContext.Session.SetString("UserName", UsersFullname);
                 HttpContext.Session.SetString("UserImage", fileName);

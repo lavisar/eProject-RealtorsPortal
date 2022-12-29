@@ -26,12 +26,10 @@ namespace Eproject_RealtorsPortal.Models
         [DisplayName("Full Name")]
         [StringLength(100)]
         [Unicode(false)]
-        [Required(ErrorMessage = "{0} is required!")]
         public string UsersFullname { get; set; } = null!;
 
         [DisplayName("Email")]
         [Column("users_email")]
-        [Required(ErrorMessage = "{0} is required!")]
         [StringLength(100)]
         [Unicode(false)]
         public string UsersEmail { get; set; } = null!;
@@ -42,7 +40,6 @@ namespace Eproject_RealtorsPortal.Models
 
         [DisplayName("Phone")]
         [Column("users_phone")]
-        [Required(ErrorMessage = "{0} is required!")]
         [StringLength(13, ErrorMessage = "{0} length must be between {2} and {1}.", MinimumLength = 9)]
         [Unicode(false)]
         public string? UsersPhone { get; set; }
@@ -55,13 +52,12 @@ namespace Eproject_RealtorsPortal.Models
 
         [DisplayName("Gender")]
         [Column("users_gender")]
-        public bool? UsersGender { get; set; }
+        public bool? UsersGender { get; set; } = null;
 
         [DisplayName("Password")]
         [Column("users_password")]
         [StringLength(100)]
         [Unicode(false)]
-        [Required(ErrorMessage = "{0} is required!")]
         public string UsersPassword { get; set; } = null!;
 
         [Column("users_image")]
@@ -101,7 +97,7 @@ namespace Eproject_RealtorsPortal.Models
         }
 
         //update info
-        public User ChangeInfor(long UsersId, string UsersFullname, string UsersPhone, string UsersAddress, bool UsersGender, string fileName)
+        public User ChangeInfor(long UsersId, string UsersFullname, string UsersPhone, string UsersAddress, bool? UsersGender, string fileName)
         {
             using (var connect = new LQHVContext())
             {
