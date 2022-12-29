@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "createPackage";
-    Layout = "~/Views/Shared/_layout_UserHome.cshtml";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
 <h1>createPackage page</h1>
@@ -44,7 +44,7 @@
             <!--Input Package Type-->
             <div class="form-group">
                 @*<label asp-for="PackageTypeId" class="control-label"></label>*@
-                Package Type (1 = Basic/ 2 = Pro):
+                Package Type:
                 <input asp-for="PackageTypeId" class="form-control" required/>
                 <span asp-validation-for="PackageTypeId" class="text-danger"></span>
             </div>
@@ -63,6 +63,6 @@
 </div>
 
 <div>
-    <a asp-action="#"> ↩ Back to List</a>
+    <a asp-action="listPackage"> ↩ Back to List</a>
 </div>
 
