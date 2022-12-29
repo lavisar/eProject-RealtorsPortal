@@ -151,7 +151,39 @@ namespace Eproject_RealtorsPortal.Controllers
         }
         public IActionResult AllOwnAds(int Id)
         {
-            return View();
+                rent = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today)
+                    .Join(
+                    LQHVContext.Categories,
+                    p => p.CategoryId,
+                    c => c.CategoryId,
+                    (p, c) => new
+                    {
+                        Product = p,
+                        Category = c
+                    })
+                .Join(
+                    LQHVContext.BusinessTypes.Where(s => s.BusinessTypesId == 1),
+                    ca => ca.Category.BusinessTypesId,
+                    bu => bu.BusinessTypesId,
+                    (ca, bu) => new
+                    {
+                        ca.Product,
+                        ca.Category,
+                        BusinessTypeID = bu.BusinessTypesId
+                    }
+                )
+                .Select(s => new ProductBox
+                {
+                    ProductID = s.Product.ProductId,
+                    ProductTitle = s.Product.ProductTitle,
+                    ProductPrice = s.Product.ProductPrice,
+                    ProductArea = s.Product.ProductArea,
+                    ProductAddress = s.Product.ProductAddress,
+                    ProductImage = s.Product.ProductImage,
+                    BusinessTypeID = s.BusinessTypeID
+                })
+                .ToList();
+                return View();
         }
     }
 }
