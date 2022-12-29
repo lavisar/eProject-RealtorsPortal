@@ -149,7 +149,7 @@ namespace Eproject_RealtorsPortal.Controllers
             }
             return View("CreateAds", model);
         }
-        public IActionResult AllOwnAds()
+        public IActionResult AllOwnAds(int Id)
         {
             return View();
         }
