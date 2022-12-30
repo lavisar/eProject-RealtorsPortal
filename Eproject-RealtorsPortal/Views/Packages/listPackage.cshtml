@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Eproject_RealtorsPortal.Models.Package>
+
+@{
+    ViewData["Title"] = "Package List";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Packages List</h1>
+
+<p>
+    <a asp-action="createPackage">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.PackagesId)*@
+                ID
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.PackagesName)*@
+                Name
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.PackagesDuration)*@
+                Duration
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.PackagesPrice)*@
+                Price
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.PackagesDesc)*@
+                Description
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.PackageTypeId)*@
+                Type
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.PackagesStatus)*@
+                Status
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackagesId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackagesName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackagesDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackagesPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackagesDesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackageTypeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackagesStatus)
+                <br>
+                @if(item.PackagesStatus == false){
+                    @* Link Active chỉ hiện với các gói == false *@
+                    @Html.ActionLink("↻ Active", "Active", new { /* id=item.PrimaryKey */ })
+                }
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) 
+                <br>
+                @Html.ActionLink("Delete", "deletePackage", new { id=item.PackagesId })                 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

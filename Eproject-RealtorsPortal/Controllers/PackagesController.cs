@@ -8,7 +8,10 @@ namespace Eproject_RealtorsPortal.Controllers
     {
         LQHVContext LQHVContext = new LQHVContext();
         List<Package> indexBox;
+        List<Package> indexList;
         Package package;
+        Package ForDeletePackage;
+
         public IActionResult Index()
         {
             //Hiển thị trạng thái khi trạng thái == true / đã kích hoạt
@@ -47,5 +50,36 @@ namespace Eproject_RealtorsPortal.Controllers
             }
             return View("createPackage", model);
         }
+        public IActionResult listPackage()
+        {
+            indexList = LQHVContext.Packages.ToList();
+            return View("listPackage", indexList);
+        }
+
+        public IActionResult deletePackage (long ID)
+        {
+            ForDeletePackage = LQHVContext.Packages.Where(s => s.PackagesId == ID).FirstOrDefault();
+            if (ForDeletePackage == null)
+            {
+                return NotFound();
+            }
+            return View(ForDeletePackage);
+        }
+        [HttpPost]
+        public IActionResult Delete(long ID)
+        {                        
+            Package package = new Package() { PackagesId = ID };
+            LQHVContext.Packages.Attach(package);
+            LQHVContext.Packages.Remove(package);
+
+            if (LQHVContext.SaveChanges() == 1)
+            {
+                //redirect to package list
+                return RedirectToAction("packageList", "Packages");
+            }
+            return View("deletePackage", package);
+        }
+
+
     }
 }
