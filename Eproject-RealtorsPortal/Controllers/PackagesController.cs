@@ -12,6 +12,7 @@ namespace Eproject_RealtorsPortal.Controllers
         Package package;
         Package ForDeletePackage;
 
+
         public IActionResult Index()
         {
             //Hiển thị trạng thái khi trạng thái == true / đã kích hoạt
@@ -23,7 +24,7 @@ namespace Eproject_RealtorsPortal.Controllers
         /// View details of packages 
         /// </summary>
         /// <param name="ID">ID of package from DB</param>
-        /// <returns></returns>
+        /// <returns>details of package</returns>
         public IActionResult packageDetails(long ID)
         {
             //Link qua trang details dựa theo ID
@@ -34,7 +35,7 @@ namespace Eproject_RealtorsPortal.Controllers
         /// <summary>
         /// Method create new package
         /// </summary>
-        /// <returns></returns>
+        /// <returns>list of package</returns>
         public IActionResult createPackage()
         {
             return View(new Package());
@@ -42,11 +43,13 @@ namespace Eproject_RealtorsPortal.Controllers
         [HttpPost]
         public IActionResult createPackage(Package model)
         {
+
+
             LQHVContext.Packages.Add(model); 
             if (LQHVContext.SaveChanges() == 1)
             {
                 //redirect to package list
-                return RedirectToAction("packageList", "Packages");
+                return RedirectToAction("listPackage", "Packages");
             }
             return View("createPackage", model);
         }
@@ -56,28 +59,92 @@ namespace Eproject_RealtorsPortal.Controllers
             return View("listPackage", indexList);
         }
 
-        public IActionResult deletePackage (long ID)
+        public IActionResult Delete(long id)
         {
-            ForDeletePackage = LQHVContext.Packages.Where(s => s.PackagesId == ID).FirstOrDefault();
-            if (ForDeletePackage == null)
+            ForDeletePackage = LQHVContext.Packages.Where(p => p.PackagesId == id).FirstOrDefault();
+            if (ForDeletePackage != null)
             {
-                return NotFound();
+                LQHVContext.Packages.Remove(ForDeletePackage);
+                if (LQHVContext.SaveChanges() > 0)
+                {
+                    TempData["msg"] = "Delete successfully";
+                    return RedirectToAction("listPackage","Packages");
+                }
             }
-            return View(ForDeletePackage);
-        }
-        [HttpPost]
-        public IActionResult Delete(long ID)
-        {                        
-            Package package = new Package() { PackagesId = ID };
-            LQHVContext.Packages.Attach(package);
-            LQHVContext.Packages.Remove(package);
 
-            if (LQHVContext.SaveChanges() == 1)
+            List<Package> list = LQHVContext.Packages.ToList();
+            TempData["msg"] = "Delete failed";
+            return View("listPackage",list);
+        }
+        /// <summary>
+        /// Active a package if it was status = false
+        /// </summary>
+        /// <returns>list of package</returns>
+        public IActionResult Active(long id)
+        {
+            using (var context = new LQHVContext())
             {
-                //redirect to package list
-                return RedirectToAction("packageList", "Packages");
+                // Get the entity that you want to update
+                var entity = context.Packages.FirstOrDefault(e => e.PackagesId == id);
+               
+                entity.PackagesStatus = true;
+
+                // Save the changes to the database
+                context.SaveChanges();
+                return RedirectToAction("listPackage", "Packages");
             }
-            return View("deletePackage", package);
+
+            List<Package> list = LQHVContext.Packages.ToList();
+            return View("listPackage", list);
+        }
+        public IActionResult Inactive(long id)
+        {
+            using (var context = new LQHVContext())
+            {
+                // Get the entity that you want to update
+                var entity = context.Packages.FirstOrDefault(e => e.PackagesId == id);
+
+                entity.PackagesStatus = false;
+
+                // Save the changes to the database
+                context.SaveChanges();
+                return RedirectToAction("listPackage", "Packages");
+            }
+
+            List<Package> list = LQHVContext.Packages.ToList();
+            return View("listPackage", list);
+        }
+
+        public ActionResult updatePackage(long id) // To fill data in the form to enable easy editing
+        {
+            using (var context = new LQHVContext())
+            {
+                var data = context.Packages.Where(x => x.PackagesId == id).SingleOrDefault();
+                return View(data);
+            }
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken] // To specify that this will be invoked when post method is called
+        public ActionResult updatePackage(long id, Package model)
+        {
+            using (var context = new LQHVContext())
+            {
+                var data = context.Packages.FirstOrDefault(x => x.PackagesId == id); // Use of lambda expression to access particular record from a database
+                if (data != null) // Checking if any such record exist 
+                {
+                    data.PackagesName = model.PackagesName;
+                    data.PackagesDuration = model.PackagesDuration;
+                    data.PackagesPrice = model.PackagesPrice;
+                    data.PackagesDesc = model.PackagesDesc;
+                    data.PackageType = model.PackageType;
+                    data.PackagesStatus = model.PackagesStatus;
+                    context.SaveChanges();
+                    return RedirectToAction("listPackage", "Packages"); // It will redirect to the Read method
+                }
+                else                    
+                    return View("listPackage", data);
+            }
         }
 
 
