@@ -175,69 +175,33 @@
 </style>
 
 <div id="products">
-    <center>
-        <h1 id="All_product">Tất cả sản phẩm</h1>
-    </center>
     <div class="product">
         <div class="card card-body" style="width:230px;height:400px">
-            <b>Loại sản phẩm:</b>
-            <ul class="filter" style="list-style-type:none,">
-                @*                                    @foreach($category as $c)
-                <li class="label"><a class="link" href="{{Route('user.showcategory',$c->id)}}">
-                {{ $c->product_type_name }}
-                </a></li>
-                @endforeach*@
-            </ul>
-            <hr>
-            <ul class="filter" style="list-style-type:none">
-                <b>Thương hiệu: </b>
-                @*                                    @foreach($brand as $b)
-                *@
-                <li class="label">
-                    <a class="link" href="{{Route('user.showbrand',$b->id)}}">
-                        {{ $b->brand_name }}
-                    </a>
-                </li>
-                @*                                    @endforeach
-                *@
-            </ul>
-            <hr>
-            <b>Lọc theo giá</b>
-            <ul class="filter" style="list-style-type:none">
-                <li class="label">
-                    <a class="link" href="{{Route('user.showprice',1)}}">
-                        200.000 - 500.000Đ
-                    </a>
-                </li>
-            </ul>
-            <ul class="filter" style="list-style-type:none">
-                <li class="label">
-                    <a class="link" href="{{Route('user.showprice',2)}}">
-                        500.000 - 700.000Đ
-                    </a>
-                </li>
-            </ul>
-            <ul class="filter" style="list-style-type:none">
-                <li class="label">
-                    <a class="link" href="{{Route('user.showprice',3)}}">
-                        700.000 - 1.000.000Đ
-                    </a>
-                </li>
-            </ul>
-            <ul class="filter" style="list-style-type:none">
-                <li class="label">
-                    <a class="link" href="{{Route('user.showprice',4)}}">
-                        1.000.000 - 1.500.000Đ
-                    </a>
-                </li>
-            </ul>
-            <ul class="filter" style="list-style-type:none">
-                <li class="label">
-                    <a class="link" href="{{Route('user.showprice',5)}}">
-                        1.500.000 - 2.000.000Đ
-                    </a>
-                </li>
-            </ul>
+            <form asp-action="SearchRent">
+                <b>Area:</b>
+                <ul class="filter" style="list-style-type:none,">
+                    <li class="label">
+                        <input type="text" name="Area" id="ar">
+                    </li>
+
+                </ul>
+                <hr>
+                <ul class="filter" style="list-style-type:none">
+                    <li class="label">
+                        <b>City: </b>
+                        <input type="text" name="Area" id="area">
+                    </li>
+                </ul>
+                <hr>
+                <b>Price: </b>
+                <ul class="filter" style="list-style-type:none">
+                    <li class="label">
+                        Start Price: <input type="text" name="StartPrice" id="StartPrice" />End Price: <input name="EndPrice" type="text" id="EndPrice" />
+                    </li>
+                </ul>
+                <button class="btn btn-md btn-success" type="submit">Apply</button>
+            </form>
+
         </div>
         @foreach (var item in Model)
         {

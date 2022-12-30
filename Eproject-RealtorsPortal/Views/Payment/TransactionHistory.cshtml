@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Eproject_RealtorsPortal.Models.Payment>
+﻿@model List<Payment>
 
 @{
     ViewData["Title"] = "View";
@@ -14,30 +14,26 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.PaymentId)
+                ID
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PaymentPrice)
+                Price
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PaymentQty)
+                Quantity
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PaymentTotal)
+                Total
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PaymentDatetime)
+                Paid Date
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ProductId)
+                Ads
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.UsersId)
+                Status
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PaymentStatus)
-            </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -62,15 +58,7 @@
                 @Html.DisplayFor(modelItem => item.ProductId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.UsersId)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.PaymentStatus)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
 }
