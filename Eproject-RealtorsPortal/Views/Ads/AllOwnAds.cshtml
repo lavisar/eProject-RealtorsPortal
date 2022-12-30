@@ -109,9 +109,9 @@
         margin: 0;
         padding: 0;
         /*          width: 320px;
-                    height: 320px;
-                    border-radius: 20px;
-                    overflow: hidden;*/
+                        height: 320px;
+                        border-radius: 20px;
+                        overflow: hidden;*/
     }
 
     .link {
@@ -173,79 +173,9 @@
         transform: scale(1);
     }
 </style>
-
 <div id="products">
-    <center>
-        <h1 id="All_product">Tất cả sản phẩm</h1>
-    </center>
     <div class="product">
         <div class="card card-body" style="width:230px;height:400px">
-            <ul class="filter" style="list-style-type:none,">
-                <li>
-                    <label>
-                        Area:
-                        <input list="browsers" name="myBrowser" />
-                    </label>
-                    <datalist id="browsers">
-                        <option value="Chrome"></option>
-                        <option value="Firefox"></option>
-                        <option value="Internet Explorer"></option>
-                        <option value="Opera"></option>
-                        <option value="Safari"></option>
-                        <option value="Microsoft Edge"></option>
-                    </datalist>
-                </li>
-            </ul>
-            <hr>
-            <ul class="filter" style="list-style-type:none">
-                <b>Thương hiệu: </b>
-                @*                                    @foreach($brand as $b)
-                *@
-                <li class="label">
-                    <a class="link" href="{{Route('user.showbrand',$b->id)}}">
-                        {{ $b->brand_name }}
-                    </a>
-                </li>
-                @*                                    @endforeach
-                *@
-            </ul>
-            <hr>
-            <b>Lọc theo giá</b>
-            <ul class="filter" style="list-style-type:none">
-                <li class="label">
-                    <a class="link" href="{{Route('user.showprice',1)}}">
-                        200.000 - 500.000Đ
-                    </a>
-                </li>
-            </ul>
-            <ul class="filter" style="list-style-type:none">
-                <li class="label">
-                    <a class="link" href="{{Route('user.showprice',2)}}">
-                        500.000 - 700.000Đ
-                    </a>
-                </li>
-            </ul>
-            <ul class="filter" style="list-style-type:none">
-                <li class="label">
-                    <a class="link" href="{{Route('user.showprice',3)}}">
-                        700.000 - 1.000.000Đ
-                    </a>
-                </li>
-            </ul>
-            <ul class="filter" style="list-style-type:none">
-                <li class="label">
-                    <a class="link" href="{{Route('user.showprice',4)}}">
-                        1.000.000 - 1.500.000Đ
-                    </a>
-                </li>
-            </ul>
-            <ul class="filter" style="list-style-type:none">
-                <li class="label">
-                    <a class="link" href="{{Route('user.showprice',5)}}">
-                        1.500.000 - 2.000.000Đ
-                    </a>
-                </li>
-            </ul>
         </div>
         @foreach (var item in Model)
         {
