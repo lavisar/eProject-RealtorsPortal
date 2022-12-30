@@ -12,6 +12,16 @@ namespace Eproject_RealtorsPortal.Controllers
         {
             return View("Pay",new Payment());
         }
+        [HttpPost]
+        public IActionResult Pay(Payment pay)
+        {
+            LQHVContext.Add(pay);
+            if (LQHVContext.SaveChanges() == 1)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            return View("Pay",pay);
+        }
         public IActionResult TransactionHistory()
         {
             long userID = long.Parse(HttpContext.Session.GetString("UserId"));
