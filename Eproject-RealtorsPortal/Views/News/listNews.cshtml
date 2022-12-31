@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Eproject_RealtorsPortal.Models.News>
+@using Eproject_RealtorsPortal.Models;
+@using Eproject_RealtorsPortal.Data;
+@{
+    ViewData["Title"] = "News List";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@using (var connect = new LQHVContext())
+{
+    News news = ViewBag.news;
+
+    <div class="ml-5">
+        <h1>News List</h1>
+
+        <p>
+            <a asp-action="createNews">Create New</a>
+        </p>
+        <table class="table ml-1">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Desc
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Content
+                    </th>
+                    <th>
+                        Images
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NewsId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NewsTitle)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NewsDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NewsDesc)
+                        </td>                     
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NewsContent, new { htmlAttributes = new { @class = "form-control" } })
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="@Url.Action("updateNews", "News", new { id=item.NewsId })">
+                                <i class="fas fa-folder"></i>Update
+                            </a>
+                            <a class="btn btn-danger btn-sm"
+                       onclick="return confirm('Are you sure you want to delete @Html.DisplayFor(modelItem => item.NewsTitle)?');"
+                       href="@Url.Action("Delete", "News", new { id=item.NewsId })">
+                                <i class="fas fa-trash"></i>Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+}
