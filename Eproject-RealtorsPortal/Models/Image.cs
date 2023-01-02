@@ -23,4 +23,10 @@ namespace Eproject_RealtorsPortal.Models
         [InverseProperty("Images")]
         public virtual Product Product { get; set; } = null!;
     }
+    public class ManyImage
+    {
+        public int ID { get; set; }
+        public string FileName { get; set; }
+        public byte[] Data { get; set; }
+    }
 }

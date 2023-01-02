@@ -19,13 +19,13 @@
                 <span asp-validation-for="PaymentPrice" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PaymentTotal" class="control-label">Total</label>
-                <input asp-for="PaymentTotal" class="form-control" value=""/>
+@*                <label asp-for="PaymentTotal" class="control-label">Total</label>
+*@                <input asp-for="PaymentTotal" class="form-control" type="hidden"/>
                 <span asp-validation-for="PaymentTotal" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PaymentDatetime" class="control-label"></label>
-                <input asp-for="PaymentDatetime" class="form-control" type="hidden" value="@DateTime.Today" />
+@*                <label asp-for="PaymentDatetime" class="control-label"></label>
+*@                <input asp-for="PaymentDatetime" class="form-control" type="hidden" value="@DateTime.Today" />
                 <span asp-validation-for="PaymentDatetime" class="text-danger"></span>
             </div>
             @if (Context.Session.GetString("PayType") == "ads")
@@ -55,6 +55,6 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="AllOwnAds">Back to List</a>
 </div>
 

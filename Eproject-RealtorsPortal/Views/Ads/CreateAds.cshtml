@@ -6,7 +6,7 @@
 <hr />
 <div class="row justify-content-center">
     <div class="col-lg-4">
-        <form asp-action="CreateAds" method="post">
+        <form asp-action="CreateAds" method="POST" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
@@ -30,10 +30,13 @@
                 <span asp-validation-for="ProductPrice" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProductImage" class="control-label">Image</label>
+                <label asp-for="ProductImage" class="control-label">Image Box</label>
                 <input asp-for="ProductImage" type="file" class="form-control" />
                 <span asp-validation-for="ProductImage" class="text-danger"></span>
+                <label for="Image" class="control-label">Image Box</label>
+                <input id="Image" type="file" class="form-control" name="files" multiple />
             </div>
+
             <div class="form-group">
                 <label asp-for="CountryName" class="control-label">Country</label>
                 <input asp-for="CountryName" list="country" class="form-control" />
@@ -106,22 +109,7 @@
                 <input asp-for="NumOfFloors" class="form-control" />
                 <span asp-validation-for="NumOfFloors" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="PackagesId" class="control-label">Package</label>
-                <select asp-for="PackagesId" list="package" class="form-control">
-                    <datalist id="package">
-                        @foreach (var item in @Model.Package)
-                        {
-                            <option value="@item.PackagesId">
-                                @item.PackagesName
-                            </option>
-                        }
-                    </datalist>
-                </select>
-
-
-                <span asp-validation-for="PackagesId" class="text-danger"></span>
-            </div>
+             @if(Context.Session.GetString(""))
             <div class="form-group">
                 <label asp-for="NumDays" class="control-label">Number of days</label>
                 <select asp-for="NumDays" list="days" class="form-control">
@@ -138,7 +126,7 @@
                 <input asp-for="StartDate" class="form-control" />
                 <span asp-validation-for="StartDate" class="text-danger"></span>
             </div>
-            if(@Context.Session.GetString("UserAccount")!=null){
+            @if(Context.Session.GetString("UserAccount")!=null){
             <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Featured" /> @Html.DisplayNameFor(model => model.Featured)

@@ -2,10 +2,11 @@
 using Eproject_RealtorsPortal.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.Diagnostics;
 using System.Linq;
-
+using System.Web;
 namespace Eproject_RealtorsPortal.Controllers
 {
     public class AdsController : Controller
@@ -20,6 +21,7 @@ namespace Eproject_RealtorsPortal.Controllers
         List<Area> areas;
         List<City> city;
         List<Country> country;
+        Image image;
         public IActionResult Sell()
         {
             sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.Status == "active")
@@ -158,14 +160,48 @@ namespace Eproject_RealtorsPortal.Controllers
         [HttpPost]
         public IActionResult CreateAds(ProductAdd model)
         {
-            products = new Product
+            if (HttpContext.Request.Method == "POST")
             {
+                // Get the uploaded files
+                IFormFileCollection files = HttpContext.Request.Form.Files;
+
+                // Iterate through the files and save each one to a file and the database
+
+                    IFormFile file = files[0];
+                    string fileName = Path.GetFileName(file.FileName);
+                    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Ads", fileName);
+
+                    // Use the FileStream class to save the file to a file on the server
+                    using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                    {
+                        file.CopyTo(fs);
+                    }
+
+                    // Read the file data into a byte array
+                    byte[] data = System.IO.File.ReadAllBytes(filePath);
+
+
+                    // Create a new Image instance
+                    ManyImage ManyImage = new ManyImage
+                    {
+                        FileName = fileName,
+                        Data = data
+                    };
+                    image = new Image
+                    {
+                        ImagePath = ManyImage.FileName,
+                        ProductId = 1
+
+                    };
+                    // Insert the image into the database
+            }
+            products = new Product {
                 ProductAddress = model.ProductAddress + ", " + model.AreaName + ", " + model.CityName + ", " + model.CityName,
                 ProductArea = model.ProductArea,
                 PackagesId = model.PackagesId,
                 ProductDesc = model.ProductDesc,
                 PhoneNumber = model.PhoneNumber,
-                ProductImage = model.ProductImage,
+                ProductImage = image.ImagePath,
                 ProductInterior = model.ProductInterior,
                 ProductLegal = model.ProductLegal,
                 ProductPrice = model.ProductPrice,
@@ -190,15 +226,52 @@ namespace Eproject_RealtorsPortal.Controllers
             {
                 HttpContext.Session.SetString("ProductId", products.ProductId.ToString());
                 HttpContext.Session.SetString("PackageId", products.PackagesId.ToString());
-                if (products.Packages.PackageType.PackageTypeId == 2)
+                HttpContext.Session.SetString("PayType", "ads");
+                //HttpContext.Session.SetString("PackagePrice", products.Packages.PackagesPrice.ToString());
+                if (HttpContext.Request.Method == "POST")
                 {
-                    HttpContext.Session.SetString("PayType", "ads");
-                    HttpContext.Session.SetString("PackagePrice", products.Packages.PackagesPrice.ToString());
+                    // Get the uploaded files
+                    IFormFileCollection files = HttpContext.Request.Form.Files;
+
+                    // Iterate through the files and save each one to a file and the database
+                    for (int i = 1; i < files.Count; i++)
+                    {
+                        IFormFile file = files[i];
+                        string fileName = Path.GetFileName(file.FileName);
+                        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Ads", fileName);
+
+                        // Use the FileStream class to save the file to a file on the server
+                        using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                        {
+                            file.CopyTo(fs);
+                        }
+
+                        // Read the file data into a byte array
+                        byte[] data = System.IO.File.ReadAllBytes(filePath);
+
+
+                        // Create a new Image instance
+                        ManyImage ManyImage = new ManyImage
+                        {
+                            FileName = fileName,
+                            Data = data
+                        };
+                        Image image = new Image
+                        {
+                            ImagePath = ManyImage.FileName,
+                            ProductId = 1
+
+                        };
+                        // Insert the image into the database
+                        LQHVContext.Images.Add(image);
+                        LQHVContext.SaveChanges();
+                    }
                 }
                 return RedirectToAction("Pay", "Payment");
             }
             return View("CreateAds", model);
         }
+
         public IActionResult AllOwnAds(int Id)
         {
             allOwnAds = LQHVContext.Products.Where(dd => dd.UsersId == Id)
