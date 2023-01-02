@@ -15,11 +15,21 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
+            if (HttpContext.Session.GetString("adminId") == null)
+            {
+                return RedirectToAction("LoginAdmin", "Home");
+            }
+
             return View();
         }
 
         public IActionResult LoginAdmin()
         {
+            if (HttpContext.Session.GetString("adminId") != null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             return View();
         }
 
@@ -31,19 +41,28 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
             {
                 if (AdminPassword == mail.AdminPassword)
                 {
-                    HttpContext.Session.SetString("Admin", mail.AdminEmail + "_" + AdminPassword);
-                    HttpContext.Session.SetString("adminId", mail.AdminId.ToString());
-                    HttpContext.Session.SetString("adminName", mail.AdminName);
-                    if (mail.AdminImage != null)
+                    if (mail.AdminStatus == true)
                     {
-                        HttpContext.Session.SetString("adminImage", mail.AdminImage);
+                        HttpContext.Session.SetString("Admin", mail.AdminEmail + "_" + AdminPassword);
+                        HttpContext.Session.SetString("adminId", mail.AdminId.ToString());
+                        HttpContext.Session.SetString("adminName", mail.AdminName);
+                        if (mail.AdminImage != null)
+                        {
+                            HttpContext.Session.SetString("adminImage", mail.AdminImage);
+                        }
+                        if (mail.AdminRole != null)
+                        {
+                            HttpContext.Session.SetString("adminRole", mail.AdminRole);
+                        }
+                        HttpContext.Session.SetString("adminEmail", mail.AdminEmail);
+                        return RedirectToAction("Index", "Home");
                     }
-                    if (mail.AdminRole != null)
+                    else
                     {
-                        HttpContext.Session.SetString("adminRole", mail.AdminRole);
+                        ViewBag.msg = "Your account has been locked!";
+                        return View();
                     }
-                    HttpContext.Session.SetString("adminEmail", mail.AdminEmail);
-                    return RedirectToAction("Index", "Home");
+
                 }
                 ViewBag.msg = "Invalid Password!";
                 return View();
@@ -424,11 +443,11 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 {
                     await AdminImage.CopyToAsync(stream);
                 }
-                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, AdminRole);
+                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, AdminStatus, AdminRole);
 
                 return View();
             }
-            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, AdminRole);
+            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, AdminStatus, AdminRole);
             return View();
         }
 
@@ -449,7 +468,7 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AccountProfile(long AdminId, string AdminName, IFormFile AdminImage, string AdminRole)
+        public async Task<IActionResult> AccountProfile(long AdminId, string AdminName, IFormFile AdminImage, bool AdminStatus, string AdminRole)
         {
             if (HttpContext.Session.GetString("adminId") == null)
             {
@@ -475,13 +494,13 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 {
                     await AdminImage.CopyToAsync(stream);
                 }
-                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, AdminRole);
+                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, false, AdminRole);
                 HttpContext.Session.SetString("adminName", AdminName);
                 HttpContext.Session.SetString("adminImage", fileName);
                 ViewBag.sg = "Update successful.";
                 return View();
             }
-            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, AdminRole);
+            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, false, AdminRole);
             HttpContext.Session.SetString("adminName", AdminName);
             ViewBag.sg = "Update successful.";
             return View();

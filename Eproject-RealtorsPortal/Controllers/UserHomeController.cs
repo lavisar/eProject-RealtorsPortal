@@ -24,7 +24,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
         public IActionResult Register()
         {
-            
+
             return View();
         }
 
@@ -40,7 +40,7 @@ namespace Eproject_RealtorsPortal.Controllers
                 ViewBag.msg = "This email has been register!";
                 return View("Register", model);
             }
-            if(model.UsersPassword.Length  < 6 || model.UsersPassword.Length > 20)
+            if (model.UsersPassword.Length < 6 || model.UsersPassword.Length > 20)
             {
                 ViewBag.msg = "Password must be between 6-20 characters!";
                 return View("Register", model);
@@ -101,14 +101,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
             if (HttpContext.Session.GetString("User") != null)
             {
-                if (HttpContext.Session.GetString("UserAccount") == null)
-                {
-                    return RedirectToAction("Index", "UserHome");
-                }
-                else
-                {
-                    return RedirectToAction("Index", "Home");
-                }
+                return RedirectToAction("Index", "UserHome");
             }
             return View();
         }
@@ -128,6 +121,7 @@ namespace Eproject_RealtorsPortal.Controllers
                 }
                 else
                 {
+                    
                     Package package = dbContext.Packages.Where(p => p.PackagesId == user.PackagesId).FirstOrDefault();
                     PackageType packageTypes = dbContext.PackageTypes.Where(p => p.PackageTypeId == package.PackageTypeId).FirstOrDefault();
 
@@ -204,7 +198,7 @@ namespace Eproject_RealtorsPortal.Controllers
             var user = new User();
             if (UsersImage != null)
             {
-                string[] typeAllow = { ".jpg", ".png", ".jpeg" , ".jftf" };
+                string[] typeAllow = { ".jpg", ".png", ".jpeg", ".jftf" };
                 if (!typeAllow.Contains(Path.GetExtension(UsersImage.FileName).ToLower()))
                 {
                     ViewBag.errorImage = "You must select true image type (jpg, png, jpeg, jftf)";
@@ -309,7 +303,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
         public IActionResult AuthenticationForm()
         {
-            if(HttpContext.Session.GetString("UserConfirmEmail") == null)
+            if (HttpContext.Session.GetString("UserConfirmEmail") == null)
             {
                 return RedirectToAction("Login", "UserHome");
             }
