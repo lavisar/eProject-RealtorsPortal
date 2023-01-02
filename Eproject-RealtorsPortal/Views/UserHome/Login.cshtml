@@ -43,6 +43,12 @@
                                         <p class="text-center fw-bold" style="color: green">Change password successfully, please login again.</p>
                                     }
                                 }
+                                @if (@ViewBag.sg != null)
+                                {
+
+                                    <p style="color: green;">@ViewBag.sg</p>
+
+                                }
                                 <p class="text-center text-secondary"><i>Hello, Sign in to continue.</i></p>
                                 <div class="form-group col-form-label mb-2">
                                     <label class="form-label" for="UsersEmail"><i class="fas fa-light fa-user me-2"></i>Email <small class="required">*</small></label>

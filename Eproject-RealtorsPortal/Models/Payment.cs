@@ -14,8 +14,7 @@ namespace Eproject_RealtorsPortal.Models
         public long PaymentId { get; set; }
         [Column("payment_price", TypeName = "decimal(18, 2)")]
         public decimal PaymentPrice { get; set; }
-        [Column("payment_qty")]
-        public int PaymentQty { get; set; }
+
         [Column("payment_total", TypeName = "decimal(18, 2)")]
         public decimal PaymentTotal { get; set; }
         [Column("payment_datetime", TypeName = "datetime")]
