@@ -337,7 +337,7 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
             mail.IsBodyHtml = true;
             mail.Body = "<br> " +
                      "Dear Mr/Ms " + admin.AdminName + ", <br>" +
-                     "<h4 style=\"color: yellow;\">Welcome to LQHV Realtors Portal</h4>" +
+                     "<h4 style=\"color: orange;\">Welcome to LQHV Realtors Portal</h4>" +
                      "<p> Your authentication code is: <b style=\"color: blue;\">" + admin.ConfirmEmail + "</b></p>" +
                      "<p> Please enter the confirmation code to login your account</p><br><br>" +
                      "<i>LQHV,</i>";

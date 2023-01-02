@@ -274,6 +274,11 @@ namespace Eproject_RealtorsPortal.Controllers
                 ViewBag.result = "The current password is not correct! ";
                 return View();
             }
+            if (oldPassword == newPassword)
+            {
+                ViewBag.result = "Password must be different from your recent password !";
+                return View();
+            }
             if (newPassword != ConfirmNewPassword)
             {
                 ViewBag.result = " Confirm new password does not match.";

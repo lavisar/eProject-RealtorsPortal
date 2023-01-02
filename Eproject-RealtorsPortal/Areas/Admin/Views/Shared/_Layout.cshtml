@@ -307,13 +307,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link ">
+                                    <a href="@Url.Action("cateList","Cate", new{area = ""})" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Categories list</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link ">
+                                    <a href="@Url.Action("Create","Cate",new{area = ""})" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Add Categories</p>
                                     </a>
@@ -330,13 +330,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="pages/tables/simple.html" class="nav-link">
+                                    <a href="@Url.Action("listPackage","Packages",new{area = ""})" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Package list</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                    <a href="@Url.Action("createPackage","Packages", new{area = ""})" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Add Package</p>
                                     </a>

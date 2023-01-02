@@ -28,6 +28,13 @@
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
+                @if (@ViewBag.result != null)
+                {
+                    if (@ViewBag.result == true)
+                    {
+                        <p class="text-center fw-bold" style="color: green">Change password successfully, please login again.</p>
+                    }
+                }
                 <form asp-controller="Home" asp-action="LoginAdmin" method="POST" enctype="multipart/form-data">
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" name="AdminEmail" placeholder="Email">
@@ -47,12 +54,12 @@
                     </div>
                     @if (ViewBag.msg != null)
                     {
-                        <p  style="color: red;">@ViewBag.msg</p>
+                        <p style="color: red;">@ViewBag.msg</p>
                     }
                     <div class="social-auth-links text-center mt-2 mb-3">
                         <button type="submit" class="btn btn-primary btn-block">Log In</button>
                     </div>
-                </form> 
+                </form>
             </div>
             <!-- /.card-body -->
         </div>
