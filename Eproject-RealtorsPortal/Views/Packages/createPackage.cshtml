@@ -2,14 +2,12 @@
 
 @{
     ViewData["Title"] = "createPackage";
-    Layout = "~/Views/Shared/_layout_UserHome.cshtml";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
-<h1>createPackage page</h1>
-
-<h4>Package</h4>
+<h1>Create new Package</h1>
 <hr />
-<div class="row ">
+<div class="ml-5">
     <div class="col-md-4">
         <form asp-action="createPackage">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -44,25 +42,32 @@
             <!--Input Package Type-->
             <div class="form-group">
                 @*<label asp-for="PackageTypeId" class="control-label"></label>*@
-                Package Type (1 = Basic/ 2 = Pro):
+                Package Type:
                 <input asp-for="PackageTypeId" class="form-control" required/>
                 <span asp-validation-for="PackageTypeId" class="text-danger"></span>
             </div>
+
             <!--Input Status (true/false)-->
             <div class="form-group">
-                @*<label asp-for="PackagesStatus" class="control-label"></label>*@
-                Package Status (True = Active/ False = Inactive)
-                <input asp-for="PackagesStatus" class="form-control" required/>
+@*<label asp-for="PackagesStatus" class="control-label"></label>*@
+                Package Status <br /> (True = Active/ False = Inactive)
+@*<input asp-for="PackagesStatus" class="form-control" required/>*@
+                <br />
+                @Html.EditorFor(m => m.PackagesStatus, new { @class = "form-control" }) 
                 <span asp-validation-for="PackagesStatus" class="text-danger"></span>
+
             </div>
+
+
             <div class="form-group mt-1">
                 <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+            <div>
+                <a class="btn btn-primary" asp-action="listPackage">Back to List</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="#"> ↩ Back to List</a>
-</div>
+
 

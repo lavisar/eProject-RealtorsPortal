@@ -2,30 +2,30 @@
     Layout = null;
 }
 @model Package
-<div class="col mb-3">
-    <div class="card h-80">        
 
-        <div class="card-body p-0">
-            <div class="text-center">
-                <!-- Package Name (co ban/ nang cao)-->
-                <h3 class="">@Model.PackagesName</h3>
-                <!-- Package price-->
-                @*<h5 class="fw-bolder">@Model.PackagesPrice</h5>*@
-                <h6 class="fw-bolder">@Html.DisplayFor(model => model.PackagesPrice)$</h6>                
-                every month - (included VAT) <br />
-                <div class="d-grid gap-2">
-                    <!-- Button BUY NOW-->
-                    <a class="btn btn-danger btn-block" href="#LinkToPaymentPage">Buy now</a> 
-                    <!-- Button VIEW DETAIL-->
-                    <a class="btn btn-outline-dark btn-block" href="@Url.Action("packageDetails", "Packages", new {id = Model.PackagesId})">View details</a>                   
-                </div>
-                <!-- Package Desc-->
-                @string.Format("{0:n}", Model.PackagesDesc) <br />
+<div class="card mt-5" style="width:250px;height:600px;" >
 
-                <!-- Package Duration-->
-                 @*Duration: @string.Format("{0:n}", Model.PackagesDuration) month         *@  
-                 @*Duration: @Html.DisplayFor(model => model.PackagesDuration) month*@
+    <div class="card-body p-4">
+        <div >
+            <!-- Package Name-->
+            <h3 class="text-center">@Model.PackagesName</h3>
+
+            <!-- Package price-->
+            <h6 class="fw-bolder text-center"">@Html.DisplayFor(model => model.PackagesPrice)$</h6>
+
+            every month - (included VAT) <br />
+
+            <div class="d-grid gap-2">
+                <!-- Button BUY NOW-->
+                <a class="btn btn-danger btn-block" href="#LinkToPaymentPage">Buy now</a>
+                <!-- Button VIEW DETAIL-->
+                <a class="btn btn-outline-dark btn-block" href="@Url.Action("packageDetails", "Packages", new {id = Model.PackagesId})">View details</a>
             </div>
+
+            <!-- Package Desc-->
+            @string.Format("{0:n}", Model.PackagesDesc) <br />
+
         </div>
     </div>
 </div>
+

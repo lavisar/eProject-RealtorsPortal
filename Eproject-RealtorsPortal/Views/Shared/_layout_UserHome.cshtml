@@ -247,7 +247,7 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="@Url.Action("AllOwnAds","Ads")" class="menu-link">
+                            <a href="@Url.Action("AllOwnAds","Ads",new{Id = Context.Session.GetString("UserId")})" class="menu-link">
                                 <i class='menu-icon tf-icons bx bxs-book-bookmark'></i>
                                 <div data-i18n="List of postings">List of postings</div>
                             </a>

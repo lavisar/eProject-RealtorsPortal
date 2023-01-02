@@ -1,0 +1,76 @@
+﻿@model Eproject_RealtorsPortal.Models.Package
+
+@{
+    ViewData["Title"] = "Update Package";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>updatePackage</h1>
+
+<h4>Package</h4>
+<hr />
+<div class="ml-5">
+    <div class="col-md-4">
+        <form asp-action="updatePackage">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                @*<label asp-for="PackagesId" class="control-label"></label>*@
+                ID:
+                <input asp-for="PackagesId" class="form-control" disabled/>
+                <span asp-validation-for="PackagesId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @*<label asp-for="PackagesName" class="control-label"></label>*@
+                Name:
+                <input asp-for="PackagesName" class="form-control" />
+                <span asp-validation-for="PackagesName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @*<label asp-for="PackagesDuration" class="control-label"></label>*@
+                Duration:
+                <input asp-for="PackagesDuration" class="form-control" />
+                <span asp-validation-for="PackagesDuration" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @*<label asp-for="PackagesPrice" class="control-label"></label>*@
+                Price:
+                <input asp-for="PackagesPrice" class="form-control" />
+                <span asp-validation-for="PackagesPrice" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @*<label asp-for="PackagesDesc" class="control-label"></label>*@
+                Description:
+                <input asp-for="PackagesDesc" class="form-control" />
+                <span asp-validation-for="PackagesDesc" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @*<label asp-for="PackageTypeId" class="control-label"></label>*@
+                Type ID:
+                <input asp-for="PackageTypeId" class="form-control" />
+                <span asp-validation-for="PackageTypeId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @*<label asp-for="PackageTypeId" class="control-label"></label>*@
+                Status:
+                <input asp-for="PackagesStatus" class="form-control" />
+                <span asp-validation-for="PackagesStatus" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+            <div>
+                <a class="btn btn-primary" asp-action="listPackage">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+

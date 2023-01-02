@@ -12,14 +12,17 @@
         width: 320px;
     }
 
+    .product {
+        display: inline /*-block*/;
+    }
+
     .card {
         display: inline-block;
+        margin-left: 50px;
     }
 
     #products {
-        display: flex,
         position: relative;
-        width: 1200px;
     }
 
         #products .card {
@@ -28,31 +31,6 @@
             border-radius: 20px;
             overflow: hidden;
         }
-
-            #products .card:before {
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: #1BBFE9;
-                clip-path: circle(150px at 80% 20%);
-                transition: 0.5s ease-in-out;
-            }
-
-            #products .card:hover:before {
-                clip-path: circle(300px at 80% -20%);
-            }
-
-
-            #products .card:after {
-                position: absolute;
-                top: 30%;
-                left: -20%;
-                font-size: 12em;
-                font-weight: 800;
-                font-style: italic;
-                color: rgba(255, 255, 255, 0.04);
-            }
 
             #products .card .imgBx {
                 position: absolute;
@@ -64,18 +42,13 @@
                 transition: .5s;
             }
 
-            #products .card:hover .imgBx {
-                top: 0%;
-                transform: translateY(-25%);
-            }
-
-            #products .card .imgBx img {
-                position: absolute;
-                left: -1.5%;
-                width: 330px;
-                height: 320px;
-                border-radius: 8%;
-            }
+                #products .card .imgBx img {
+                    position: absolute;
+                    left: -1.5%;
+                    width: 330px;
+                    height: 320px;
+                    border-radius: 8%;
+                }
 
             #products .card .contentBx {
                 position: absolute;
@@ -134,13 +107,81 @@
                 }
 
 </style>
+<style>
+
+    .filter {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        /*          width: 320px;
+                    height: 320px;
+                    border-radius: 20px;
+                    overflow: hidden;*/
+    }
+
+    .link {
+        color: inherit;
+        text-decoration: none;
+    }
+
+
+    /* Underline styles */
+    .link {
+        display: block;
+        position: relative;
+        padding: 0.2em 0;
+    }
+
+        /* Fade in */
+        .link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0.1em;
+            background-color: hotpink;
+            opacity: 0;
+            transition: opacity 300ms, transform 300ms;
+        }
+
+        .link:hover::after,
+        .link:focus::after {
+            opacity: 1;
+            transform: translate3d(0, 0.2em, 0);
+        }
+
+    /* Slide in */
+    .label:nth-child(2) .link {
+        overflow: hidden;
+    }
+
+        .label:nth-child(2) .link::after {
+            opacity 1;
+            transform: translate3d(-100%, 0, 0);
+        }
+
+        .label:nth-child(2) .link:hover::after,
+        .label:nth-child(2) .link:focus::after {
+            transform: translate3d(0, 0, 0);
+        }
+
+    /* Scale from center */
+    .label:nth-child(3) .link::after {
+        opacity 1;
+        transform: scale(0);
+        transform-origin: center;
+    }
+
+    .label:nth-child(3) .link:hover::after,
+    .label:nth-child(3) .link:focus::after {
+        transform: scale(1);
+    }
+</style>
 
 <div id="products">
-    <h1>Trang hiển thị gói nâng cấp - đang cập nhật</h1>
-    <!--FOR TEST CREATE PAGE ONLY-->
-    <b>FOR TEST CREATE PAGE ONLY</b>
-    <a class="" href="@Url.Action("createPackage", "Packages")">CREATE</a> 
-
+    <h1 id="All_product">All Packages</h1>
+    <div class="product mt-5">
         @foreach (var item in Model)
         {
             @Html.Partial("Box", item)

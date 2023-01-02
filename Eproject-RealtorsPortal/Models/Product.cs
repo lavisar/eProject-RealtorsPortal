@@ -109,9 +109,12 @@ namespace Eproject_RealtorsPortal.Models
         public virtual ICollection<Image> Images { get; set; }
         [InverseProperty("Product")]
         public virtual ICollection<Payment> Payments { get; set; }
-
-
-
+        public List<Package> Package { get; set; }
+        public List<Category> Categories { get; set; }
+        public List<Area> Areas { get; set; }
+        public List<City> Cities { get; set; }
+        public List<Region> Region { get; set; }
+        public List<Country> Countries { get; set; }
 
         //LQHVContext LQHVContext = new LQHVContext();
         //BusinessType BusinessTypeID;
@@ -152,6 +155,37 @@ namespace Eproject_RealtorsPortal.Models
         public string PhoneNumber { get; set; } = null!;
         public string? ContactAddress { get; set; }
         public string ContactEmail { get; set; } = null!;
+
+    }
+    public class ProductAdd
+    {
+        public long ProductID { get; set; }
+        public string ProductTitle { get; set; }
+        public string ProductDesc { get; set; } = null!;
+        public string ProductImage { get; set; }
+        public decimal ProductPrice { get; set; }
+        public decimal ProductArea { get; set; }
+        public string ProductAddress { get; set; }
+        public string? ProductLegal { get; set; }
+        public string? ProductInterior { get; set; }
+        public int? NumToilets { get; set; }
+        public int? NumBedrooms { get; set; }
+        public string? HomeOrientation { get; set; }
+        public string? BalconyOrientation { get; set; }
+        public int? NumOfFloors { get; set; }
+        public string ContactName { get; set; } = null!;
+        public string PhoneNumber { get; set; } = null!;
+        public string? ContactAddress { get; set; }
+        public string ContactEmail { get; set; } = null!;
+        public long? UsersId { get; set; }
+        public long PackagesId { get; set; }
+        public int NumDays { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public bool Featured { get; set; }
+        public long CategoryId { get; set; }
+
+
 
     }
 }

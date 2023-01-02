@@ -3,69 +3,62 @@
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
 @model IEnumerable<Eproject_RealtorsPortal.Models.News>
 
-@*
-<section class="body">
-	<!-- Section Intro -->
-	<section class="header d-flex flex-column justify-content-center align-content-center">
-		<section id="" class="m-2">
-			<div class="container">
-				<div class="row justify-content-center align-items-center">
-					<div class="col-md-10 col-lg-7 py-3 py-lg-2 mt-md-5 mt-lg-0 rounded text-center " style="background-color: rgb(228, 216, 180, 0.5) ;">
-						<h1>
-							<div class="h2 fw-bold" style="color:green;">
-								Danh mục tin tức
-							</div>
-							<div class="h4" style="color: black; font-style: italic;">
-								Có rất nhiều tin tức thú vị về nhà đất
-							</div>
-						</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-	</section>
-	<!-- Section Intro End -->
-	<section class="content container light-grey" style="padding-top: 70px; padding-bottom: 70px;">
-		<div class="w3-content" style="max-width:1400px">
-			<br>
-			<div class="w3-row" class="w3-card-4 w3-margin w3-white ">
-				<div class="container-fluid">
-					<div class="row content">
-						<div class="col-sm-2 ">
-						</div>
-						<div class="col-sm-10">
-							<div class="w3-card-4 w3-margin w3-white">
-								<div>
-									@foreach (var item in Model)
-									{
-										<div>
-											<p>@Html.DisplayFor(modelItem => item.NewsImage)</p>
-											<p>@Html.DisplayFor(modelItem => item.NewsDate)</p>
-											<p>@Html.DisplayFor(modelItem => item.NewsDesc)</p>
-											@Html.ActionLink("Details", "Details", "News", new { @id = item.NewsId })
-										</div>
-									}
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-2 ">
-				</div>
-			</div>
-			<!-- END GRID -->
-		</div><br>
+<style>
+		.primary-btn {
+		display: inline-block;
+		font-size: 16px;
+		font-weight: 600;
+		padding: 0 12px;
+		color: #ffffff;
+		text-align: center;
+		width: 160px;
+		height: 46px;
+		border-left: 2px solid #eb3c5a;
+		border-right: 2px solid #f67831;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		background-position: 0 0, 0 100%;
+		background-repeat: no-repeat;
+		background-size: 100% 2px;
+		background-image: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831)), -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
+		background-image: -o-linear-gradient(left, #eb3c5a 0%, #f67831 100%), -o-linear-gradient(left, #eb3c5a 0%, #f67831 100%);
+		background-image: linear-gradient(to right, #eb3c5a 0%, #f67831 100%), linear-gradient(to right, #eb3c5a 0%, #f67831 100%);
+		-webkit-transition-duration: 1000ms;
+		-o-transition-duration: 1000ms;
+		transition-duration: 1000ms;
+		line-height: 45px;
+		position: relative;
+		z-index: 1;
+	}
 
-		<!-- END w3-content -->
-		</div>
-	</section>
-</section>
-*@
+	.primary-btn:after {
+		color: #fff;
+		-webkit-transition-duration: 500ms;
+		-o-transition-duration: 500ms;
+		transition-duration: 500ms;
+		background: #f67831;
+		background: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
+		background: -o-linear-gradient(left, #eb3c5a, #f67831);
+		background: linear-gradient(to right, #eb3c5a, #f67831);
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		opacity: 1;
+	}
+</style>
 
 <section class="body">
+	
+	<!--FOR TEST CREATE PAGE ONLY-->
+    <b>FOR TEST CREATE PAGE ONLY</b>
+    <a class="" href="@Url.Action("createNews", "News")">CREATE</a> 
+
 	<div style="background-color: rgb(239,239,239);">
 		<section class="pb-4 mt-3 container" style="padding-top: 20px">
 			<div class="bg-white border rounded-5 border-white">
@@ -108,15 +101,15 @@
 														<div class="row" style="padding-top: 20px">
 															<div class="col-lg-6" id="intro-info">
 																<div class="about-text ps-0">
-																	<p>@Html.DisplayFor(modelItem => item.NewsImage)</p>
+																	<p height="280" width="480">@Html.DisplayFor(modelItem => item.NewsImage)</p>
 																</div>
 															</div>
 
 															<div class="col-lg-6">
-																<p>@Html.DisplayFor(modelItem => item.NewsDate)</p>
-																<p>@Html.DisplayFor(modelItem => item.NewsDesc)</p>
-																<p class="btn btn-primary btn-block mb-4 ">
-																	@Html.ActionLink("Details", "Details", "News", new { @id = item.NewsId })
+																<h4 style="color: red; font-style: italic;">@Html.DisplayFor(modelItem => item.NewsDate)</h4>
+																<h3>@Html.DisplayFor(modelItem => item.NewsDesc)</h3>
+																<p class="primary-btn">
+																	@Html.ActionLink("READ MORE", "Details", "News", new { @id = item.NewsId })
 																</p>
 
 															</div>
