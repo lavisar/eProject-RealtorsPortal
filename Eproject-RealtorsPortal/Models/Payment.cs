@@ -21,12 +21,12 @@ namespace Eproject_RealtorsPortal.Models
         [Column("payment_datetime", TypeName = "datetime")]
         public DateTime PaymentDatetime { get; set; }
         [Column("product_id")]
-        public long ProductId { get; set; }
+        public long? ProductId { get; set; }
         [Column("users_id")]
         public long UsersId { get; set; }
         [Column("payment_status")]
         public bool? PaymentStatus { get; set; }
-
+        [Column("payment_")]
         [ForeignKey("ProductId")]
         [InverseProperty("Payments")]
         public virtual Product Product { get; set; } = null!;

@@ -10,7 +10,7 @@ namespace Eproject_RealtorsPortal.Controllers
     public class AdsController : Controller
     {
         LQHVContext LQHVContext = new LQHVContext();
-        List<ProductBox> rent, sell;
+        List<ProductBox> rent, sell, allOwnAds;
         //List<Product> products;
         ProductDetail product;
         Product products;
@@ -23,7 +23,7 @@ namespace Eproject_RealtorsPortal.Controllers
         ProductAdd productAdd;
         public IActionResult Sell()
         {
-            sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today)
+            sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.Status == "active")
                 .Join(
                 LQHVContext.Categories,
                 p => p.CategoryId,
@@ -60,7 +60,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
         public IActionResult Rent()
         {
-            rent = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today)
+            rent = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.Status == "active")
                 .Join(
                 LQHVContext.Categories,
                 p => p.CategoryId,
@@ -154,14 +154,14 @@ namespace Eproject_RealtorsPortal.Controllers
             city = LQHVContext.Cities.ToList();
             region = LQHVContext.Regions.ToList();
             country = LQHVContext.Countries.ToList();
-            return View(new ProductAdd { Package = package,Categories = category, Countries = country, Region = region, Areas = areas, Cities = city });
+            return View(new ProductAdd { Package = package,Categories = category, Countries = country, Areas = areas, Cities = city });
         }
         [HttpPost]
         public IActionResult CreateAds(ProductAdd model)
         {
             products = new Product
             {
-                ProductAddress = model.ProductAddress,
+                ProductAddress = model.ProductAddress+","+model.AreaName+","+model.CityName+","+model.CityName,
                 ProductArea = model.ProductArea,
                 PackagesId = model.PackagesId,
                 ProductDesc = model.ProductDesc,
@@ -170,7 +170,21 @@ namespace Eproject_RealtorsPortal.Controllers
                 ProductInterior = model.ProductInterior,
                 ProductLegal = model.ProductLegal,
                 ProductPrice = model.ProductPrice,
-                ProductTitle = model.ProductTitle
+                ProductTitle = model.ProductTitle,
+                StartDate = model.StartDate,
+                EndDate = model.StartDate.AddDays(model.NumDays),
+                Featured = model.Featured,
+                ContactAddress = model.ContactEmail,
+                CategoryId = model.CategoryId,
+                ContactEmail = model.ContactEmail,
+                ContactName = model.ContactName,
+                NumDays = model.NumDays,
+                NumBedrooms = model.NumBedrooms,
+                NumOfFloors = model.NumOfFloors,
+                NumToilets = model.NumToilets,
+                HomeOrientation = model.HomeOrientation,
+                BalconyOrientation = model.BalconyOrientation,
+                UsersId = model.UsersId
             };
             LQHVContext.Products.Add(products);
             if (LQHVContext.SaveChanges() == 1)
@@ -183,7 +197,7 @@ namespace Eproject_RealtorsPortal.Controllers
         }
         public IActionResult AllOwnAds(int Id)
         {
-            rent = LQHVContext.Products.Where(dd => dd.UsersId == Id)
+            allOwnAds = LQHVContext.Products.Where(dd => dd.UsersId == Id)
                 .Join(
                 LQHVContext.Categories,
                 p => p.CategoryId,
@@ -215,11 +229,11 @@ namespace Eproject_RealtorsPortal.Controllers
                 BusinessTypeID = s.BusinessTypeID
             })
             .ToList();
-            return View();
+            return View(allOwnAds);
         }
         public IActionResult SearchRent(string Area, string City, long StartPrice, long EndPrice)
         {
-            rent = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductAddress.Contains(Area) && d.ProductAddress.Contains(City) && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice)
+            rent = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductAddress.Contains(Area) && d.ProductAddress.Contains(City) && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice && d.Status == "active")
             .Join(
              LQHVContext.Categories,
              p => p.CategoryId,
@@ -254,7 +268,7 @@ namespace Eproject_RealtorsPortal.Controllers
         }
         public IActionResult SearchSell(string Area, string City, long StartPrice, long EndPrice)
         {
-            sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductAddress.Contains(Area) && d.ProductAddress.Contains(City) && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice)
+            sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductAddress.Contains(Area) && d.ProductAddress.Contains(City) && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice && d.Status == "active")
             .Join(
              LQHVContext.Categories,
              p => p.CategoryId,

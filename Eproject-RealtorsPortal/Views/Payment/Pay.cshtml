@@ -14,8 +14,8 @@
         <form asp-action="Pay" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="PaymentPrice" class="control-label">Price</label>
-                <input asp-for="PaymentPrice" class="form-control" type="hidden" value="@Context.Session.GetString("PackagePrice")" />
+@*                <label asp-for="PaymentPrice" class="control-label">Price</label>
+*@                <input asp-for="PaymentPrice" class="form-control" type="hidden" value="@Context.Session.GetString("PackagePrice")" />
                 <span asp-validation-for="PaymentPrice" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -34,13 +34,13 @@
                 <span asp-validation-for="PaymentDatetime" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProductId" class="control-label"></label>
-                <input asp-for="ProductId" class="form-control" type="hidden" value="@Context.Session.GetString("ProductId")" />
+@*                <label asp-for="ProductId" class="control-label"></label>
+*@                <input asp-for="ProductId" class="form-control" type="hidden" value="@Context.Session.GetString("ProductId")" />
                 <span asp-validation-for="ProductId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="UsersId" class="control-label"></label>
-                <input asp-for="UsersId" class="form-control" type="hidden" value="@Context.Session.GetString("UserId")"/>
+@*                <label asp-for="UsersId" class="control-label"></label>
+*@                <input asp-for="UsersId" class="form-control" type="hidden" value="@Context.Session.GetString("UserId")"/>
                 <span asp-validation-for="UsersId" class="text-danger"></span>
             </div>
             <div class="form-group">

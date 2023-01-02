@@ -1,4 +1,7 @@
 ﻿@model List<ProductBox>
+@{
+    Layout = "~/Views/Shared/_layout_UserHome.cshtml";
+}
 <style>
 
     .price {
@@ -175,11 +178,9 @@
 </style>
 <div id="products">
     <div class="product">
-        <div class="card card-body" style="width:230px;height:400px">
         </div>
         @foreach (var item in Model)
         {
             @Html.Partial("Box", item)
         }
     </div>
-</div>
