@@ -35,16 +35,16 @@
                 <span asp-validation-for="ProductImage" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AreaName" class="control-label">Area</label>
-                <input asp-for="AreaName" list="area" class="form-control"/>
-                    <datalist id="area">
-                        @foreach (var item in @Model.Areas)
-                        {
-                            <option value="@item.AreasName">
-                                @item.AreasName
-                            </option>
-                        }
-                    </datalist>
+                <label asp-for="CountryName" class="control-label">Country</label>
+                <input asp-for="CountryName" list="country" class="form-control" />
+                <datalist id="country">
+                    @foreach (var item in @Model.Countries)
+                    {
+                        <option value="@item.CountriesName">
+                            @item.CountriesName
+                        </option>
+                    }
+                </datalist>
                 <label asp-for="CityName" class="control-label">City</label>
                 <input asp-for="CityName" list="city" class="form-control"/>
                     <datalist id="city">
@@ -55,13 +55,13 @@
                             </option>
                         }
                     </datalist>
-                <label asp-for="CountryName" class="control-label">Country</label>
-                <input asp-for="CountryName" list="country" class="form-control"/>
-                    <datalist id="country">
-                        @foreach (var item in @Model.Countries)
+                <label asp-for="AreaName" class="control-label">Area</label>
+                <input asp-for="AreaName" list="area" class="form-control"/>
+                    <datalist id="area">
+                        @foreach (var item in @Model.Areas)
                         {
-                            <option value="@item.CountriesName">
-                                @item.CountriesName
+                            <option value="@item.AreasName">
+                                @item.AreasName
                             </option>
                         }
                     </datalist>
@@ -138,12 +138,14 @@
                 <input asp-for="StartDate" class="form-control" />
                 <span asp-validation-for="StartDate" class="text-danger"></span>
             </div>
-@*            if(@Context.Session.GetString("UserTypeID"))
-*@            <div class="form-group form-check">
+            if(@Context.Session.GetString("UserAccount")!=null){
+            <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Featured" /> @Html.DisplayNameFor(model => model.Featured)
                 </label>
             </div>
+            }
+
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label">Category: </label>
                 <select asp-for="CategoryId" list="category" class="form-control">
@@ -202,21 +204,6 @@
             var selValue = b.options[b.selectedIndex].value;
             $("#EndDate").text(a + b);
         })
-        //var c = document.getElementById("Area").value;
-        //var d = document.getElementById("Cities").value;
-        //var e = document.getElementById("Country").value;
-        //var textAddress = document.getElementById("ProductAddress").value;
-        //$("#Areas").keyup(function (event) {
-        //    var c = document.getElementById("Areas").value;
-        //    textAddress += c;
-        //    $("#ProductAddress").text(textAddress);
-        //})
-        //function CopyArea(){
-        //    var area = document.getElementById("Areas");
-        //    var inputAddress= document.getElementById("ProductAddress");
-        //    var selValue = area.options[area.selectedIndex].value;
-        //    inputAddress.value += ","+selValue
-        //    if(inputAddress.value)
-        //}
+        
     })
 </script>

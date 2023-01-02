@@ -11,7 +11,7 @@ namespace Eproject_RealtorsPortal.Controllers
     public class AdsController : Controller
     {
         LQHVContext LQHVContext = new LQHVContext();
-        List<ProductBox> rent, sell, allOwnAds;
+        List<ProductBox> rent, sell, allOwnAds,search;
         //List<Product> products;
         ProductDetail product;
         Product products;
@@ -19,9 +19,7 @@ namespace Eproject_RealtorsPortal.Controllers
         List<Category> category;
         List<Area> areas;
         List<City> city;
-        List<Region> region;
         List<Country> country;
-        ProductAdd productAdd;
         public IActionResult Sell()
         {
             sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.Status == "active")
@@ -153,16 +151,16 @@ namespace Eproject_RealtorsPortal.Controllers
             category = LQHVContext.Categories.ToList();
             areas = LQHVContext.Areas.ToList();
             city = LQHVContext.Cities.ToList();
-            region = LQHVContext.Regions.ToList();
+            //region = LQHVContext.Regions.ToList();
             country = LQHVContext.Countries.ToList();
-            return View(new ProductAdd { Package = package,Categories = category, Countries = country, Areas = areas, Cities = city });
+            return View(new ProductAdd { Package = package, Categories = category, Countries = country, Areas = areas, Cities = city });
         }
         [HttpPost]
         public IActionResult CreateAds(ProductAdd model)
         {
             products = new Product
             {
-                ProductAddress = model.ProductAddress+","+model.AreaName+","+model.CityName+","+model.CityName,
+                ProductAddress = model.ProductAddress + ", " + model.AreaName + ", " + model.CityName + ", " + model.CityName,
                 ProductArea = model.ProductArea,
                 PackagesId = model.PackagesId,
                 ProductDesc = model.ProductDesc,
@@ -192,7 +190,7 @@ namespace Eproject_RealtorsPortal.Controllers
             {
                 HttpContext.Session.SetString("ProductId", products.ProductId.ToString());
                 HttpContext.Session.SetString("PackageId", products.PackagesId.ToString());
-                if(products.Packages.PackageType.PackageTypeId == 2)
+                if (products.Packages.PackageType.PackageTypeId == 2)
                 {
                     HttpContext.Session.SetString("PayType", "ads");
                     HttpContext.Session.SetString("PackagePrice", products.Packages.PackagesPrice.ToString());
@@ -237,75 +235,139 @@ namespace Eproject_RealtorsPortal.Controllers
             .ToList();
             return View(allOwnAds);
         }
-        public IActionResult SearchRent(string Area, string City, long StartPrice, long EndPrice)
+        public IActionResult Search(long Type, string Area, string City, decimal StartPrice, decimal EndPrice)
         {
-            rent = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductAddress.Contains(Area) && d.ProductAddress.Contains(City) && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice && d.Status == "active")
-            .Join(
-             LQHVContext.Categories,
-             p => p.CategoryId,
-             c => c.CategoryId,
-            (p, c) => new
+
+            if (Area == null)
+            {
+                search = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductAddress.Contains(City) && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice && d.Status == "active").Join(
+                LQHVContext.Categories,
+                p => p.CategoryId,
+                c => c.CategoryId,
+               (p, c) => new
                {
-               Product = p,
-              Category = c
+                   Product = p,
+                   Category = c
                })
-            .Join(
-             LQHVContext.BusinessTypes.Where(s => s.BusinessTypesId == 1),
-            ca => ca.Category.BusinessTypesId,
-           bu => bu.BusinessTypesId,
-           (ca, bu) => new
-              {
-               ca.Product,
-               ca.Category,
-          BusinessTypeID = bu.BusinessTypesId
-              })
-            .Select(s => new ProductBox
+               .Join(LQHVContext.BusinessTypes.Where(s => s.BusinessTypesId == Type),
+                     ca => ca.Category.BusinessTypesId,
+                     bu => bu.BusinessTypesId,
+                (ca, bu) => new
                 {
-                  ProductID = s.Product.ProductId,
-                  ProductTitle = s.Product.ProductTitle,
-                  ProductPrice = s.Product.ProductPrice,
-                  ProductArea = s.Product.ProductArea,
-                  ProductAddress = s.Product.ProductAddress,
-                  ProductImage = s.Product.ProductImage,
-                  BusinessTypeID = s.BusinessTypeID
+                    ca.Product,
+                    ca.Category,
+                    BusinessTypeID = bu.BusinessTypesId
                 })
-            .ToList();
-            return View("Search",rent);
-        }
-        public IActionResult SearchSell(string Area, string City, long StartPrice, long EndPrice)
-        {
-            sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductAddress.Contains(Area) && d.ProductAddress.Contains(City) && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice && d.Status == "active")
-            .Join(
-             LQHVContext.Categories,
-             p => p.CategoryId,
-             c => c.CategoryId,
-            (p, c) => new
+               .Select(s => new ProductBox
+               {
+                   ProductID = s.Product.ProductId,
+                   ProductTitle = s.Product.ProductTitle,
+                   ProductPrice = s.Product.ProductPrice,
+                   ProductArea = s.Product.ProductArea,
+                   ProductAddress = s.Product.ProductAddress,
+                   ProductImage = s.Product.ProductImage,
+                   BusinessTypeID = s.BusinessTypeID
+               })
+               .ToList();
+            }
+            if (City == null)
             {
-                Product = p,
-                Category = c
-            })
-            .Join(
-             LQHVContext.BusinessTypes.Where(s => s.BusinessTypesId == 2),
-            ca => ca.Category.BusinessTypesId,
-           bu => bu.BusinessTypesId,
-           (ca, bu) => new
-           {
-               ca.Product,
-               ca.Category,
-               BusinessTypeID = bu.BusinessTypesId
-           })
-            .Select(s => new ProductBox
+                search = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductAddress.Contains(Area) && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice && d.Status == "active").Join(
+                LQHVContext.Categories,
+                p => p.CategoryId,
+                c => c.CategoryId,
+               (p, c) => new
+               {
+                   Product = p,
+                   Category = c
+               })
+               .Join(LQHVContext.BusinessTypes.Where(s => s.BusinessTypesId == Type),
+                     ca => ca.Category.BusinessTypesId,
+                     bu => bu.BusinessTypesId,
+                (ca, bu) => new
+                {
+                    ca.Product,
+                    ca.Category,
+                    BusinessTypeID = bu.BusinessTypesId
+                })
+               .Select(s => new ProductBox
+               {
+                   ProductID = s.Product.ProductId,
+                   ProductTitle = s.Product.ProductTitle,
+                   ProductPrice = s.Product.ProductPrice,
+                   ProductArea = s.Product.ProductArea,
+                   ProductAddress = s.Product.ProductAddress,
+                   ProductImage = s.Product.ProductImage,
+                   BusinessTypeID = s.BusinessTypeID
+               })
+               .ToList();
+            }
+            if(Area == null && City == null)
             {
-                ProductID = s.Product.ProductId,
-                ProductTitle = s.Product.ProductTitle,
-                ProductPrice = s.Product.ProductPrice,
-                ProductArea = s.Product.ProductArea,
-                ProductAddress = s.Product.ProductAddress,
-                ProductImage = s.Product.ProductImage,
-                BusinessTypeID = s.BusinessTypeID
-            })
-            .ToList();
-            return View("Search", sell);
+                search = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today &&d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice && d.Status == "active").Join(
+                LQHVContext.Categories,
+                p => p.CategoryId,
+                c => c.CategoryId,
+               (p, c) => new
+               {
+                   Product = p,
+                   Category = c
+               })
+               .Join(LQHVContext.BusinessTypes.Where(s => s.BusinessTypesId == Type),
+                     ca => ca.Category.BusinessTypesId,
+                     bu => bu.BusinessTypesId,
+                (ca, bu) => new
+                {
+                    ca.Product,
+                    ca.Category,
+                    BusinessTypeID = bu.BusinessTypesId
+                })
+               .Select(s => new ProductBox
+               {
+                   ProductID = s.Product.ProductId,
+                   ProductTitle = s.Product.ProductTitle,
+                   ProductPrice = s.Product.ProductPrice,
+                   ProductArea = s.Product.ProductArea,
+                   ProductAddress = s.Product.ProductAddress,
+                   ProductImage = s.Product.ProductImage,
+                   BusinessTypeID = s.BusinessTypeID
+               })
+               .ToList();
+            }
+            else
+            {
+                search = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductAddress.Contains(Area) && d.ProductAddress.Contains(City) && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice && d.Status == "active").Join(
+                LQHVContext.Categories,
+                p => p.CategoryId,
+                c => c.CategoryId,
+               (p, c) => new
+               {
+                   Product = p,
+                   Category = c
+               })
+               .Join(LQHVContext.BusinessTypes.Where(s => s.BusinessTypesId == Type),
+                     ca => ca.Category.BusinessTypesId,
+                     bu => bu.BusinessTypesId,
+                (ca, bu) => new
+                {
+                    ca.Product,
+                    ca.Category,
+                    BusinessTypeID = bu.BusinessTypesId
+                })
+               .Select(s => new ProductBox
+               {
+                   ProductID = s.Product.ProductId,
+                   ProductTitle = s.Product.ProductTitle,
+                   ProductPrice = s.Product.ProductPrice,
+                   ProductArea = s.Product.ProductArea,
+                   ProductAddress = s.Product.ProductAddress,
+                   ProductImage = s.Product.ProductImage,
+                   BusinessTypeID = s.BusinessTypeID
+               })
+               .ToList();
+            }
+
+            return View("Search", search);
         }
     }
 }
