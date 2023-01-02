@@ -1,5 +1,6 @@
 ﻿using Eproject_RealtorsPortal.Data;
 using Eproject_RealtorsPortal.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +24,8 @@ namespace Eproject_RealtorsPortal.Controllers
         List<Region> region;
         List<Country> country;
         Image image;
+        Package packages;
+        ManyImage ManyImage;
         public IActionResult Sell()
         {
             sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.Status == "active")
@@ -183,17 +186,12 @@ namespace Eproject_RealtorsPortal.Controllers
 
 
                     // Create a new Image instance
-                    ManyImage ManyImage = new ManyImage
+                    ManyImage = new ManyImage
                     {
                         FileName = fileName,
                         Data = data
                     };
-                    image = new Image
-                    {
-                        ImagePath = ManyImage.FileName,
-                        ProductId = 1
 
-                    };
                     // Insert the image into the database
             }
             products = new Product {
@@ -202,7 +200,7 @@ namespace Eproject_RealtorsPortal.Controllers
                 PackagesId = model.PackagesId,
                 ProductDesc = model.ProductDesc,
                 PhoneNumber = model.PhoneNumber,
-                ProductImage = image.ImagePath,
+                ProductImage = ManyImage.FileName,
                 ProductInterior = model.ProductInterior,
                 ProductLegal = model.ProductLegal,
                 ProductPrice = model.ProductPrice,
@@ -225,10 +223,12 @@ namespace Eproject_RealtorsPortal.Controllers
             LQHVContext.Products.Add(products);
             if (LQHVContext.SaveChanges() == 1)
             {
+                packages = LQHVContext.Packages.Find(products.PackagesId);
                 HttpContext.Session.SetString("ProductId", products.ProductId.ToString());
                 HttpContext.Session.SetString("PackageId", products.PackagesId.ToString());
                 HttpContext.Session.SetString("PayType", "ads");
-                //HttpContext.Session.SetString("PackagePrice", products.Packages.PackagesPrice.ToString());
+
+                HttpContext.Session.SetString("PackagePrice", packages.PackagesPrice.ToString());
                 if (HttpContext.Request.Method == "POST")
                 {
                     // Get the uploaded files
@@ -260,9 +260,9 @@ namespace Eproject_RealtorsPortal.Controllers
                         Image image = new Image
                         {
                             ImagePath = ManyImage.FileName,
-                            ProductId = 1
+                            ProductId = long.Parse(HttpContext.Session.GetString("ProductId"))
 
-                        };
+                    };
                         // Insert the image into the database
                         LQHVContext.Images.Add(image);
                         LQHVContext.SaveChanges();
