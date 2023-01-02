@@ -14,7 +14,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
         public IActionResult Sell()
         {
-            sell = LQHVContext.Products
+            sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today)
                 .Join(
                 LQHVContext.Categories,
                 p => p.CategoryId,
@@ -51,7 +51,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
         public IActionResult Rent()
         {
-            rent = LQHVContext.Products.Where(d=>d.StartDate > DateTime.Today && d.EndDate < DateTime.Today)
+            rent = LQHVContext.Products.Where(d=>d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today)
                 .Join(
                 LQHVContext.Categories,
                 p => p.CategoryId,
@@ -149,7 +149,7 @@ namespace Eproject_RealtorsPortal.Controllers
             }
             return View("CreateAds", model);
         }
-        public IActionResult AllOwnAds()
+        public IActionResult AllOwnAds(int Id)
         {
             return View();
         }

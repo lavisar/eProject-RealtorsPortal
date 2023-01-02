@@ -102,7 +102,7 @@
                     @if (@Model.BusinessTypeID == 2)
                     {
                         <p>
-@(@Model.ProductPrice) USD<br>@(Model.ProductArea)/m&sup2;
+                            @(@Model.ProductPrice) USD
                         </p>
                     }
                 </div>
@@ -122,9 +122,11 @@
                     }
                 </h6>
                 <hr>
-                <p> <i class="fa fa-map-marker-alt text-muted"></i> @Model.ProductAddress </p>
-                <article class="bg-gray overflow-hidden position-relative rounded" style="height: 130px">
+                <p> 
+                    <i class="fa fa-map-marker-alt text-muted"></i> @Model.ProductAddress
                     <a href="https://www.google.com/maps/place/@Model.ProductAddress" class="center-xy btn btn-light" target="_blank">Show on map</a>
+                </p>
+                <article class="bg-gray overflow-hidden position-relative rounded" style="height: 130px">
                     <img src="~/Ads/map.webp" class="img-fluid opacity">
                 </article> <br>
                 <article class="box">
