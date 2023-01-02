@@ -353,6 +353,10 @@
       "PackagePath": "staticwebassets\\Image\\FAQ.png"
     },
     {
+      "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\HINH SINH NHAT 4.png",
+      "PackagePath": "staticwebassets\\Image\\User\\HINH SINH NHAT 4.png"
+    },
+    {
       "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\avatar.png",
       "PackagePath": "staticwebassets\\Image\\User\\avatar.png"
     },
@@ -365,24 +369,40 @@
       "PackagePath": "staticwebassets\\Image\\User\\avatar2.png"
     },
     {
+      "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\avatar2231120244.png",
+      "PackagePath": "staticwebassets\\Image\\User\\avatar2231120244.png"
+    },
+    {
       "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\avatar3.png",
       "PackagePath": "staticwebassets\\Image\\User\\avatar3.png"
+    },
+    {
+      "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\avatar3.png231315635",
+      "PackagePath": "staticwebassets\\Image\\User\\avatar3.png231315635"
+    },
+    {
+      "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\avatar3231924933.png",
+      "PackagePath": "staticwebassets\\Image\\User\\avatar3231924933.png"
     },
     {
       "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\avatar4.png",
       "PackagePath": "staticwebassets\\Image\\User\\avatar4.png"
     },
     {
+      "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\avatar4.png231606719",
+      "PackagePath": "staticwebassets\\Image\\User\\avatar4.png231606719"
+    },
+    {
       "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\avatar5.png",
       "PackagePath": "staticwebassets\\Image\\User\\avatar5.png"
     },
     {
-      "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\bu0xtxjacqjvjda7gzdy.png",
-      "PackagePath": "staticwebassets\\Image\\User\\bu0xtxjacqjvjda7gzdy.png"
-    },
-    {
       "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\defaultImage.jpg",
       "PackagePath": "staticwebassets\\Image\\User\\defaultImage.jpg"
+    },
+    {
+      "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\defaultImage.png",
+      "PackagePath": "staticwebassets\\Image\\User\\defaultImage.png"
     },
     {
       "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\Image\\User\\fb avt.png",
@@ -525,6 +545,10 @@
       "PackagePath": "staticwebassets\\admin\\dist\\img\\avatar2.png"
     },
     {
+      "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\avatar235828986.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\img\\avatar235828986.png"
+    },
+    {
       "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\avatar3.png",
       "PackagePath": "staticwebassets\\admin\\dist\\img\\avatar3.png"
     },
@@ -533,12 +557,24 @@
       "PackagePath": "staticwebassets\\admin\\dist\\img\\avatar4.png"
     },
     {
+      "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\avatar4235721351.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\img\\avatar4235721351.png"
+    },
+    {
       "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\avatar5.png",
       "PackagePath": "staticwebassets\\admin\\dist\\img\\avatar5.png"
     },
     {
+      "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\avatar5235802671.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\img\\avatar5235802671.png"
+    },
+    {
       "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\defaultImage.jpg",
       "PackagePath": "staticwebassets\\admin\\dist\\img\\defaultImage.jpg"
+    },
+    {
+      "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\defaultImage.png",
+      "PackagePath": "staticwebassets\\admin\\dist\\img\\defaultImage.png"
     },
     {
       "Id": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\logo.jpg",

@@ -20,6 +20,7 @@ namespace Eproject_RealtorsPortal.Models
 
         [Key]
         [Column("users_id")]
+        [DisplayName("ID")]
         public long UsersId { get; set; }
 
         [Column("users_fullname")]

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 
-    <link rel="icon" type="image/x-icon" href="../Image/logo_small.png" />
+    <link rel="icon" type="image/x-icon" href="~/Image/logo_small.png" />
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -26,11 +26,11 @@
     <link rel="stylesheet" href="/admin/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="/admin/plugins/summernote/summernote-bs4.min.css">
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
             <img class="animation__shake" src="~/admin/dist/img/logo1.png" alt="AdminLogo" height="60" width="60">
@@ -83,8 +83,8 @@
                     </a>
                 </li>
                 <li class="nav navbar-nav flex-row justify-content-between ml-auto">
-                    <a class="btn btn-outline-dark" href="#">
-                        <i class="ion-log-out text-uppercase"></i> Log Out
+                    <a class="btn btn-outline-dark" href="@Url.Action("Logout","Home", new{area = "Admin"})">
+                        <i class="ion-log-out text-uppercase"></i>Log Out
                     </a>
                 </li>
             </ul>
@@ -93,33 +93,41 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <div style="display: flex; justify-content:center; margin-left:10px">
-                <a href="@Url.Action("Index","Home")" class="brand-link">
-                    <img src="/admin/dist/img/logo.jpg" height="70" width="150" alt="AdminLogo">
-                </a>
-            </div>
+            <a href="@Url.Action("Index","Home")" class="brand-link">
+                <img src="/admin/dist/img/logo_small.png" alt="Admin Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light fw-bold text-orange">LQHV</span>
+            </a>
+
+
             <!-- Sidebar -->
             <div class="sidebar">
+
                 <!-- Sidebar user panel (optional) 160x 160-->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="/admin/dist/img/defaultImage.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">Admin Name</a>
-                    </div>
-                </div>
-
-                <!-- SidebarSearch Form -->
-                <div class="form-inline">
-                    <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-sidebar">
-                                <i class="fas fa-search fa-fw"></i>
-                            </button>
+                    @if (Context.Session.GetString("adminImage") != null)
+                    {
+                        string adminImage = Context.Session.GetString("adminImage");
+                        <div class="image">
+                            <img src="/admin/dist/img/@adminImage" class="img-circle elevation-2" alt="Admin Image">
                         </div>
-                    </div>
+                    }
+                    else
+                    {
+                        <div class="image">
+                            <img src="/admin/dist/img/defaultImage.jpg" class="img-circle elevation-2" alt="Admin Image">
+                        </div>
+
+                    }
+
+
+                    @if (Context.Session.GetString("adminName") != null)
+                    {
+                        string adminName = Context.Session.GetString("adminName");
+                        <div class="info fw-bold">
+                            <a href="@Url.Action("AccountProfile", "Home",  new{area = "Admin"})" class="d-block">@adminName</a>
+                        </div>
+
+                    }
                 </div>
 
                 <!-- Sidebar Menu -->
@@ -132,7 +140,6 @@
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
-                                    <span class="badge badge-info right">2</span>
                                 </p>
                             </a>
                         </li>
@@ -144,64 +151,129 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-user-tie"></i>
-                                <p>
-                                    Users management
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>
-                                            User
-                                            <i class="right fas fa-angle-left"></i>
-                                        </p>
-                                    </a>
-                                    <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="far fa-dot-circle nav-icon"></i>
-                                                <p> User list</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="far fa-dot-circle nav-icon"></i>
-                                                <p> Add users</p>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>
-                                            Admin
-                                            <i class="right fas fa-angle-left"></i>
-                                        </p>
-                                    </a>
-                                    <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="far fa-dot-circle nav-icon"></i>
-                                                <p> Admin list</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="far fa-dot-circle nav-icon"></i>
-                                                <p> Add Admin</p>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
 
+
+                        @if (Context.Session.GetString("adminRole") == "Super admin")
+                        {
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-user-tie"></i>
+                                    <p>
+                                        Users management
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>
+                                                User
+                                                <i class="right fas fa-angle-left"></i>
+                                            </p>
+                                        </a>
+                                        <ul class="nav nav-treeview">
+                                            <li class="nav-item">
+                                                <a href="@Url.Action("ViewUser","Home", new{area = "Admin"})" class="nav-link">
+                                                    <i class="far fa-dot-circle nav-icon"></i>
+                                                    <p> User list</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="@Url.Action("AddUser","Home", new{area = "Admin"})" class="nav-link">
+                                                    <i class="far fa-dot-circle nav-icon"></i>
+                                                    <p> Add users</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item textl">
+                                        <a href="#" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>
+                                                Admin
+                                                <i class="right fas fa-angle-left"></i>
+                                            </p>
+                                        </a>
+                                        <ul class="nav nav-treeview">
+                                            <li class="nav-item">
+                                                <a href="@Url.Action("ViewAdmin","Home", new{area = "Admin"})" class="nav-link">
+                                                    <i class="far fa-dot-circle nav-icon"></i>
+                                                    <p> Admin list</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="@Url.Action("AddAdmin","Home", new{area = "Admin"})" class="nav-link">
+                                                    <i class="far fa-dot-circle nav-icon"></i>
+                                                    <p> Add Admin</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-user-tie"></i>
+                                    <p>
+                                        Users management
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>
+                                                User
+                                                <i class="right fas fa-angle-left"></i>
+                                            </p>
+                                        </a>
+                                        <ul class="nav nav-treeview">
+                                            <li class="nav-item">
+                                                <a href="@Url.Action("ViewUser","Home", new{area = "Admin"})" class="nav-link">
+                                                    <i class="far fa-dot-circle nav-icon"></i>
+                                                    <p> User list</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="@Url.Action("AddUser","Home", new{area = "Admin"})" class="nav-link">
+                                                    <i class="far fa-dot-circle nav-icon"></i>
+                                                    <p> Add users</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item text-secondary">
+                                        <a href="#" class="nav-link disabled">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>
+                                                Admin
+                                                <i class="right fas fa-angle-left"></i>
+                                            </p>
+                                        </a>
+                                        <ul class="nav nav-treeview">
+                                            <li class="nav-item">
+                                                <a href="@Url.Action("ViewAdmin","Home", new{area = "Admin"})" class="nav-link">
+                                                    <i class="far fa-dot-circle nav-icon"></i>
+                                                    <p> Admin list</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="@Url.Action("AddAdmin","Home", new{area = "Admin"})" class="nav-link">
+                                                    <i class="far fa-dot-circle nav-icon"></i>
+                                                    <p> Add Admin</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        }
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-edit"></i>
@@ -235,13 +307,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link disabled">
+                                    <a href="#" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Categories list</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link disabled">
+                                    <a href="#" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Add Categories</p>
                                     </a>
@@ -433,19 +505,19 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="pages/mailbox/mailbox.html" class="nav-link">
+                                    <a href="@Url.Action("AccountProfile", "Home",  new{area = "Admin"})" class="nav-link">
                                         <i class="fas fa-list-alt pe-2 pl-2"></i>
                                         <p class="pl-2">Profile</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/mailbox/compose.html" class="nav-link">
+                                    <a href="@Url.Action("ChangePassword","Home")" class="nav-link">
                                         <i class="fas fa-user-lock pe-2 pl-2"></i>
                                         <p class="pl-2">Change Password</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                    <a href="@Url.Action("Logout","Home", new{area = "Admin"})" class="nav-link">
                                         <i class="fas fa-sign-out-alt pe-2 pl-2"></i>
                                         <p class="pl-2">Log out</p>
                                     </a>

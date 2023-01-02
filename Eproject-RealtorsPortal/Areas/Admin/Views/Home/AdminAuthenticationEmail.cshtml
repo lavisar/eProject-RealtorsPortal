@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "AdminAuthenticationEmail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container">
+    <div class="authentication-wrapper authentication-basic container-p-y">
+        <div class="authentication-inner py-4">
+            <!-- Forgot Password -->
+            <div class="card">
+                <div class="card-body d-grid gap-2 col-lg-6 mx-auto">
+                    <!-- Logo -->
+                    <div class="justify-content-center pb-2">
+                        <a href="#" class="app-brand-link gap-2">
+                            <div class="row gy-3 align-items-center">
+                                <div class="col-lg-2 col-md-3 col-4 p2">
+                                    <a href="@Url.Action("Index","Home")" class="brand-wrap"> <img class="logo" height="85" src="~/Image/logo1.png"> </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- /Logo -->
+                    <h4 class="mb-2">Account Verification? 🔒</h4>
+
+                    <p class="mb-4">Please check your email and enter the verification code below</p>
+
+                    <form role="form" action="@Url.Action("AdminAuthenticationEmail","Home")" method="post">
+
+                        <div class="mb-3">
+                            <label for="code" class="form-label">Code <small style="color: red;">*</small></label>
+                            <input type="text" class="form-control" name="ConfirmEmail" placeholder="Enter your code" autofocus />
+                        </div>
+                        @if (@ViewBag.msg != null)
+                        {
+                            <p style="color: red;">@ViewBag.msg</p>
+                        }
+                        <div class="d-grid gap-2 col-lg-3 mx-auto">
+                            <button class="btn btn-primary d-grid w-100" type="submit">Send</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <!-- /Forgot Password -->
+        </div>
+    </div>
+</div>
+
+
+
