@@ -109,9 +109,12 @@ namespace Eproject_RealtorsPortal.Models
         public virtual ICollection<Image> Images { get; set; }
         [InverseProperty("Product")]
         public virtual ICollection<Payment> Payments { get; set; }
-
-
-
+        //public List<Package> Package { get; set; }
+        //public List<Category> Categories { get; set; }
+        //public List<Area> Areas { get; set; }
+        //public List<City> Cities { get; set; }
+        //public List<Region> Region { get; set; }
+        //public List<Country> Countries { get; set; }
 
         //LQHVContext LQHVContext = new LQHVContext();
         //BusinessType BusinessTypeID;
@@ -178,10 +181,20 @@ namespace Eproject_RealtorsPortal.Models
         public long PackagesId { get; set; }
         public int NumDays { get; set; }
         public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public DateTime? EndDate { get; set; }
         public bool Featured { get; set; }
         public long CategoryId { get; set; }
-        public  List<Package> Packages { get; set; } = null!;
+
+        public List<Package> Package { get; set; }
+        public string PackageName { get; set; }
+        public List<Category> Categories { get; set; }
+        public string CategoryName { get; set; }
+        public List<Area> Areas { get; set; }
+        public string AreaName { get; set; } = " ";
+        public List<City> Cities { get; set; }
+        public string CityName { get; set; } = " ";
+        public List<Country> Countries { get; set; }
+        public string CountryName { get; set; } = " ";
 
     }
 }

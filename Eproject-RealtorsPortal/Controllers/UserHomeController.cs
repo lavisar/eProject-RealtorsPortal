@@ -12,7 +12,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
     public class UserHomeController : Controller
     {
-       
+
         public IActionResult Index()
         {
             if (HttpContext.Session.GetString("User") == null)
@@ -24,10 +24,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
         public IActionResult Register()
         {
-            if (HttpContext.Session.GetString("User") != null)
-            {
-                return RedirectToAction("Logout", "UserHome");
-            }
+            
             return View();
         }
 
@@ -41,7 +38,12 @@ namespace Eproject_RealtorsPortal.Controllers
             if (email != null)
             {
                 ViewBag.msg = "This email has been register!";
-                return RedirectToAction("Register", model);
+                return View("Register", model);
+            }
+            if(model.UsersPassword.Length  < 6 || model.UsersPassword.Length > 20)
+            {
+                ViewBag.msg = "Password must be between 6-20 characters!";
+                return View("Register", model);
             }
 
             var user = new User()
@@ -54,7 +56,7 @@ namespace Eproject_RealtorsPortal.Controllers
                 UsersAddress = model.UsersAddress,
                 UsersImage = "defaultImage.jpg",
                 UsersStatus = false,
-                PackagesId = 2,//sử dụng id có sẵn làm mặc định
+                PackagesId = 2
 
             };
             user.ConfirmEmail = random.Next().ToString();
@@ -77,7 +79,13 @@ namespace Eproject_RealtorsPortal.Controllers
             mail.From = new MailAddress("huyenle021039@gmail.com");
             mail.To.Add(model.UsersEmail);
             mail.Subject = "Confirm your account";
-            mail.Body = "Welcome to LQHV Realtors Portal Your authentication code is: " + user.ConfirmEmail + " . Please enter the confirmation code to login your account.  <LQHV>";
+            mail.IsBodyHtml = true;
+            mail.Body = "<br> " +
+                     "Dear Mr/Ms " + user.UsersFullname + ", <br>" +
+                     "<h4 style=\"color: orange;\">Welcome to LQHV Realtors Portal</h4>" +
+                     "<p> Your authentication code is: <b style=\"color: blue;\">" + user.ConfirmEmail + "</b></p>" +
+                     "<p> Please enter the confirmation code to login your account</p><br><br>" +
+                     "<i>LQHV,</i>";
             SmtpServer.Port = 587;
             SmtpServer.Credentials = new System.Net.NetworkCredential("huyenle021039@gmail.com", "fwnwnhallceirfsl");
             SmtpServer.EnableSsl = true;
@@ -185,18 +193,18 @@ namespace Eproject_RealtorsPortal.Controllers
         }
 
 
-        [HttpPost] 
-        public async Task<IActionResult> ChangeInfor(long UsersId, string UsersFullname, string UsersPhone, string UsersAddress, bool UsersGender, IFormFile UsersImage)
+        [HttpPost]
+        public async Task<IActionResult> ViewAccountProfile(long UsersId, string UsersFullname, string UsersPhone, string UsersAddress, bool? UsersGender, IFormFile UsersImage)
         {
             if (HttpContext.Session.GetString("UserId") == null)
             {
-                return RedirectToAction(controllerName: "UserHome", actionName: "Logout");
+                return RedirectToAction("Logout", "UserHome");
             }
 
             var user = new User();
             if (UsersImage != null)
             {
-                string[] typeAllow = { ".jpg", ".png", ".jpeg", ".jftf" };
+                string[] typeAllow = { ".jpg", ".png", ".jpeg" , ".jftf" };
                 if (!typeAllow.Contains(Path.GetExtension(UsersImage.FileName).ToLower()))
                 {
                     ViewBag.errorImage = "You must select true image type (jpg, png, jpeg, jftf)";
@@ -204,14 +212,22 @@ namespace Eproject_RealtorsPortal.Controllers
                 }
 
                 string filePath = "wwwroot/Image/User";
-                string fileName = UsersImage.FileName.Replace(Path.GetExtension(UsersImage.FileName), "") + ".png";
+                string fileName = UsersImage.FileName.Replace(Path.GetExtension(UsersImage.FileName), "");
+                fileName += DateTime.Now.ToString("yymmssfff") + ".png";
                 var fileNameWithPath = string.Concat(filePath, "/", fileName);
 
                 using (var stream = new FileStream(fileNameWithPath, FileMode.Create))
                 {
                     await UsersImage.CopyToAsync(stream);
                 }
-                ViewBag.user = user.ChangeInfor(UsersId, UsersFullname, UsersPhone, UsersAddress, UsersGender, fileName);
+                if (UsersGender != null)
+                {
+                    ViewBag.user = user.ChangeInfor(UsersId, UsersFullname, UsersPhone, UsersAddress, UsersGender, fileName);
+                }
+                else
+                {
+                    ViewBag.user = user.ChangeInfor(UsersId, UsersFullname, UsersPhone, UsersAddress, null, fileName);
+                }
                 HttpContext.Session.SetString("UserId", UsersId.ToString());
                 HttpContext.Session.SetString("UserName", UsersFullname);
                 HttpContext.Session.SetString("UserImage", fileName);
@@ -258,6 +274,11 @@ namespace Eproject_RealtorsPortal.Controllers
                 ViewBag.result = "The current password is not correct! ";
                 return View();
             }
+            if (oldPassword == newPassword)
+            {
+                ViewBag.result = "Password must be different from your recent password !";
+                return View();
+            }
             if (newPassword != ConfirmNewPassword)
             {
                 ViewBag.result = " Confirm new password does not match.";
@@ -288,6 +309,10 @@ namespace Eproject_RealtorsPortal.Controllers
 
         public IActionResult AuthenticationForm()
         {
+            if(HttpContext.Session.GetString("UserConfirmEmail") == null)
+            {
+                return RedirectToAction("Login", "UserHome");
+            }
             return View();
         }
 
@@ -296,7 +321,7 @@ namespace Eproject_RealtorsPortal.Controllers
         {
             LQHVContext dbContext = new LQHVContext();
 
-            string? email = HttpContext.Session.GetString("UserEmail");
+            //string? email = HttpContext.Session.GetString("UserEmail");
             string ConfirmEmail = HttpContext.Session.GetString("UserConfirmEmail");
             if (ConfirmEmail == null)
             {
@@ -308,18 +333,18 @@ namespace Eproject_RealtorsPortal.Controllers
                 User user = dbContext.Users.Where(o => o.ConfirmEmail == ConfirmEmail).FirstOrDefault();
                 if (user != null)
                 {
-                    //check
                     user.UsersStatus = true;
                     dbContext.Users.Update(user);
                     if (dbContext.SaveChanges() >= 1)
                     {
-                        return RedirectToAction("Login", "UserHome");
+                        ViewBag.sg = "Registration successful!";
+                        return View("Login", "UserHome");
                     }
                 }
                 else
                 {
                     ViewBag.msg = "The verification code is not correct!";
-                    return RedirectToAction("AuthenticationForm");
+                    return View("AuthenticationForm");
                 }
             }
             ViewBag.msg = "Please enter the verification code to continue logging into your account";

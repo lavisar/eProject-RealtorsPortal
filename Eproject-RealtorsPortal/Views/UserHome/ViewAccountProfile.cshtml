@@ -2,8 +2,6 @@
     ViewData["Title"] = "ViewAccountProfile";
     Layout = "~/Views/Shared/_layout_UserHome.cshtml";
 }
-
-@using Eproject_RealtorsPortal.Models;
 @using Eproject_RealtorsPortal.Data;
 
 @using (var connect = new LQHVContext())
@@ -24,7 +22,7 @@
                 </ul>
                 <div class="card mb-4">
                     <h5 class="card-header text-primarytext-uppercase fw-bold">@user.UsersFullname</h5>
-                    <form asp-controller="UserHome" asp-action="ChangeInfor" asp-route-id="@user.UsersId" method="POST" enctype="multipart/form-data">
+                    <form asp-controller="UserHome" asp-action="ViewAccountProfile" asp-route-id="@user.UsersId" method="POST" enctype="multipart/form-data">
                         <input type="hidden" name="UsersId" value="@user.UsersId" />
                         <!-- Account -->
                         <div class="card-body">
@@ -36,11 +34,11 @@
                                         <i class="bx bx-upload d-block d-sm-none"></i>
                                         <input type="file" id="upload" name="UsersImage" class="account-file-input" hidden accept="image/png, image/jpeg" />
                                     </label>
-                                    @*<p class="text-muted mb-0">Allowed JPG, JPEG or PNG</p>
+                           
                                     @if (@ViewBag.errorImage != null)
                                     {
                                         <p style="color: red">@ViewBag.errorImage</p>
-                                    }*@
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -77,7 +75,7 @@
                                                         </div>
                                                         <div class="form-check mt-3 pb-1">
                                                             <input name="UsersGender" class="form-check-input" type="radio" value="false" />
-                                                            <label class="form-check-label" for="defaultRadio1"> FMale</label>
+                                                            <label class="form-check-label" for="defaultRadio1"> Female</label>
                                                         </div>
                                                     }
                                                     else
@@ -88,7 +86,7 @@
                                                         </div>
                                                         <div class="form-check mt-3 pb-1">
                                                             <input name="UsersGender" class="form-check-input" type="radio" checked value="false" />
-                                                            <label class="form-check-label" for="defaultRadio1"> FMale</label>
+                                                            <label class="form-check-label" for="defaultRadio1"> Female</label>
                                                         </div>
                                                     }
                                                 }
@@ -100,11 +98,10 @@
                                                     </div>
                                                     <div class="form-check mt-3 pb-1">
                                                         <input name="UsersGender" class="form-check-input" type="radio" value="false" />
-                                                        <label class="form-check-label" for="defaultRadio1"> FMale</label>
+                                                        <label class="form-check-label" for="defaultRadio1"> Female</label>
                                                     </div>
                                                 }
                                             </div>
-
                                         </div>
 
                                         <div class="row mb-3">

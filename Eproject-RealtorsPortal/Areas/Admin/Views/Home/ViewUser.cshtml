@@ -1,0 +1,139 @@
+﻿@model IEnumerable<Eproject_RealtorsPortal.Models.User>
+
+@{
+    ViewData["Title"] = "ViewUser";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="text-blue">User management</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Home</li>
+                    <li class="breadcrumb-item active">User List</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="row">
+        <div class=" col-12 col-auto">
+            <div class="card">
+                <div class="card-body">
+                    <table id="customer" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width: 5%">
+                                    @Html.DisplayNameFor(model => model.UsersId)
+                                </th>
+                                <th style="width: 15%">
+                                    @Html.DisplayNameFor(model => model.UsersFullname)
+                                </th>
+                                <th style="width: 15%">
+                                    @Html.DisplayNameFor(model => model.UsersEmail)
+                                </th>
+                                <th style="width: 10%">
+                                    @Html.DisplayNameFor(model => model.UsersGender)
+                                </th>
+                                <th style="width: 10%">
+                                    @Html.DisplayNameFor(model => model.UsersImage)
+                                </th>
+                                <th style="width: 15%">
+                                    @Html.DisplayNameFor(model => model.UsersStatus)
+                                </th>
+                                <th style="width: 30%">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UsersId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UsersFullname)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UsersEmail)
+                                    </td>
+                                    <td>
+                                        @if (item.UsersGender != null)
+                                        {
+                                            @if (item.UsersGender == true)
+                                            {
+                                                <p><i class="fas fa-male"></i>Male</p>
+                                            }
+                                            else
+                                            {
+                                                <p><i class="fas fa-female"></i>Female</p>
+                                            }
+                                        }
+                                    </td>
+
+                                    <td>
+                                        <small>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <img alt="Avatar" class="table-avatar" src="~/Image/User/@item.UsersImage" style="border-radius: 50%;display: inline;width: 100%;height:30">
+                                                </li>
+                                            </ul>
+                                        </small>
+                                    </td>
+                                    <td>
+                                        @if (item.UsersStatus == false)
+                                        {
+
+                                            <label for="UsersStatus" class="btn-sm btn-danger">
+                                                Not activated
+                                            </label>
+                                        }
+                                        else
+                                        {
+                                            <label for="UsersStatus" class="btn-sm btn-warning ">
+                                                Activated
+                                            </label>
+                                        }
+                                    </td>
+
+                                    <td class="project-actions text-right">
+                                        <a class="btn btn-primary btn-sm" href="@Url.Action("DetailsUser", "Home", new { id=item.UsersId })">
+                                            <i class="fas fa-folder"></i>Details
+                                        </a>
+                                        <a class="btn btn-info btn-sm" href="@Url.Action("EditUser", "Home", new { id=item.UsersId })">
+                                            <i class="fas fa-folder"></i>Edit
+                                        </a>
+                                        <a class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete?');" href="@Url.Action("DeleteUser", "Home", new {  id=item.UsersId  })">
+                                            <i class="fas fa-trash"></i>Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+<script>
+    $(function () {
+        $('#customer').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+        });
+    });
+</script>

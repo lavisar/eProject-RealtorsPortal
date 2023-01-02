@@ -1,5 +1,4 @@
-﻿@model ProductAdd
-@using Eproject_RealtorsPortal.Models;
+﻿@model Eproject_RealtorsPortal.Models.ProductAdd
 @{
     Layout = "~/Views/Shared/_layout_UserHome.cshtml";
 }
@@ -9,6 +8,7 @@
     <div class="col-lg-4">
         <form asp-action="CreateAds" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
             <div class="form-group">
                 <label asp-for="ProductTitle" class="control-label">Title</label>
                 <input asp-for="ProductTitle" class="form-control" />
@@ -21,12 +21,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="ProductArea" class="control-label">Area</label>
-                <input asp-for="ProductArea" class="form-control" />
+                <input asp-for="ProductArea" class="form-control" placeholder="Km&sup2;" value=""/>
                 <span asp-validation-for="ProductArea" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ProductPrice" class="control-label">Price</label>
-                <input asp-for="ProductPrice" class="form-control" />
+                <input asp-for="ProductPrice" class="form-control"  placeholder="USD" value=""/>
                 <span asp-validation-for="ProductPrice" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -35,8 +35,40 @@
                 <span asp-validation-for="ProductImage" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="AreaName" class="control-label">Area</label>
+                <input asp-for="AreaName" list="area" class="form-control"/>
+                    <datalist id="area">
+                        @foreach (var item in @Model.Areas)
+                        {
+                            <option value="@item.AreasName">
+                                @item.AreasName
+                            </option>
+                        }
+                    </datalist>
+                <label asp-for="CityName" class="control-label">City</label>
+                <input asp-for="CityName" list="city" class="form-control"/>
+                    <datalist id="city">
+                        @foreach (var item in @Model.Cities)
+                        {
+                            <option value="@item.CitiesName">
+                                @item.CitiesName
+                            </option>
+                        }
+                    </datalist>
+                <label asp-for="CountryName" class="control-label">Country</label>
+                <input asp-for="CountryName" list="country" class="form-control"/>
+                    <datalist id="country">
+                        @foreach (var item in @Model.Countries)
+                        {
+                            <option value="@item.CountriesName">
+                                @item.CountriesName
+                            </option>
+                        }
+                    </datalist>
+            </div>
+            <div class="form-group">
                 <label asp-for="ProductAddress" class="control-label">Address</label>
-                <input asp-for="ProductAddress" class="form-control" />
+                <input asp-for="ProductAddress" class="form-control" placeholder="(Number of the house, Name of the street,....)"/>
                 <span asp-validation-for="ProductAddress" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -75,18 +107,30 @@
                 <span asp-validation-for="NumOfFloors" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PackagesId" class="control-label"></label>
-                <input asp-for="PackagesId" list="package" class="form-control" />
-                <datalist id="package">
-                        <option value="3">Vip</option>
-                        <option value="4">Basic</option>
-                </datalist>
+                <label asp-for="PackagesId" class="control-label">Package</label>
+                <select asp-for="PackagesId" list="package" class="form-control">
+                    <datalist id="package">
+                        @foreach (var item in @Model.Package)
+                        {
+                            <option value="@item.PackagesId">
+                                @item.PackagesName
+                            </option>
+                        }
+                    </datalist>
+                </select>
+
 
                 <span asp-validation-for="PackagesId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="NumDays" class="control-label">Number of days</label>
-                <input asp-for="NumDays" class="form-control" />
+                <select asp-for="NumDays" list="days" class="form-control">
+                    <datalist id="days">
+                        <option value="7">7 days</option>
+                        <option value="10">10 days</option>
+                        <option value="30">30 days</option>
+                    </datalist>
+                </select>
                 <span asp-validation-for="NumDays" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -94,39 +138,24 @@
                 <input asp-for="StartDate" class="form-control" />
                 <span asp-validation-for="StartDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="EndDate" class="control-label"></label>
-                <input asp-for="EndDate" class="form-control" type="hidden" value=""/>
-                <span asp-validation-for="EndDate" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
+@*            if(@Context.Session.GetString("UserTypeID"))
+*@            <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Featured" /> @Html.DisplayNameFor(model => model.Featured)
                 </label>
             </div>
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label">Category: </label>
-                <input asp-for="CategoryId" class="form-control" />
-                <datalist>
-                    <option value="1">
-                        Apartment
-                    </option>
-                    <option value="2">
-                        Adjacent villa house
-                    </option>
-                    <option value="3">
-                        Office
-                    </option>
-                    <option value="4">
-                        Shops
-                    </option>
-                    <option value="5">
-                        Commercial land
-                    </option>
-                    <option value="6">
-                        House
-                    </option>
-                </datalist>
+                <select asp-for="CategoryId" list="category" class="form-control">
+                    <datalist id="category">
+                        @foreach (var item in @Model.Categories)
+                        {
+                            <option value="@item.CategoryId">
+                                @item.CategoryName
+                            </option>
+                        }
+                    </datalist>
+                </select>
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -145,13 +174,13 @@
                 <span asp-validation-for="ContactAddress" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ContactEmail" class="control-label"></label>
+                <label asp-for="ContactEmail" class="control-label">Contact Email</label>
                 <input asp-for="ContactEmail" class="form-control" />
                 <span asp-validation-for="ContactEmail" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="UsersId" class="control-label"></label>
-                <input asp-for="UsersId" class="form-control" type="hidden" value="@Context.Session.GetString("UserId")" />
+                @*                <label asp-for="UsersId" class="control-label"></label>
+                *@                <input asp-for="UsersId" class="form-control" type="hidden" value="@Context.Session.GetString("UserId")" />
                 <span asp-validation-for="UsersId" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -162,15 +191,32 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="AllOwnAds">Back to List</a>
 </div>
 <script>
 
-    $(document).ready(function(){
-        $("#StartDate").keyup(function(event){
-            var a = document.getElementById("StartDate").value
-            var b = document.getElementById("NumDays").value
-            $("#EndDate").text(a+b);
+    $(document).ready(function () {
+        $("#StartDate").keyup(function (event) {
+            var a = document.getElementById("StartDate").value;
+            var b = document.getElementById("NumDays").value;
+            var selValue = b.options[b.selectedIndex].value;
+            $("#EndDate").text(a + b);
         })
+        //var c = document.getElementById("Area").value;
+        //var d = document.getElementById("Cities").value;
+        //var e = document.getElementById("Country").value;
+        //var textAddress = document.getElementById("ProductAddress").value;
+        //$("#Areas").keyup(function (event) {
+        //    var c = document.getElementById("Areas").value;
+        //    textAddress += c;
+        //    $("#ProductAddress").text(textAddress);
+        //})
+        //function CopyArea(){
+        //    var area = document.getElementById("Areas");
+        //    var inputAddress= document.getElementById("ProductAddress");
+        //    var selValue = area.options[area.selectedIndex].value;
+        //    inputAddress.value += ","+selValue
+        //    if(inputAddress.value)
+        //}
     })
 </script>
