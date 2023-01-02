@@ -2,6 +2,7 @@
 using Eproject_RealtorsPortal.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.Diagnostics;
 using System.Linq;
 
@@ -191,6 +192,11 @@ namespace Eproject_RealtorsPortal.Controllers
             {
                 HttpContext.Session.SetString("ProductId", products.ProductId.ToString());
                 HttpContext.Session.SetString("PackageId", products.PackagesId.ToString());
+                if(products.Packages.PackageType.PackageTypeId == 2)
+                {
+                    HttpContext.Session.SetString("PayType", "ads");
+                    HttpContext.Session.SetString("PackagePrice", products.Packages.PackagesPrice.ToString());
+                }
                 return RedirectToAction("Pay", "Payment");
             }
             return View("CreateAds", model);
