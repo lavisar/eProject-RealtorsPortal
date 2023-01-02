@@ -38,16 +38,16 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="CountryName" class="control-label">Country</label>
-                <input asp-for="CountryName" list="country" class="form-control" />
-                <datalist id="country">
-                    @foreach (var item in @Model.Countries)
-                    {
-                        <option value="@item.CountriesName">
-                            @item.CountriesName
-                        </option>
-                    }
-                </datalist>
+                <label asp-for="AreaName" class="control-label">Area</label>
+                <input asp-for="AreaName" list="area" class="form-control"/>
+                    <datalist id="area">
+                        @foreach (var item in @Model.Areas)
+                        {
+                            <option value="@item.AreasName">
+                                @item.AreasName
+                            </option>
+                        }
+                    </datalist>
                 <label asp-for="CityName" class="control-label">City</label>
                 <input asp-for="CityName" list="city" class="form-control"/>
                     <datalist id="city">
@@ -58,13 +58,13 @@
                             </option>
                         }
                     </datalist>
-                <label asp-for="AreaName" class="control-label">Area</label>
-                <input asp-for="AreaName" list="area" class="form-control"/>
-                    <datalist id="area">
-                        @foreach (var item in @Model.Areas)
+                <label asp-for="CountryName" class="control-label">Country</label>
+                <input asp-for="CountryName" list="country" class="form-control"/>
+                    <datalist id="country">
+                        @foreach (var item in @Model.Countries)
                         {
-                            <option value="@item.AreasName">
-                                @item.AreasName
+                            <option value="@item.CountriesName">
+                                @item.CountriesName
                             </option>
                         }
                     </datalist>
@@ -132,8 +132,6 @@
                     <input class="form-check-input" asp-for="Featured" /> @Html.DisplayNameFor(model => model.Featured)
                 </label>
             </div>
-            }
-
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label">Category: </label>
                 <select asp-for="CategoryId" list="category" class="form-control">
@@ -192,6 +190,21 @@
             var selValue = b.options[b.selectedIndex].value;
             $("#EndDate").text(a + b);
         })
-        
+        //var c = document.getElementById("Area").value;
+        //var d = document.getElementById("Cities").value;
+        //var e = document.getElementById("Country").value;
+        //var textAddress = document.getElementById("ProductAddress").value;
+        //$("#Areas").keyup(function (event) {
+        //    var c = document.getElementById("Areas").value;
+        //    textAddress += c;
+        //    $("#ProductAddress").text(textAddress);
+        //})
+        //function CopyArea(){
+        //    var area = document.getElementById("Areas");
+        //    var inputAddress= document.getElementById("ProductAddress");
+        //    var selValue = area.options[area.selectedIndex].value;
+        //    inputAddress.value += ","+selValue
+        //    if(inputAddress.value)
+        //}
     })
 </script>

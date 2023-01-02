@@ -25,10 +25,10 @@
                         Name
                     </th>
                     <th>
-                        Desc
+                        Date
                     </th>
                     <th>
-                        Date
+                        Desc
                     </th>
                     <th>
                         Content
@@ -57,7 +57,7 @@
                             @Html.DisplayFor(modelItem => item.NewsDesc)
                         </td>                     
                         <td>
-                            @Html.DisplayFor(modelItem => item.NewsContent, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.Raw(item.NewsContent)
                         </td>
                         <td class="project-actions text-right">
                             <a class="btn btn-primary btn-sm" href="@Url.Action("updateNews", "News", new { id=item.NewsId })">

@@ -26,7 +26,7 @@
           rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="~/assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
     <link rel="stylesheet" href="~/assets/vendor/css/core.css" class="template-customizer-core-css" />
@@ -92,11 +92,10 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#">
+                                                <a class="dropdown-item" href="@Url.Action("ChangePassword","UserHome")">
                                                     <span class="d-flex align-items-center align-middle">
                                                         <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                                                        <span class="flex-grow-1 align-middle">Billing</span>
-                                                        <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                                        <span class="flex-grow-1 align-middle">Change Password</span>
                                                     </span>
                                                 </a>
                                             </li>
@@ -140,13 +139,6 @@
                                         <li class="nav-item  me-4"> <a class="nav-link" href="@Url.Action("Index","News")">News</a> </li>
                                         <li class="nav-item  me-4"> <a class="nav-link" href="@Url.Action("AboutUs","Home")">About Us</a> </li>
                                         <li class="nav-item dropdown">
-                                            <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Other </a>
-                                            <ul class="dropdown-menu">
-                                                <li> <a class="dropdown-item" href="#">Featured real estate</a> </li>
-                                                <li> <a class="dropdown-item" href="#">Real estate agent</a> </li>
-                                                <li> <a class="dropdown-item" href="@Url.Action("AboutUs","Home")">Contact advertising</a></li>
-                                            </ul>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>

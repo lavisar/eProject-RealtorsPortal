@@ -15,11 +15,21 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
+            if (HttpContext.Session.GetString("adminId") == null)
+            {
+                return RedirectToAction("LoginAdmin", "Home");
+            }
+
             return View();
         }
 
         public IActionResult LoginAdmin()
         {
+            if (HttpContext.Session.GetString("adminId") != null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             return View();
         }
 
@@ -31,19 +41,28 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
             {
                 if (AdminPassword == mail.AdminPassword)
                 {
-                    HttpContext.Session.SetString("Admin", mail.AdminEmail + "_" + AdminPassword);
-                    HttpContext.Session.SetString("adminId", mail.AdminId.ToString());
-                    HttpContext.Session.SetString("adminName", mail.AdminName);
-                    if (mail.AdminImage != null)
+                    if (mail.AdminStatus == true)
                     {
-                        HttpContext.Session.SetString("adminImage", mail.AdminImage);
+                        HttpContext.Session.SetString("Admin", mail.AdminEmail + "_" + AdminPassword);
+                        HttpContext.Session.SetString("adminId", mail.AdminId.ToString());
+                        HttpContext.Session.SetString("adminName", mail.AdminName);
+                        if (mail.AdminImage != null)
+                        {
+                            HttpContext.Session.SetString("adminImage", mail.AdminImage);
+                        }
+                        if (mail.AdminRole != null)
+                        {
+                            HttpContext.Session.SetString("adminRole", mail.AdminRole);
+                        }
+                        HttpContext.Session.SetString("adminEmail", mail.AdminEmail);
+                        return RedirectToAction("Index", "Home");
                     }
-                    if (mail.AdminRole != null)
+                    else
                     {
-                        HttpContext.Session.SetString("adminRole", mail.AdminRole);
+                        ViewBag.msg = "Your account has been locked!";
+                        return View();
                     }
-                    HttpContext.Session.SetString("adminEmail", mail.AdminEmail);
-                    return RedirectToAction("Index", "Home");
+
                 }
                 ViewBag.msg = "Invalid Password!";
                 return View();
@@ -116,7 +135,7 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 UsersAddress = model.UsersAddress,
                 UsersImage = "defaultImage.jpg",
                 UsersStatus = false,
-                PackagesId = 2
+                PackagesId = 1
 
             };
             Random random = new Random();
@@ -157,6 +176,10 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
 
         public IActionResult AdminAuthenticationForm()
         {
+            if (HttpContext.Session.GetString("AdminConfirmEmail") == null)
+            {
+                return RedirectToAction("LoginAdmin", "Home");
+            }
             return View();
         }
 
@@ -253,7 +276,7 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 if (dbContext.SaveChanges() >= 1)
                 {
                     ViewBag.msg = "Update successful.";
-                    return RedirectToAction("ViewUser","Home",model);
+                    return RedirectToAction("ViewUser", "Home", model);
                 }
                 ViewBag.msg = "Status update failed !";
                 return View();
@@ -420,10 +443,11 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 {
                     await AdminImage.CopyToAsync(stream);
                 }
-                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, AdminRole, AdminStatus);
+                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, AdminStatus, AdminRole);
+
                 return View();
             }
-            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, AdminRole, AdminStatus);
+            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, AdminStatus, AdminRole);
             return View();
         }
 
@@ -470,11 +494,14 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 {
                     await AdminImage.CopyToAsync(stream);
                 }
-                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, AdminRole, AdminStatus);
+                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, false, AdminRole);
+                HttpContext.Session.SetString("adminName", AdminName);
+                HttpContext.Session.SetString("adminImage", fileName);
                 ViewBag.sg = "Update successful.";
                 return View();
             }
-            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, AdminRole, AdminStatus);
+            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, false, AdminRole);
+            HttpContext.Session.SetString("adminName", AdminName);
             ViewBag.sg = "Update successful.";
             return View();
         }
@@ -483,6 +510,10 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
         public IActionResult AdminAuthenticationEmail()
         {
             if (HttpContext.Session.GetString("adminId") == null)
+            {
+                return RedirectToAction("LoginAdmin", "Home");
+            }
+            if (HttpContext.Session.GetString("AdminConfirmEmail") == null)
             {
                 return RedirectToAction("LoginAdmin", "Home");
             }
@@ -554,11 +585,11 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 ViewBag.result = "The current password is not correct! ";
                 return View();
             }
-            if (newPassword.Length > 20 || newPassword.Length <6 || ConfirmNewPassword.Length > 20 ||ConfirmNewPassword.Length < 6)
+            if (newPassword.Length > 20 || newPassword.Length < 6 || ConfirmNewPassword.Length > 20 || ConfirmNewPassword.Length < 6)
             {
                 ViewBag.result = "Password must be between 6-20 characters!";
                 return View();
-            }     
+            }
             if (oldPassword == newPassword)
             {
                 ViewBag.result = "Password must be different from your recent password !";
@@ -584,7 +615,7 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 HttpContext.Session.Remove("adminId");
                 HttpContext.Session.Remove("adminImage");
 
-                return RedirectToAction("LoginAdmin","Home");
+                return RedirectToAction("LoginAdmin", "Home");
             }
         }
     }

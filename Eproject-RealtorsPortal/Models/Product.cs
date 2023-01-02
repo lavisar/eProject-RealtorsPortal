@@ -195,7 +195,6 @@ namespace Eproject_RealtorsPortal.Models
         public string CityName { get; set; } = " ";
         public List<Country> Countries { get; set; }
         public string CountryName { get; set; } = " ";
-        public List<Region> Regions { get; set; }
-        public string RegionName { get; set; } = " ";
+
     }
 }
