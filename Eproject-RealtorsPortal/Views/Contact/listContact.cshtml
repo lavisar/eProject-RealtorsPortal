@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Eproject_RealtorsPortal.Models.Contact>
+
+@{
+    ViewData["Title"] = "Contact List";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="ml-5">
+    <h1>Contact List</h1>
+    <table class="table ml-1">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Phone
+                </th>
+                <th>
+                    Content
+                </th>
+                <th>
+                    UserID
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ContactsId)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ContactsName)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ContactsEmail)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ContactsPhone)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ContactsContent)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UsersId)
+                    </td>
+
+                    <td class="project-actions text-right">
+                        <a class="btn btn-danger btn-sm"
+                       onclick="return confirm('Are you sure you want to delete @Html.DisplayFor(modelItem => item.ContactsName)?');"
+                       href="@Url.Action("Delete", "Contact", new { id=item.ContactsId })">
+                            <i class="fas fa-trash"></i>Delete
+                        </a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

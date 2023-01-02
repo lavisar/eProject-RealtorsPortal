@@ -180,11 +180,8 @@
 </style>
 
 <div id="products">
-    <h1>Trang hiển thị gói nâng cấp - đang cập nhật</h1>
-    <!--FOR TEST CREATE PAGE ONLY-->
-    <b>FOR TEST CREATE PAGE ONLY</b>
-    <a class="" href="@Url.Action("createPackage", "Packages")">CREATE</a> 
-
+    <h1 id="All_product">All Packages</h1>
+    <div class="product mt-5">
         @foreach (var item in Model)
         {
             @Html.Partial("Box", item)

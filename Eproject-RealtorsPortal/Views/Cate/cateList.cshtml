@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Eproject_RealtorsPortal.Models.Category>
+
+@{
+    ViewData["Title"] = " List";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Category</h1>
+
+<p>
+    <a class="btn btn-primary ml-2" asp-action="Create">Create New Category</a>
+</p>
+<table class="table table-hover ml-2">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Category Name
+            </th>
+            <th>
+                Status
+            </th>
+            <th style="width:30%">
+                Business Types
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryName)
+                </td>
+                <td>
+                    @if (item.CategoryStatus == false)
+                    {
+                        @* Link Active chỉ hiện với các gói == false *@
+                        <a class="btn btn-outline-success" href="@Url.Action("Active","Cate", new { id=item.CategoryId })">
+                            ↻ Active
+                        </a>
+                    }
+                    @if (item.CategoryStatus == true)
+                    {
+                        @* Link Active chỉ hiện với các gói == true *@
+                        @*@Html.ActionLink("↻ Inactive", "Inactive", new { id=item.CategoryId })*@
+                        <a class="btn btn-outline-warning" href="@Url.Action("Inactive","Cate", new { id=item.CategoryId })">
+                            ↻ Inactive
+                        </a>
+                    }
+                </td>
+                <td>
+                    @if(item.BusinessTypesId == 1)
+                    {
+                        <p>Sell</p>
+                    }
+                    @if(item.BusinessTypesId == 2)
+                    {
+                        <p>Rent</p>
+                    }
+                </td>
+                <td class="project-actions text-right">
+                    <a class="btn btn-primary btn-sm" href="@Url.Action("Update", "Cate", new { id=item.CategoryId })">
+                        <i class="fas fa-folder"></i>Update
+                    </a>
+                    <a class="btn btn-danger btn-sm" 
+                        onclick="return confirm('Are you sure you want to delete @Html.DisplayFor(modelItem => item.CategoryName)?');" 
+                        href="@Url.Action("Delete", "Cate", new { id=item.CategoryId })">
+                            <i class="fas fa-trash"></i>Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

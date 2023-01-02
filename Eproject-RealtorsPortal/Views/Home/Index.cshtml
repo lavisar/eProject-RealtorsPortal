@@ -133,6 +133,500 @@
                 }
 </style>
 
+
+
+<style>
+    .home .getting-started-box .content .box .image {
+        background-image: url("https://s3-ap-southeast-1.amazonaws.com/cms-wordpress/homepage-getting-started-box/assets/PGSG_PMR_2022.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto;
+        flex-basis: 40%;
+        height: 100%;
+        max-height: 160px;
+    }
+
+    .svg .home .getting-started-box .content .box .image {
+        background-image: url("https://s3-ap-southeast-1.amazonaws.com/cms-wordpress/homepage-getting-started-box/assets/PGSG_PMR_2022.svg");
+    }
+</style>
+
+@*<style>
+    .home .getting-started-box .content .schema-1 {
+        background-color: #FFECEB;
+        color: #0E2638;
+        text-align: left;
+    }
+
+        .home .getting-started-box .content .schema-1:hover {
+            background-color: #FFC7C3;
+            text-align: left;
+        }
+
+        .home .getting-started-box .content .schema-1 .btn {
+            background-color: #e03c31;
+            color: #ffffff;
+            text-align: left;
+        }
+
+            .home .getting-started-box .content .schema-1 .btn:hover {
+                background-color: #FF837A;
+                color: #ffffff;
+                text-align: left;
+            }
+
+            .home .getting-started-box .content .schema-1 .btn:active {
+                background-color: ##74150F;
+                color: #ffffff;
+                text-align: left;
+            }
+
+    .home .getting-started-box .content .schema-2 {
+        background-color: #0E2638;
+        color: #ffffff;
+    }
+
+        .home .getting-started-box .content .schema-2 .btn {
+            background-color: #ffffff;
+            border-color: #e03c31;
+            color: #e03c31;
+        }
+
+            .home .getting-started-box .content .schema-2 .btn:hover {
+                background-color: #FFECEB;
+                border-color: #e03c31;
+                color: #e03c31;
+            }
+
+            .home .getting-started-box .content .schema-2 .btn:active {
+                background-color: #e03c31;
+                border-color: #e03c31;
+                color: #ffffff;
+            }
+
+    .home .getting-started-box .content .schema-3 {
+        background-color: #CCCCCC;
+        color: #0E2638;
+    }
+
+        .home .getting-started-box .content .schema-3 .btn {
+            background-color: #ffffff;
+            border-color: #e03c31;
+            color: #e03c31;
+        }
+
+            .home .getting-started-box .content .schema-3 .btn:hover {
+                background-color: #FFECEB;
+                border-color: #e03c31;
+                color: #e03c31;
+            }
+
+            .home .getting-started-box .content .schema-3 .btn:active {
+                background-color: #e03c31;
+                border-color: #e03c31;
+                color: #ffffff;
+            }
+</style>
+*@
+
+@*<div id="searchBoxOriginal" class="input-group revamp-save-search " data-automation-id="search-filter-freetext-input" style="display: block;">
+    <div class="js-form-group btn-group param-listing_type           btn-group-expand-right                     js-has-value" data-gentitle="" data-separator=", ">
+        <button type="button" class="btn btn-form-outline dropdown-toggle " data-title="Buy" title="Rent" data-toggle="dropdown" aria-expanded="false"><span class="btn-label">Looking For</span><span class="btn-title">Rent</span></button><ul class="dropdown-menu" role="menu">
+
+
+
+            <li class=""><a href="#sale">Buy</a></li>
+            <li class="active"><a href="#rent">Rent</a></li>
+            <li class=""><a href="#loans">Home Loans</a></li>
+
+
+
+
+
+        </ul><input type="hidden" name="listing_type" value="rent">
+    </div>
+    <div class="js-form-group btn-group form-group-multi-step no-arrow form-group-location  tide-to tide-to-property_type" data-tideto="property_type" data-tidetowhen="!H" title="Select a location here" data-toggle="tooltip">
+        <button type="button" class="btn btn-form-outline dropdown-toggle dropdown-no-chevron" data-title="Location" title="Location" data-toggle="dropdown"><i class="pgicon pgicon-select-location"></i></button><div class="dropdown-menu dropdown-multi-step dropdown-menu-right" role="menu">
+            <div class="step-pane param-district_code step-pane-last">
+                <ul class="step-options">
+                    <li class="dropdown-reset"><a href="#">All Districts</a></li>
+                    <li role="presentation" class="divider"></li>
+
+
+                    <li title="D01 Boat Quay / Raffles Place / Marina"><label><input type="checkbox" name="district_code[]" value="D01" autocomplete="off" title="D01 Boat Quay / Raffles Place / Marina">D01 Boat Quay / Raffles Place / Marina</label></li>
+                    <li title="D02 Chinatown / Tanjong Pagar"><label><input type="checkbox" name="district_code[]" value="D02" autocomplete="off" title="D02 Chinatown / Tanjong Pagar">D02 Chinatown / Tanjong Pagar</label></li>
+                    <li title="D03 Alexandra / Commonwealth"><label><input type="checkbox" name="district_code[]" value="D03" autocomplete="off" title="D03 Alexandra / Commonwealth">D03 Alexandra / Commonwealth</label></li>
+                    <li title="D04 Harbourfront / Telok Blangah"><label><input type="checkbox" name="district_code[]" value="D04" autocomplete="off" title="D04 Harbourfront / Telok Blangah">D04 Harbourfront / Telok Blangah</label></li>
+                    <li title="D05 Buona Vista / West Coast / Clementi New Town"><label><input type="checkbox" name="district_code[]" value="D05" autocomplete="off" title="D05 Buona Vista / West Coast / Clementi New Town">D05 Buona Vista / West Coast / Clementi New Town</label></li>
+                    <li title="D06 City Hall / Clarke Quay"><label><input type="checkbox" name="district_code[]" value="D06" autocomplete="off" title="D06 City Hall / Clarke Quay">D06 City Hall / Clarke Quay</label></li>
+                    <li title="D07 Beach Road / Bugis / Rochor"><label><input type="checkbox" name="district_code[]" value="D07" autocomplete="off" title="D07 Beach Road / Bugis / Rochor">D07 Beach Road / Bugis / Rochor</label></li>
+                    <li title="D08 Farrer Park / Serangoon Rd"><label><input type="checkbox" name="district_code[]" value="D08" autocomplete="off" title="D08 Farrer Park / Serangoon Rd">D08 Farrer Park / Serangoon Rd</label></li>
+                    <li title="D09 Orchard / River Valley"><label><input type="checkbox" name="district_code[]" value="D09" autocomplete="off" title="D09 Orchard / River Valley">D09 Orchard / River Valley</label></li>
+                    <li title="D10 Tanglin / Holland / Bukit Timah"><label><input type="checkbox" name="district_code[]" value="D10" autocomplete="off" title="D10 Tanglin / Holland / Bukit Timah">D10 Tanglin / Holland / Bukit Timah</label></li>
+                    <li title="D11 Newton / Novena"><label><input type="checkbox" name="district_code[]" value="D11" autocomplete="off" title="D11 Newton / Novena">D11 Newton / Novena</label></li>
+                    <li title="D12 Balestier / Toa Payoh"><label><input type="checkbox" name="district_code[]" value="D12" autocomplete="off" title="D12 Balestier / Toa Payoh">D12 Balestier / Toa Payoh</label></li>
+                    <li title="D13 Macpherson / Potong Pasir"><label><input type="checkbox" name="district_code[]" value="D13" autocomplete="off" title="D13 Macpherson / Potong Pasir">D13 Macpherson / Potong Pasir</label></li>
+                    <li title="D14 Eunos / Geylang / Paya Lebar"><label><input type="checkbox" name="district_code[]" value="D14" autocomplete="off" title="D14 Eunos / Geylang / Paya Lebar">D14 Eunos / Geylang / Paya Lebar</label></li>
+                    <li title="D15 East Coast / Marine Parade"><label><input type="checkbox" name="district_code[]" value="D15" autocomplete="off" title="D15 East Coast / Marine Parade">D15 East Coast / Marine Parade</label></li>
+                    <li title="D16 Bedok / Upper East Coast"><label><input type="checkbox" name="district_code[]" value="D16" autocomplete="off" title="D16 Bedok / Upper East Coast">D16 Bedok / Upper East Coast</label></li>
+                    <li title="D17 Changi Airport / Changi Village"><label><input type="checkbox" name="district_code[]" value="D17" autocomplete="off" title="D17 Changi Airport / Changi Village">D17 Changi Airport / Changi Village</label></li>
+                    <li title="D18 Pasir Ris / Tampines"><label><input type="checkbox" name="district_code[]" value="D18" autocomplete="off" title="D18 Pasir Ris / Tampines">D18 Pasir Ris / Tampines</label></li>
+                    <li title="D19 Hougang / Punggol / Sengkang"><label><input type="checkbox" name="district_code[]" value="D19" autocomplete="off" title="D19 Hougang / Punggol / Sengkang">D19 Hougang / Punggol / Sengkang</label></li>
+                    <li title="D20 Ang Mo Kio / Bishan / Thomson"><label><input type="checkbox" name="district_code[]" value="D20" autocomplete="off" title="D20 Ang Mo Kio / Bishan / Thomson">D20 Ang Mo Kio / Bishan / Thomson</label></li>
+                    <li title="D21 Clementi Park / Upper Bukit Timah"><label><input type="checkbox" name="district_code[]" value="D21" autocomplete="off" title="D21 Clementi Park / Upper Bukit Timah">D21 Clementi Park / Upper Bukit Timah</label></li>
+                    <li title="D22 Boon Lay / Jurong / Tuas"><label><input type="checkbox" name="district_code[]" value="D22" autocomplete="off" title="D22 Boon Lay / Jurong / Tuas">D22 Boon Lay / Jurong / Tuas</label></li>
+                    <li title="D23 Dairy Farm / Bukit Panjang / Choa Chu Kang"><label><input type="checkbox" name="district_code[]" value="D23" autocomplete="off" title="D23 Dairy Farm / Bukit Panjang / Choa Chu Kang">D23 Dairy Farm / Bukit Panjang / Choa Chu Kang</label></li>
+                    <li title="D24 Lim Chu Kang / Tengah"><label><input type="checkbox" name="district_code[]" value="D24" autocomplete="off" title="D24 Lim Chu Kang / Tengah">D24 Lim Chu Kang / Tengah</label></li>
+                    <li title="D25 Admiralty / Woodlands"><label><input type="checkbox" name="district_code[]" value="D25" autocomplete="off" title="D25 Admiralty / Woodlands">D25 Admiralty / Woodlands</label></li>
+                    <li title="D26 Mandai / Upper Thomson"><label><input type="checkbox" name="district_code[]" value="D26" autocomplete="off" title="D26 Mandai / Upper Thomson">D26 Mandai / Upper Thomson</label></li>
+                    <li title="D27 Sembawang / Yishun"><label><input type="checkbox" name="district_code[]" value="D27" autocomplete="off" title="D27 Sembawang / Yishun">D27 Sembawang / Yishun</label></li>
+                    <li title="D28 Seletar / Yio Chu Kang"><label><input type="checkbox" name="district_code[]" value="D28" autocomplete="off" title="D28 Seletar / Yio Chu Kang">D28 Seletar / Yio Chu Kang</label></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="js-form-group btn-group form-group-multi-step no-arrow form-group-location  hide tide-to tide-to-property_type" data-tideto="property_type" data-tidetowhen="H">
+        <button type="button" class="btn btn-form-outline dropdown-toggle dropdown-no-chevron" data-title="HDB" title="HDB" data-toggle="dropdown"><i class="pgicon pgicon-select-location"></i></button><div class="dropdown-menu dropdown-multi-step dropdown-menu-right" role="menu">
+            <div class="step-pane param-hdb_estate step-pane-last">
+                <ul class="step-options">
+                    <li class="dropdown-reset"><a href="#">All HDB Estates</a></li>
+                    <li role="presentation" class="divider"></li>
+
+
+                    <li title="Ang Mo Kio"><label><input type="checkbox" name="hdb_estate[]" value="1" autocomplete="off" title="Ang Mo Kio" disabled="">Ang Mo Kio</label></li>
+                    <li title="Bedok"><label><input type="checkbox" name="hdb_estate[]" value="2" autocomplete="off" title="Bedok" disabled="">Bedok</label></li>
+                    <li title="Bishan"><label><input type="checkbox" name="hdb_estate[]" value="3" autocomplete="off" title="Bishan" disabled="">Bishan</label></li>
+                    <li title="Bukit Batok"><label><input type="checkbox" name="hdb_estate[]" value="4" autocomplete="off" title="Bukit Batok" disabled="">Bukit Batok</label></li>
+                    <li title="Bukit Merah"><label><input type="checkbox" name="hdb_estate[]" value="5" autocomplete="off" title="Bukit Merah" disabled="">Bukit Merah</label></li>
+                    <li title="Bukit Panjang"><label><input type="checkbox" name="hdb_estate[]" value="6" autocomplete="off" title="Bukit Panjang" disabled="">Bukit Panjang</label></li>
+                    <li title="Bukit Timah"><label><input type="checkbox" name="hdb_estate[]" value="7" autocomplete="off" title="Bukit Timah" disabled="">Bukit Timah</label></li>
+                    <li title="Central Area"><label><input type="checkbox" name="hdb_estate[]" value="8" autocomplete="off" title="Central Area" disabled="">Central Area</label></li>
+                    <li title="Choa Chu Kang"><label><input type="checkbox" name="hdb_estate[]" value="9" autocomplete="off" title="Choa Chu Kang" disabled="">Choa Chu Kang</label></li>
+                    <li title="Clementi"><label><input type="checkbox" name="hdb_estate[]" value="10" autocomplete="off" title="Clementi" disabled="">Clementi</label></li>
+                    <li title="Geylang"><label><input type="checkbox" name="hdb_estate[]" value="11" autocomplete="off" title="Geylang" disabled="">Geylang</label></li>
+                    <li title="Hougang"><label><input type="checkbox" name="hdb_estate[]" value="12" autocomplete="off" title="Hougang" disabled="">Hougang</label></li>
+                    <li title="Jurong East"><label><input type="checkbox" name="hdb_estate[]" value="13" autocomplete="off" title="Jurong East" disabled="">Jurong East</label></li>
+                    <li title="Jurong West"><label><input type="checkbox" name="hdb_estate[]" value="14" autocomplete="off" title="Jurong West" disabled="">Jurong West</label></li>
+                    <li title="Kallang/Whampoa"><label><input type="checkbox" name="hdb_estate[]" value="15" autocomplete="off" title="Kallang/Whampoa" disabled="">Kallang/Whampoa</label></li>
+                    <li title="Lim Chu Kang"><label><input type="checkbox" name="hdb_estate[]" value="16" autocomplete="off" title="Lim Chu Kang" disabled="">Lim Chu Kang</label></li>
+                    <li title="Marine Parade"><label><input type="checkbox" name="hdb_estate[]" value="17" autocomplete="off" title="Marine Parade" disabled="">Marine Parade</label></li>
+                    <li title="Pasir Ris"><label><input type="checkbox" name="hdb_estate[]" value="18" autocomplete="off" title="Pasir Ris" disabled="">Pasir Ris</label></li>
+                    <li title="Punggol"><label><input type="checkbox" name="hdb_estate[]" value="19" autocomplete="off" title="Punggol" disabled="">Punggol</label></li>
+                    <li title="Queenstown"><label><input type="checkbox" name="hdb_estate[]" value="20" autocomplete="off" title="Queenstown" disabled="">Queenstown</label></li>
+                    <li title="Sembawang"><label><input type="checkbox" name="hdb_estate[]" value="21" autocomplete="off" title="Sembawang" disabled="">Sembawang</label></li>
+                    <li title="Sengkang"><label><input type="checkbox" name="hdb_estate[]" value="22" autocomplete="off" title="Sengkang" disabled="">Sengkang</label></li>
+                    <li title="Serangoon"><label><input type="checkbox" name="hdb_estate[]" value="23" autocomplete="off" title="Serangoon" disabled="">Serangoon</label></li>
+                    <li title="Tampines"><label><input type="checkbox" name="hdb_estate[]" value="24" autocomplete="off" title="Tampines" disabled="">Tampines</label></li>
+                    <li title="Toa Payoh"><label><input type="checkbox" name="hdb_estate[]" value="25" autocomplete="off" title="Toa Payoh" disabled="">Toa Payoh</label></li>
+                    <li title="Woodlands"><label><input type="checkbox" name="hdb_estate[]" value="26" autocomplete="off" title="Woodlands" disabled="">Woodlands</label></li>
+                    <li title="Yishun"><label><input type="checkbox" name="hdb_estate[]" value="27" autocomplete="off" title="Yishun" disabled="">Yishun</label></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="form-control freetext-input tt-hint" value="" autocomplete="off" readonly="" spellcheck="false" tabindex="-1" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);" dir="ltr"><input name="freetext" type="text" class="form-control freetext-input tt-input" value="" placeholder="Search Location" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Roboto, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-autocomplete"></div><div class="tt-dataset tt-dataset-autocompletedefaults"></div><div class="tt-dataset tt-dataset-savedSearches"></div><div class="tt-dataset tt-dataset-previousSearches"></div></div></span>
+
+    <div class="js-form-group btn-group param-property_type           btn-group-expand-right" data-gentitle="" data-separator=", ">
+        <button type="button" class="btn btn-form-outline dropdown-toggle " data-title="Residential" title="Residential" data-toggle="dropdown" aria-expanded="false"><span class="btn-label">Residential</span><span class="btn-title">Residential</span></button><ul class="dropdown-menu has-select-all" role="menu" style="">
+
+
+            <li data-toggle="buttons">
+                <div class="btn-group form-group dropdown-input-toggle dropdown-input-toggle-market">
+                    <label class="btn active"><input type="radio" name="market" value="residential" checked="checked" data-toggle="button" title="">Residential</label>
+                </div>
+            </li>
+
+
+
+            <li class="dropdown-reset"><a href="#">Residential</a></li>
+            <li role="presentation" class="divider"></li>
+
+            <li class="property-type-code-N tide-to tide-to-market" data-tideto="market" data-tidetowhen="residential">
+                <a href="#N">Condo</a>
+                <ul class="sub-dropdown-menu" style="">
+                    <li class="select-all">
+                        <label>
+                            <input type="checkbox" class="select-all-input" value="" checked="checked">
+                            <span class="sel">Select all</span>
+                            <span class="unsel">Unselect all</span>
+                        </label>
+                    </li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="CONDO">Condominium</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="APT">Apartment</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="WALK">Walk-up</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="CLUS">Cluster House</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="EXCON">Executive Condominium</label></li>
+                </ul>
+            </li>
+            <li class="property-type-code-L tide-to tide-to-market" data-tideto="market" data-tidetowhen="residential">
+                <a href="#L">Landed</a>
+                <ul class="sub-dropdown-menu" style="">
+                    <li class="select-all">
+                        <label>
+                            <input type="checkbox" class="select-all-input" value="" checked="checked">
+                            <span class="sel">Select all</span>
+                            <span class="unsel">Unselect all</span>
+                        </label>
+                    </li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="TERRA">Terraced House</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="DETAC">Detached House</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="SEMI">Semi-Detached House</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="CORN">Corner Terrace</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="LBUNG">Bungalow House</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="BUNG">Good Class Bungalow</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="SHOPH">Shophouse</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="RLAND">Land Only</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="TOWN">Town House</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="CON">Conservation House</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="LCLUS">Cluster House</label></li>
+                </ul>
+            </li>
+            <li class="property-type-code-H tide-to tide-to-market" data-tideto="market" data-tidetowhen="residential">
+                <a href="#H">HDB</a>
+                <ul class="sub-dropdown-menu" style="">
+                    <li class="select-all">
+                        <label>
+                            <input type="checkbox" class="select-all-input" value="" checked="checked">
+                            <span class="sel">Select all</span>
+                            <span class="unsel">Unselect all</span>
+                        </label>
+                    </li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="1R">1-Room / Studio</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="2A">2A</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="2I">2I (Improved)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="2S">2S (Standard)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="3A">3A</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="3NG">3NG (New Generation)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="3Am">3A (Modified)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="3NGm">3NG (Modified)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="3I">3I (Improved)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="3Im">3I (Modified)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="3S">3S (Simplified)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="3STD">3STD (Standard)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="4A">4A</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="4NG">4NG (New Generation)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="4S">4S (Simplified)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="4I">4I (Improved)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="4STD">4STD (Standard)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="5A">5A</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="5I">5I</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="5S">5S</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="6J">Jumbo</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="EA">EA (Exec Apartment)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="EM">EM (Exec Maisonette)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="MG">MG (Multi-Generation)</label></li>
+                    <li><label><input type="checkbox" name="property_type_code[]" value="TE">Terrace</label></li>
+                </ul>
+            </li>
+
+
+
+        </ul><input type="hidden" name="property_type" value="">
+    </div>
+    <div class="js-form-group btn-group param-      tide-to tide-to-listing_type       searchbox-hidden-xs btn-group-range btn-price-range btn-group-expand-left" data-gentitle-min="Min S$ %1" data-gentitle-max="Max S$ %1" data-gentitle-range="S$ %1" data-gentitle-range-separator=" - " data-tideto="listing_type" data-tidetowhen="rent" data-gentitle="" data-separator=", ">
+        <button type="button" class="btn btn-form-outline dropdown-toggle " data-title="Any Price" title="Any Price" data-toggle="dropdown" aria-expanded="false"><span class="btn-label">Price</span><span class="btn-title">Any Price</span></button><ul class="dropdown-menu" role="menu" style="">
+            <li class="dropdown-input-range range-min  form-group-numeric" data-rangemaxparam="maxprice">
+                <input type="text" name="minprice" value="" class="form-control focus" placeholder="Min">
+            </li>
+            <li class="dropdown-input-range range-max  form-group-numeric" data-rangeminparam="minprice">
+                <input type="text" name="maxprice" value="" class="form-control" placeholder="Max">
+            </li>
+
+
+
+
+
+
+            <li class="range-options tide-to-focus tide-to-focus-minprice option-range-min" data-rangetype="min" data-tidetofocus="minprice" data-targetname="minprice">
+                <ul class="dropdown-menu">
+                    <li class="dropdown-reset"><a href="#">No Min</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li><a href="#500">S$ 500</a></li>
+                    <li><a href="#1000">S$ 1,000</a></li>
+                    <li><a href="#1500">S$ 1,500</a></li>
+                    <li><a href="#2000">S$ 2,000</a></li>
+                    <li><a href="#2500">S$ 2,500</a></li>
+                    <li><a href="#3000">S$ 3,000</a></li>
+                    <li><a href="#3500">S$ 3,500</a></li>
+                    <li><a href="#4000">S$ 4,000</a></li>
+                    <li><a href="#5000">S$ 5,000</a></li>
+                    <li><a href="#6000">S$ 6,000</a></li>
+                    <li><a href="#7000">S$ 7,000</a></li>
+                    <li><a href="#8000">S$ 8,000</a></li>
+                    <li><a href="#9000">S$ 9,000</a></li>
+                    <li><a href="#10000">S$ 10,000</a></li>
+                    <li><a href="#12000">S$ 12,000</a></li>
+                    <li><a href="#15000">S$ 15,000</a></li>
+                    <li><a href="#20000">S$ 20,000</a></li>
+                    <li><a href="#30000">S$ 30,000</a></li>
+                    <li><a href="#40000">S$ 40,000</a></li>
+                    <li><a href="#50000">S$ 50,000</a></li>
+                </ul>
+            </li>
+            <li class="range-options hide tide-to-focus tide-to-focus-maxprice option-range-max" data-rangetype="max" data-tidetofocus="maxprice" data-targetname="maxprice">
+                <ul class="dropdown-menu">
+                    <li class="dropdown-reset"><a href="#">No Max</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li><a href="#500">S$ 500</a></li>
+                    <li><a href="#1000">S$ 1,000</a></li>
+                    <li><a href="#1500">S$ 1,500</a></li>
+                    <li><a href="#2000">S$ 2,000</a></li>
+                    <li><a href="#2500">S$ 2,500</a></li>
+                    <li><a href="#3000">S$ 3,000</a></li>
+                    <li><a href="#3500">S$ 3,500</a></li>
+                    <li><a href="#4000">S$ 4,000</a></li>
+                    <li><a href="#5000">S$ 5,000</a></li>
+                    <li><a href="#6000">S$ 6,000</a></li>
+                    <li><a href="#7000">S$ 7,000</a></li>
+                    <li><a href="#8000">S$ 8,000</a></li>
+                    <li><a href="#9000">S$ 9,000</a></li>
+                    <li><a href="#10000">S$ 10,000</a></li>
+                    <li><a href="#12000">S$ 12,000</a></li>
+                    <li><a href="#15000">S$ 15,000</a></li>
+                    <li><a href="#20000">S$ 20,000</a></li>
+                    <li><a href="#30000">S$ 30,000</a></li>
+                    <li><a href="#40000">S$ 40,000</a></li>
+                    <li><a href="#50000">S$ 50,000</a></li>
+                </ul>
+            </li>
+
+
+        </ul><input type="hidden" name="" value="">
+    </div>
+    <div class="js-form-group btn-group param-      tide-to tide-to-listing_type       searchbox-hidden-xs btn-group-range btn-price-range btn-group-expand-left hide" data-gentitle-min="Min S$ %1" data-gentitle-max="Max S$ %1" data-gentitle-range="S$ %1" data-gentitle-range-separator=" - " data-tideto="listing_type" data-tidetowhen="sale,auction,opt" data-gentitle="" data-separator=", ">
+        <button type="button" class="btn btn-form-outline dropdown-toggle " data-title="Any Price" title="Any Price" data-toggle="dropdown" aria-expanded="false"><span class="btn-label">Price</span><span class="btn-title">Any Price</span></button><ul class="dropdown-menu" role="menu">
+            <li class="dropdown-input-range range-min  form-group-numeric" data-rangemaxparam="maxprice">
+                <input type="text" name="minprice" value="" class="form-control" placeholder="Min" disabled="">
+            </li>
+            <li class="dropdown-input-range range-max  form-group-numeric" data-rangeminparam="minprice">
+                <input type="text" name="maxprice" value="" class="form-control" placeholder="Max" disabled="">
+            </li>
+
+
+
+
+
+
+            <li class="range-options hide tide-to-focus tide-to-focus-minprice option-range-min" data-rangetype="min" data-tidetofocus="minprice" data-targetname="minprice">
+                <ul class="dropdown-menu">
+                    <li class="dropdown-reset"><a href="#">No Min</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li><a href="#200000">S$ 200,000</a></li>
+                    <li><a href="#300000">S$ 300,000</a></li>
+                    <li><a href="#400000">S$ 400,000</a></li>
+                    <li><a href="#500000">S$ 500,000</a></li>
+                    <li><a href="#600000">S$ 600,000</a></li>
+                    <li><a href="#700000">S$ 700,000</a></li>
+                    <li><a href="#800000">S$ 800,000</a></li>
+                    <li><a href="#900000">S$ 900,000</a></li>
+                    <li><a href="#1000000">S$ 1,000,000</a></li>
+                    <li><a href="#1250000">S$ 1,250,000</a></li>
+                    <li><a href="#1500000">S$ 1,500,000</a></li>
+                    <li><a href="#2000000">S$ 2,000,000</a></li>
+                    <li><a href="#2500000">S$ 2,500,000</a></li>
+                    <li><a href="#3000000">S$ 3,000,000</a></li>
+                    <li><a href="#4000000">S$ 4,000,000</a></li>
+                    <li><a href="#5000000">S$ 5,000,000</a></li>
+                    <li><a href="#6000000">S$ 6,000,000</a></li>
+                    <li><a href="#8000000">S$ 8,000,000</a></li>
+                    <li><a href="#10000000">S$ 10,000,000</a></li>
+                    <li><a href="#15000000">S$ 15,000,000</a></li>
+                    <li><a href="#20000000">S$ 20,000,000</a></li>
+                    <li><a href="#30000000">S$ 30,000,000</a></li>
+                    <li><a href="#50000000">S$ 50,000,000</a></li>
+                </ul>
+            </li>
+            <li class="range-options hide tide-to-focus tide-to-focus-maxprice option-range-max" data-rangetype="max" data-tidetofocus="maxprice" data-targetname="maxprice">
+                <ul class="dropdown-menu">
+                    <li class="dropdown-reset"><a href="#">No Max</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li><a href="#200000">S$ 200,000</a></li>
+                    <li><a href="#300000">S$ 300,000</a></li>
+                    <li><a href="#400000">S$ 400,000</a></li>
+                    <li><a href="#500000">S$ 500,000</a></li>
+                    <li><a href="#600000">S$ 600,000</a></li>
+                    <li><a href="#700000">S$ 700,000</a></li>
+                    <li><a href="#800000">S$ 800,000</a></li>
+                    <li><a href="#900000">S$ 900,000</a></li>
+                    <li><a href="#1000000">S$ 1,000,000</a></li>
+                    <li><a href="#1250000">S$ 1,250,000</a></li>
+                    <li><a href="#1500000">S$ 1,500,000</a></li>
+                    <li><a href="#2000000">S$ 2,000,000</a></li>
+                    <li><a href="#2500000">S$ 2,500,000</a></li>
+                    <li><a href="#3000000">S$ 3,000,000</a></li>
+                    <li><a href="#4000000">S$ 4,000,000</a></li>
+                    <li><a href="#5000000">S$ 5,000,000</a></li>
+                    <li><a href="#6000000">S$ 6,000,000</a></li>
+                    <li><a href="#8000000">S$ 8,000,000</a></li>
+                    <li><a href="#10000000">S$ 10,000,000</a></li>
+                    <li><a href="#15000000">S$ 15,000,000</a></li>
+                    <li><a href="#20000000">S$ 20,000,000</a></li>
+                    <li><a href="#30000000">S$ 30,000,000</a></li>
+                    <li><a href="#50000000">S$ 50,000,000</a></li>
+                </ul>
+            </li>
+
+
+        </ul><input type="hidden" name="" value="" disabled="">
+    </div>
+    <div class="js-form-group btn-group param-beds      tide-to tide-to-listing_type       btn-group-expand-right js-has-value" data-tideto="listing_type" data-tidetowhen="rent" data-gentitle="" data-separator=", ">
+        <button type="button" class="btn btn-form-outline dropdown-toggle " data-title="Any Beds" title="Any Beds" data-toggle="dropdown" aria-expanded="false"><span class="btn-label">Any Beds</span><span class="btn-title">Any Beds</span></button><ul class="dropdown-menu" role="menu" style="">
+            <li class="dropdown-reset"><a href="#">Any Beds</a></li>
+            <li role="presentation" class="divider"></li>
+
+
+
+
+            <li><label><input type="checkbox" name="beds[]" value="-1">Room rental</label></li>
+            <li><label><input type="checkbox" name="beds[]" value="0">Studio</label></li>
+            <li><label><input type="checkbox" name="beds[]" value="1">1</label></li>
+            <li><label><input type="checkbox" name="beds[]" value="2">2</label></li>
+            <li><label><input type="checkbox" name="beds[]" value="3">3</label></li>
+            <li><label><input type="checkbox" name="beds[]" value="4">4</label></li>
+            <li><label><input type="checkbox" name="beds[]" value="5">5+</label></li>
+
+
+
+
+        </ul>
+    </div>
+    <div class="js-form-group btn-group param-beds      tide-to tide-to-listing_type       btn-group-expand-right js-has-value hide" data-tideto="listing_type" data-tidetowhen="sale" data-gentitle="" data-separator=", ">
+        <button type="button" class="btn btn-form-outline dropdown-toggle " data-title="Any Beds" title="Any Beds" data-toggle="dropdown" aria-expanded="false"><span class="btn-label">Any Beds</span><span class="btn-title">Any Beds</span></button><ul class="dropdown-menu" role="menu">
+            <li class="dropdown-reset"><a href="#">Any Beds</a></li>
+            <li role="presentation" class="divider"></li>
+
+
+
+
+            <li><label><input type="checkbox" name="beds[]" value="0" disabled="">Studio</label></li>
+            <li><label><input type="checkbox" name="beds[]" value="1" disabled="">1</label></li>
+            <li><label><input type="checkbox" name="beds[]" value="2" disabled="">2</label></li>
+            <li><label><input type="checkbox" name="beds[]" value="3" disabled="">3</label></li>
+            <li><label><input type="checkbox" name="beds[]" value="4" disabled="">4</label></li>
+            <li><label><input type="checkbox" name="beds[]" value="5" disabled="">5+</label></li>
+
+
+
+
+        </ul>
+    </div>
+
+
+    <ul class="search-options search-options-aligned-top searchbox-hidden-xs"><li class="search-options-moreoptions"><a href="#MoreOptions"><span class="hidden-criteria"><span class="badge">0</span> Selected</span><span class="no-hidden-criteria">More filters</span><i class="pgicon pgicon-arrow-down"></i></a></li><li class="search-options-lessoptions"><a href="#LessOptions" class="pgicon pgicon-arrow-up">Hide filters <i class="pgicon pgicon-arrow-up"></i></a></li></ul>
+    <span class="input-group-btn">
+        <button class="btn btn-primary btn-submit" type="submit" data-title="search">
+            <i class="pgicon pgicon-search"></i>
+
+        </button>
+    </span>
+</div>
+*@
+
 <div id="products">
     <div class="product">
         @foreach (var item in Model)

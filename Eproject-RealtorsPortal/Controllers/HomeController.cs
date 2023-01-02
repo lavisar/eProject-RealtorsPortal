@@ -3,13 +3,16 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Eproject_RealtorsPortal.Models;
 using Eproject_RealtorsPortal.Data;
+using System.Linq;
 
 namespace Eproject_RealtorsPortal.Controllers
 {
     public class HomeController : Controller
     {
-        LQHVContext LQHVContext = new LQHVContext(); 
+        LQHVContext LQHVContext = new LQHVContext();
         List<ProductBox> featured;
+        ProductDetail product;
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -19,7 +22,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
         public IActionResult Index()
         {
-            featured = LQHVContext.Products.Where(w=>w.Featured == true)
+            featured = LQHVContext.Products.Where(w => w.Featured == true)
                .Join(
                LQHVContext.Categories,
                p => p.CategoryId,
@@ -53,6 +56,53 @@ namespace Eproject_RealtorsPortal.Controllers
 
             return View(featured);
         }
+        public IActionResult Details(long ID)
+        {
+            product = LQHVContext.Products.Where(s => s.ProductId == ID)
+                .Join(
+                LQHVContext.Categories,
+                p => p.CategoryId,
+                c => c.CategoryId,
+                (p, c) => new
+                {
+                    Product = p,
+                    Category = c
+                })
+            .Join(
+                LQHVContext.BusinessTypes,
+                ca => ca.Category.BusinessTypesId,
+                bu => bu.BusinessTypesId,
+                (ca, bu) => new
+                {
+                    ca.Product,
+                    ca.Category,
+                    BusinessTypeID = bu.BusinessTypesId
+                }
+            )
+            .Select(s => new ProductDetail
+            {
+                ProductID = s.Product.ProductId,
+                ProductTitle = s.Product.ProductTitle,
+                ProductDesc = s.Product.ProductDesc,
+                ProductPrice = s.Product.ProductPrice,
+                ProductArea = s.Product.ProductArea,
+                ProductAddress = s.Product.ProductAddress,
+                ProductImage = s.Product.ProductImage,
+                ProductInterior = s.Product.ProductInterior,
+                ProductLegal = s.Product.ProductLegal,
+                PhoneNumber = s.Product.PhoneNumber,
+                NumToilets = s.Product.NumToilets,
+                NumBedrooms = s.Product.NumBedrooms,
+                NumOfFloors = s.Product.NumOfFloors,
+                ContactName = s.Product.ContactName,
+                ContactAddress = s.Product.ContactAddress,
+                ContactEmail = s.Product.ContactEmail,
+                BalconyOrientation = s.Product.BalconyOrientation,
+                HomeOrientation = s.Product.HomeOrientation,
+                BusinessTypeID = s.BusinessTypeID
+            }).FirstOrDefault();
+            return View("Details", product);
+        }
         public IActionResult UserHome()
         {
             return View();
@@ -76,6 +126,16 @@ namespace Eproject_RealtorsPortal.Controllers
         public IActionResult AboutUs()
         {
             return View("AboutUs");
+        }
+        [HttpPost]
+        public IActionResult createContact(Contact model)
+        {
+            LQHVContext.Contacts.Add(model);
+            if (LQHVContext.SaveChanges() == 1)
+            {
+                return RedirectToAction("AboutUs", "Home");
+            }
+            return View("createContact", model);
         }
     }
 }
