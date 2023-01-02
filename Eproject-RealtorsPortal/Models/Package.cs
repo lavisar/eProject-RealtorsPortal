@@ -24,6 +24,8 @@ namespace Eproject_RealtorsPortal.Models
         [Column("packages_duration")]
         public int PackagesDuration { get; set; }
         [Column("packages_price", TypeName = "decimal(18, 2)")]
+        
+        [DisplayFormat(DataFormatString = "{0:C}")]
         public decimal PackagesPrice { get; set; }
         [Column("packages_desc")]
         [StringLength(500)]

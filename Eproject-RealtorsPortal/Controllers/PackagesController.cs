@@ -12,12 +12,32 @@ namespace Eproject_RealtorsPortal.Controllers
         Package package;
         Package ForDeletePackage;
 
-
+        
         public IActionResult Index()
         {
-            //Hiển thị trạng thái khi trạng thái == true / đã kích hoạt
-            indexBox = LQHVContext.Packages.Where(s => s.PackagesStatus == true).ToList();
-            return View("Index", indexBox);
+            var user = new User();
+
+            if (HttpContext.Session.GetString("UserId") == null)
+            {
+                return RedirectToAction(controllerName: "UserHome", actionName: "Logout");
+            }
+            else
+            {
+                //Hiển thị trạng thái khi trạng thái == true / đã kích hoạt
+                indexBox = LQHVContext.Packages.Where(s => s.PackagesStatus == true).ToList();
+                return View("Index", indexBox);
+            }
+
+
+        }
+        public IActionResult Pay(int ID,decimal price)
+        {
+            package = LQHVContext.Packages.Where(s => s.PackagesId == ID && s.PackagesPrice == price).FirstOrDefault();
+
+            HttpContext.Session.SetString("PackagesId", package.PackagesId.ToString());
+            HttpContext.Session.SetString("PackagesPrice", package.PackagesPrice.ToString());
+
+            return RedirectToAction("Pay","Payment");
         }
 
         /// <summary>

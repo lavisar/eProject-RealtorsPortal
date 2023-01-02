@@ -1,7 +1,17 @@
+using Eproject_RealtorsPortal.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//add applicationDBcontext
+builder.Services.AddDbContext<LQHVContext>(
+    option =>
+    option.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationDbContextConnection")));
+
 
 builder.Services.AddSession(options =>
 {
@@ -9,6 +19,7 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
 
 var app = builder.Build();
 

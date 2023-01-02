@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Eproject_RealtorsPortal.Models.Contact
+@{
 	ViewData["Title"] = "News";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -130,9 +131,51 @@
 </style>
 
 <div style="background-color: rgb(239,239,239);">
-	<img src="~/Image/ContactUs.png" class="img-fluid" alt="bulding" style="height:300" />
+	<img src="~/Image/AboutUs.png" class="img-fluid" alt="bulding" />
 	<section class="pb-4 mt-3 container">
+
 		<div class="bg-white border rounded-5 border-white">
+			<div class="aboutus">
+				<div class="container-fluid pb-5 pb-md-0">
+					<div >
+						<h1 style="text-align: center; color:#006600; font-weight: bolder; text-shadow: 1px 0px 1px rgb(10, 2, 32);">
+							<b>About Us</b>
+						</h1>
+						<div>
+							<div class="feature  bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+							<h2 class="h4 fw-bolder">Foundation</h2>
+							<p class="mb-0">
+								We’ve Come A Long Way.<br />
+								Founded in 2000, LQHV Realtors Portal is Southeast Asia’s pioneering and most trusted property technology company.
+							</p>
+						</div>
+
+						<div>
+							<div class="feature  bg-gradient text-white rounded-3 mb-3">
+								<i class="bi bi-info"></i>
+							</div>
+							<h2 class="h4 fw-bolder">Where We Are</h2>
+							<p class="mb-0">
+								LQHV Realtors Portal is present in 14 markets in Asia.<br />
+								LQHV Realtors Portal’s success is firmly rooted in solving a very big consumer pain-point - making finding a home a straightforward and transparent process for everyone involved. With this focus at our core, we are now the leading proptech company in five markets across South East Asia and employ over 1,400 Gurus.
+							</p>
+						</div>		
+						
+						<div>
+							<div class="feature  bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+							<h2 class="h4 fw-bolder">Our Founding Story</h2>
+							<p class="mb-0">								
+								Back in 2006, Sar Lavi was each trying to find a new home in VietNam. Spending hours going through the available sources for property choices and up-to-date pricing information only left himfeeling further from the goal. He soon learnt that other property seekers were facing the same challenges and decided to do something about it. And so, LQHV Realtors Portal was born. <br />
+
+								LQHV Realtors Portal disrupted the traditional classified property ads market more then ten years ago, and revolutionized the real estate market in VietNam by taking property search online. And in doing so, we opened the market and business opportunities for the real estate industry – agents, agencies and developers.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br><br>
+
 			<div class="main">
 				<div class="content">
 					<div class="section group">
@@ -141,14 +184,15 @@
 								<h1 style="text-align: center; color:#006600; font-weight: bolder; text-shadow: 1px 0px 1px rgb(10, 2, 32);">
 									<b>Contact Us</b>
 								</h1>
-								<form>
+								<form asp-action="createContact">
 									<div>
 										<label class="h4" style="color: black; font-style: italic;">
 											<i class="fa fa-user me-2 "></i>
 											Name
 											<small class="required">*</small>
 										</label>
-										<input type="text" class="form-control" required>
+										<input asp-for="ContactsName" type="text" class="form-control" required />
+										<span asp-validation-for="ContactsName" class="text-danger"></span>
 									</div>
 
 									<div>
@@ -157,16 +201,17 @@
 											E-mail
 											<small class="required">*</small>
 										</label>
-										<input type="email" class="form-control" required>
+										<input asp-for="ContactsEmail" type="email" class="form-control" required />
+										<span asp-validation-for="ContactsEmail" class="text-danger"></span>
 									</div>
 
 									<div>
 										<label class="h4" style="color: black; font-style: italic;">
 											<i class="fas fa-phone me-2"></i>
 											Phone Number
-											<small class="required">*</small>
 										</label>
-										<input type="number" class="form-control" min="9" maxlength="12" required>
+										<input asp-for="ContactsPhone" type="number" class="form-control" min="9" maxlength="12" />
+										<span asp-validation-for="ContactsPhone" class="text-danger"></span>
 									</div>
 
 									<div>
@@ -175,17 +220,22 @@
 											Content
 											<small class="required">*</small>
 										</label>
-										<textarea type="textarea" class="form-control" height="400" required></textarea>
+										<textarea asp-for="ContactsContent" type="textarea" class="form-control" height="400" required></textarea>
+										<span asp-validation-for="ContactsContent" class="text-danger"></span>
 									</div>
+
 									<div>
-										<input type="submit" class="btn btn-primary btn-block mb-4 faq-contact-form-submit" value="SEND">
+										<input type="submit" class="btn btn-primary btn-block mb-4 faq-contact-form-submit" value="SEND" onclick="myFunction()">
 									</div>
 								</form>
 							</div>
 						</div>
+
 						<div class="col span_1_of_3">
 							<div class="contact_info">
-								<h3>Find Us Here</h3>
+								<h1 style="text-align: center; color:#006600; font-weight: bolder; text-shadow: 1px 0px 1px rgb(10, 2, 32);">
+									<b>Find Us Here</b>
+								</h1>
 								<div class="map">
 									<iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3193500366883!2d106.66408561394566!3d10.786834792314448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2s!4v1605550165904!5m2!1sen!2s"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:12px">View Larger Map</a></small>
 								</div>
@@ -205,5 +255,9 @@
 		</div>
 
 </div>
-</section>
-</div>      
+
+<script>
+	function myFunction() {
+		alert("Send Succesful!!!");
+	}
+</script>

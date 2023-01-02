@@ -55,10 +55,10 @@
                     @Html.DisplayFor(modelItem => item.PackagesName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.PackagesDuration)
+                    @Html.DisplayFor(modelItem => item.PackagesDuration) month
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.PackagesPrice)
+                    @Html.DisplayFor(modelItem => item.PackagesPrice)$
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.PackagesDesc)
@@ -67,11 +67,15 @@
                     @*@Html.DisplayFor(modelItem => item.PackageTypeId)*@
                     @if(item.PackageTypeId == 1)
                     {
-                        <p>name of typeID 1</p>
+                        <p>Account Service</p>
                     }
                     @if(item.PackageTypeId == 2)
                     {
-                        <p>name of typeID 1</p>
+                        <p>Ads Posting</p>
+                    }
+                    @if(item.PackageTypeId == 3)
+                    {
+                        <p>Free</p>
                     }
                 </td>
                 <td>
