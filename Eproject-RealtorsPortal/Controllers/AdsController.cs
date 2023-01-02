@@ -1,6 +1,8 @@
 ﻿using Eproject_RealtorsPortal.Data;
 using Eproject_RealtorsPortal.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Diagnostics;
 using System.Linq;
 
 namespace Eproject_RealtorsPortal.Controllers
@@ -12,6 +14,13 @@ namespace Eproject_RealtorsPortal.Controllers
         //List<Product> products;
         ProductDetail product;
         Product products;
+        ProductAdd productAdd;
+        List<Package> package;
+        List<Category> category;
+        List<Area> area;
+        List<City> city;
+        List<Region> region;
+        List<Country> country;
         public IActionResult Sell()
         {
             sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today)
@@ -136,7 +145,16 @@ namespace Eproject_RealtorsPortal.Controllers
         }
         public IActionResult CreateAds()
         {
-            return View();
+            //productAdd.Categories = LQHVContext.Categories.ToList();
+            //productAdd.Packages = LQHVContext.Packages.ToList();
+
+            package = LQHVContext.Packages.Where(p=>p.PackagesId ==2).ToList();
+            category = LQHVContext.Categories.ToList();
+            area = LQHVContext.Areas.ToList();
+            city = LQHVContext.Cities.ToList();
+            region = LQHVContext.Regions.ToList();
+            country = LQHVContext.Countries.ToList();
+            return View(new Product { Package = package,Categories = category, Countries = country, Region = region });
         }
         [HttpPost]
         public IActionResult CreateAds(Product model)

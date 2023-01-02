@@ -1,5 +1,4 @@
-﻿@model ProductAdd
-@using Eproject_RealtorsPortal.Models;
+﻿@model Eproject_RealtorsPortal.Models.Product
 @{
     Layout = "~/Views/Shared/_layout_UserHome.cshtml";
 }
@@ -9,6 +8,7 @@
     <div class="col-lg-4">
         <form asp-action="CreateAds" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
             <div class="form-group">
                 <label asp-for="ProductTitle" class="control-label">Title</label>
                 <input asp-for="ProductTitle" class="form-control" />
@@ -33,6 +33,52 @@
                 <label asp-for="ProductImage" class="control-label">Image</label>
                 <input asp-for="ProductImage" type="file" class="form-control" />
                 <span asp-validation-for="ProductImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Areas" class="control-label">Area</label>
+                <select asp-for="Areas" list="Areas" class="form-control">
+                    <datalist id="Areas">
+                    @foreach (var item in @Model.Areas)
+                    {
+                            <option value="@item.AreasName">
+                            @item.AreasName
+                        </option>
+                    }
+                </datalist>
+                </select>
+                <label asp-for="Cities" class="control-label">City</label>
+                <select asp-for="Cities" list="Cities" class="form-control">
+                    <datalist id="Cities">
+                        @foreach (var item in @Model.Cities)
+                        {
+                            <option value="@item.CitiesName">
+                                @item.CitiesName
+                            </option>
+                        }
+                    </datalist>
+                </select>
+                <label asp-for="Region" class="control-label">Region</label>
+                <select asp-for="Region" list="Region" class="form-control">
+                    <datalist id="Region">
+                        @foreach (var item in @Model.Region)
+                        {
+                            <option value="@item.RegionsName">
+                                @item.RegionsName
+                            </option>
+                        }
+                    </datalist>
+                </select>
+                <label asp-for="Countries" class="control-label">Country</label>
+                <select asp-for="Countries" list="Countries" class="form-control">
+                    <datalist id="Countries">
+                        @foreach (var item in @Model.Countries)
+                        {
+                            <option value="@item.CountriesName">
+                                @item.CountriesName
+                            </option>
+                        }
+                    </datalist>
+                </select>
             </div>
             <div class="form-group">
                 <label asp-for="ProductAddress" class="control-label">Address</label>
@@ -75,18 +121,30 @@
                 <span asp-validation-for="NumOfFloors" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PackagesId" class="control-label"></label>
-                <input asp-for="PackagesId" list="package" class="form-control" />
+                <label asp-for="PackagesId" class="control-label">Package</label>
+                <select asp-for="PackagesId" list="package" class="form-control" >
                 <datalist id="package">
-                        <option value="3">Vip</option>
-                        <option value="4">Basic</option>
+                    @foreach (var item in @Model.Package)
+                    {
+                        <option value="@item.PackagesId">
+                            @item.PackagesName
+                        </option>
+                    }
                 </datalist>
+                </select>
+
 
                 <span asp-validation-for="PackagesId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="NumDays" class="control-label">Number of days</label>
-                <input asp-for="NumDays" class="form-control" />
+                <select asp-for="NumDays" list="days"class="form-control" >
+                    <datalist id="days">
+                        <option value="7">7 days</option>
+                        <option value="10">10 days</option>
+                        <option value="30">30 days</option>
+                    </datalist>
+                </select>
                 <span asp-validation-for="NumDays" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -95,8 +153,8 @@
                 <span asp-validation-for="StartDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EndDate" class="control-label"></label>
-                <input asp-for="EndDate" class="form-control" type="hidden" value=""/>
+@*                <label asp-for="EndDate" class="control-label"></label>
+*@                <input asp-for="EndDate" class="form-control" type="hidden" value=" "/>
                 <span asp-validation-for="EndDate" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
@@ -106,27 +164,16 @@
             </div>
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label">Category: </label>
-                <input asp-for="CategoryId" class="form-control" />
-                <datalist>
-                    <option value="1">
-                        Apartment
-                    </option>
-                    <option value="2">
-                        Adjacent villa house
-                    </option>
-                    <option value="3">
-                        Office
-                    </option>
-                    <option value="4">
-                        Shops
-                    </option>
-                    <option value="5">
-                        Commercial land
-                    </option>
-                    <option value="6">
-                        House
-                    </option>
-                </datalist>
+                <select asp-for="CategoryId" list="category" class="form-control">
+                    <datalist id="category">
+                        @foreach (var item in @Model.Categories)
+                        {
+                            <option value="@item.CategoryId">
+                                @item.CategoryName
+                            </option>
+                        }
+                    </datalist>
+                </select>
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -145,13 +192,13 @@
                 <span asp-validation-for="ContactAddress" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ContactEmail" class="control-label"></label>
+                <label asp-for="ContactEmail" class="control-label">Contact Email</label>
                 <input asp-for="ContactEmail" class="form-control" />
                 <span asp-validation-for="ContactEmail" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="UsersId" class="control-label"></label>
-                <input asp-for="UsersId" class="form-control" type="hidden" value="@Context.Session.GetString("UserId")" />
+@*                <label asp-for="UsersId" class="control-label"></label>
+*@                <input asp-for="UsersId" class="form-control" type="hidden" value="@Context.Session.GetString("UserId")" />
                 <span asp-validation-for="UsersId" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -168,9 +215,18 @@
 
     $(document).ready(function(){
         $("#StartDate").keyup(function(event){
-            var a = document.getElementById("StartDate").value
-            var b = document.getElementById("NumDays").value
+            var a = document.getElementById("StartDate").value;
+            var b = document.getElementById("NumDays").value;
             $("#EndDate").text(a+b);
+        })
+        //var c = document.getElementById("Area").value;
+        //var d = document.getElementById("Cities").value;
+        //var e = document.getElementById("Country").value;
+        var textAddress = document.getElementById("ProductAddress").value;
+        $("#Area").keyup(function (event) {
+            var c = document.getElementById("Area").value;
+            textAddress+=c;
+            $("#ProductAddress").text(textAddress);
         })
     })
 </script>
