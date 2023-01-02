@@ -107,20 +107,18 @@
                     }
                 </div>
 
-                <h6>
                     @if (!String.IsNullOrEmpty(Model.HomeOrientation))
                     {
-                        <p>
+                        <h6>
                             Home Orientation: @Model.HomeOrientation
-                        </p>
+                        </h6>
                     }
                     @if (!String.IsNullOrEmpty(Model.BalconyOrientation))
                     {
-                        <p>
+                        <h6>
                             &nbsp;&nbsp;&nbsp;&nbsp;Balcony Orientation: @Model.BalconyOrientation
-                        </p>
+                        </h6>
                     }
-                </h6>
                 <hr>
                 <p> 
                     <i class="fa fa-map-marker-alt text-muted"></i> @Model.ProductAddress

@@ -1,4 +1,4 @@
-﻿@model Eproject_RealtorsPortal.Models.Product
+﻿@model Eproject_RealtorsPortal.Models.ProductAdd
 @{
     Layout = "~/Views/Shared/_layout_UserHome.cshtml";
 }
@@ -36,8 +36,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="Areas" class="control-label">Area</label>
-                <select asp-for="Areas" list="Areas" class="form-control">
-                    <datalist id="Areas">
+                <select asp-for="Areas" list="area" class="form-control">
+                    <datalist id="area">
                     @foreach (var item in @Model.Areas)
                     {
                             <option value="@item.AreasName">
@@ -47,8 +47,8 @@
                 </datalist>
                 </select>
                 <label asp-for="Cities" class="control-label">City</label>
-                <select asp-for="Cities" list="Cities" class="form-control">
-                    <datalist id="Cities">
+                <select asp-for="Cities" list="city" class="form-control">
+                    <datalist id="city">
                         @foreach (var item in @Model.Cities)
                         {
                             <option value="@item.CitiesName">
@@ -58,8 +58,8 @@
                     </datalist>
                 </select>
                 <label asp-for="Region" class="control-label">Region</label>
-                <select asp-for="Region" list="Region" class="form-control">
-                    <datalist id="Region">
+                <select asp-for="Region" list="region" class="form-control">
+                    <datalist id="region">
                         @foreach (var item in @Model.Region)
                         {
                             <option value="@item.RegionsName">
@@ -69,8 +69,8 @@
                     </datalist>
                 </select>
                 <label asp-for="Countries" class="control-label">Country</label>
-                <select asp-for="Countries" list="Countries" class="form-control">
-                    <datalist id="Countries">
+                <select asp-for="Countries" list="country" class="form-control">
+                    <datalist id="country">
                         @foreach (var item in @Model.Countries)
                         {
                             <option value="@item.CountriesName">

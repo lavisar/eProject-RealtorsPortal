@@ -14,13 +14,13 @@ namespace Eproject_RealtorsPortal.Controllers
         //List<Product> products;
         ProductDetail product;
         Product products;
-        ProductAdd productAdd;
         List<Package> package;
         List<Category> category;
-        List<Area> area;
+        List<Area> areas;
         List<City> city;
         List<Region> region;
         List<Country> country;
+        ProductAdd productAdd;
         public IActionResult Sell()
         {
             sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today)
@@ -148,18 +148,31 @@ namespace Eproject_RealtorsPortal.Controllers
             //productAdd.Categories = LQHVContext.Categories.ToList();
             //productAdd.Packages = LQHVContext.Packages.ToList();
 
-            package = LQHVContext.Packages.Where(p=>p.PackagesId ==2).ToList();
+            package = LQHVContext.Packages.Where(pac => pac.PackageTypeId == 2).ToList();
             category = LQHVContext.Categories.ToList();
-            area = LQHVContext.Areas.ToList();
+            areas = LQHVContext.Areas.ToList();
             city = LQHVContext.Cities.ToList();
             region = LQHVContext.Regions.ToList();
             country = LQHVContext.Countries.ToList();
-            return View(new Product { Package = package,Categories = category, Countries = country, Region = region });
+            return View(new ProductAdd { Package = package,Categories = category, Countries = country, Region = region, Areas = areas, Cities = city });
         }
         [HttpPost]
-        public IActionResult CreateAds(Product model)
+        public IActionResult CreateAds(ProductAdd model)
         {
-            LQHVContext.Products.Add(model);
+            products = new Product
+            {
+                ProductAddress = model.ProductAddress,
+                ProductArea = model.ProductArea,
+                PackagesId = model.PackagesId,
+                ProductDesc = model.ProductDesc,
+                PhoneNumber = model.PhoneNumber,
+                ProductImage = model.ProductImage,
+                ProductInterior = model.ProductInterior,
+                ProductLegal = model.ProductLegal,
+                ProductPrice = model.ProductPrice,
+                ProductTitle = model.ProductTitle
+            };
+            LQHVContext.Products.Add(products);
             if (LQHVContext.SaveChanges() == 1)
             {
                 HttpContext.Session.SetString("ProductId", products.ProductId.ToString());
