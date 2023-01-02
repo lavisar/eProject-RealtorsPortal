@@ -103,15 +103,10 @@
 
 </style>
 <style>
-
     .filter {
         list-style: none;
         margin: 0;
         padding: 0;
-        /*          width: 320px;
-                    height: 320px;
-                    border-radius: 20px;
-                    overflow: hidden;*/
     }
 
     .link {
@@ -176,31 +171,39 @@
 
 <div id="products">
     <div class="product">
-        <div class="card card-body" style="width:230px;height:400px">
-            <form asp-action="SearchRent">
-                <b>Area:</b>
+        <div class="card card-body" style="width:230px;height:600px">
+            @using(Html.BeginForm("Search","Ads")){
+                <p>Type</p>
                 <ul class="filter" style="list-style-type:none,">
                     <li class="label">
-                        <input type="text" name="Area" id="ar">
+                        <select type="text" name="Type" id="Type" class="form-control">
+                            <option value="1">Rent</option>
+                            <option value="2">Sell</option>
+                        </select>
                     </li>
-
                 </ul>
                 <hr>
+                <b>District:</b>
+                <ul class="filter" style="list-style-type:none,">
+                    <li class="label">
+                        <input type="text" name="Area" id="Area">
+                    </li>
+                </ul>
                 <ul class="filter" style="list-style-type:none">
                     <li class="label">
                         <b>City: </b>
-                        <input type="text" name="Area" id="area">
+                        <input type="text" name="City" id="City">
                     </li>
                 </ul>
                 <hr>
                 <b>Price: </b>
                 <ul class="filter" style="list-style-type:none">
                     <li class="label">
-                        Start Price: <input type="text" name="StartPrice" id="StartPrice" />End Price: <input name="EndPrice" type="text" id="EndPrice" />
+                        Start Price: <input type="text" name="StartPrice" id="StartPrice" value="1"/>End Price: <input name="EndPrice" type="text" id="EndPrice" value="1000000000000"/>
                     </li>
                 </ul>
                 <button class="btn btn-md btn-success" type="submit">Apply</button>
-            </form>
+            }
 
         </div>
         @foreach (var item in Model)

@@ -25,8 +25,11 @@
     <None Include="Views\Home\FAQ.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
     <None Include="Views\Home\Privacy.cshtml" />
+    <None Include="Views\News\createNews.cshtml" />
     <None Include="Views\News\Details.cshtml" />
     <None Include="Views\News\Index.cshtml" />
+    <None Include="Views\News\listNews.cshtml" />
+    <None Include="Views\News\updateNews.cshtml" />
     <None Include="Views\UserHome\AuthenticationForm.cshtml" />
     <None Include="Views\UserHome\ChangePassword.cshtml" />
     <None Include="Views\UserHome\ForgotPassword.cshtml" />

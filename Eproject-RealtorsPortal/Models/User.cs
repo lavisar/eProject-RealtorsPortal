@@ -72,7 +72,7 @@ namespace Eproject_RealtorsPortal.Models
         public bool UsersStatus { get; set; } = false;
 
         [Column("packages_id")]
-        public long? PackagesId { get; set; } = 2; // con rang buoc khoa ngoai xu li sau mac dinh 1 gia tri co san de demo (gia tri tai khoan mac dinh la free)
+        public long? PackagesId { get; set; } = 1; //(gia tri tai khoan mac dinh la free)
 
         [ForeignKey("PackagesId")]
         [InverseProperty("Users")]
