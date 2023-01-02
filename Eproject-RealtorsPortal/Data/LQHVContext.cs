@@ -129,6 +129,12 @@ namespace Eproject_RealtorsPortal.Data
                     .HasForeignKey(d => d.UsersId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Payment_users_id");
+
+                entity.HasOne(d => d.Package)
+                .WithMany(p => p.Payments)
+                .HasForeignKey(d => d.PackageId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Payment_packages_id");
             });
 
             modelBuilder.Entity<Product>(entity =>

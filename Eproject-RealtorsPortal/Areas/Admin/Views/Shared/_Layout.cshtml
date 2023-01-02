@@ -136,7 +136,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                              with font-awesome or any other icon font library -->
                         <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -256,14 +256,14 @@
                                             </p>
                                         </a>
                                         <ul class="nav nav-treeview">
-                                            <li class="nav-item">
-                                                <a href="@Url.Action("ViewAdmin","Home", new{area = "Admin"})" class="nav-link">
+                                            <li class="nav-item ">
+                                                <a href="@Url.Action("ViewAdmin","Home", new{area = "Admin"})" class="nav-link disabled">
                                                     <i class="far fa-dot-circle nav-icon"></i>
                                                     <p> Admin list</p>
                                                 </a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="@Url.Action("AddAdmin","Home", new{area = "Admin"})" class="nav-link">
+                                            <li class="nav-item ">
+                                                <a href="@Url.Action("AddAdmin","Home", new{area = "Admin"})" class="nav-link disabled">
                                                     <i class="far fa-dot-circle nav-icon"></i>
                                                     <p> Add Admin</p>
                                                 </a>
@@ -320,6 +320,8 @@
                                 </li>
                             </ul>
                         </li>
+
+
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
@@ -343,98 +345,200 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fab fa-hornbill"></i>
-                                <p>
-                                    Country management
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{ url('admin/slider/index') }}" class="nav-link disabled">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p> Country list</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ url('admin/slider/create') }}" class="nav-link disabled">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Add Country</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fab fa-hornbill"></i>
-                                <p>
-                                    Region management
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{ url('admin/slider/index') }}" class="nav-link disabled">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Region list</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ url('admin/slider/create') }}" class="nav-link disabled">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Add Region</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fab fa-hornbill"></i>
-                                <p>
-                                    City management
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{ url('admin/slider/index') }}" class="nav-link disabled">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>City list</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ url('admin/slider/create') }}" class="nav-link disabled">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Add City</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fab fa-hornbill"></i>
-                                <p>
-                                    Area management
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{ url('admin/slider/index') }}" class="nav-link disabled">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Area list</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ url('admin/slider/create') }}" class="nav-link disabled">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Add Area</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+
+                        @if (Context.Session.GetString("adminRole") == "Staff")
+                        {
+
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link disabled">
+                                    <i class="nav-icon fab fa-hornbill"></i>
+                                    <p>
+                                        Country management
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link disabled">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p> Country list</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link disabled">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Add Country</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link disabled">
+                                    <i class="nav-icon fab fa-hornbill"></i>
+                                    <p>
+                                        Region management
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link disabled">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Region list</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link disabled">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Add Region</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link disabled">
+                                    <i class="nav-icon fab fa-hornbill"></i>
+                                    <p>
+                                        City management
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link disabled">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>City list</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link disabled">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Add City</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link disabled">
+                                    <i class="nav-icon fab fa-hornbill"></i>
+                                    <p>
+                                        Area management
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item ">
+                                        <a href="#" class="nav-link disabled">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Area list</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{#" class="nav-link disabled">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Add Area</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fab fa-hornbill"></i>
+                                    <p>
+                                        Country management
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{ url('admin/slider/index') }}" class="nav-link ">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p> Country list</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ url('admin/slider/create') }}" class="nav-link ">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Add Country</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fab fa-hornbill"></i>
+                                    <p>
+                                        Region management
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{ url('admin/slider/index') }}" class="nav-link ">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Region list</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ url('admin/slider/create') }}" class="nav-link ">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Add Region</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fab fa-hornbill"></i>
+                                    <p>
+                                        City management
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{ url('admin/slider/index') }}" class="nav-link ">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>City list</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ url('admin/slider/create') }}" class="nav-link ">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Add City</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fab fa-hornbill"></i>
+                                    <p>
+                                        Area management
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{ url('admin/slider/index') }}" class="nav-link ">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Area list</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ url('admin/slider/create') }}" class="nav-link ">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Add Area</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+
+
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
@@ -468,7 +572,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link disabled">
+                                    <a href="#" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Payment history list</p>
                                     </a>

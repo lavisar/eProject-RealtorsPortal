@@ -12,6 +12,7 @@ namespace Eproject_RealtorsPortal.Models
         {
             Products = new HashSet<Product>();
             Users = new HashSet<User>();
+            Payments = new HashSet<Payment>();
         }
 
         [Key]
@@ -42,5 +43,8 @@ namespace Eproject_RealtorsPortal.Models
         public virtual ICollection<Product> Products { get; set; }
         [InverseProperty("Packages")]
         public virtual ICollection<User> Users { get; set; }
+
+        [InverseProperty("Package")]
+        public virtual ICollection<Payment> Payments { get; set; }
     }
 }

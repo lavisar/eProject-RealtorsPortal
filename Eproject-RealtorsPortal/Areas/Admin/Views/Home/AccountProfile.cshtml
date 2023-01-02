@@ -73,67 +73,13 @@
                                             @if (admin.AdminRole == "Staff")
                                             {
                                                 <option value="Staff" selected>Staff</option>
-                                                <option value="Manager">Manager</option>
                                             }
                                             else
                                             {
                                                 <option value="Manager" selected>Manager</option>
-                                                <option value="Staff">Staff</option>
                                             }
                                         </select>
                                     }
-                                </div>
-                                <div class="form-group">
-                                    <label for="txt-name">Status <small style="color: red;">*</small></label><br />
-                                    @if (admin.AdminRole == "Super admin")
-                                    {
-                                        <div class="row">
-                                            <div class="col-auto">
-                                                <label for="AdminStatus" class="btn btn-warning">
-                                                    <input type="hidden" name="AdminStatus" value="true">
-                                                    Activated
-                                                </label>
-                                            </div>
-                                        </div>
-                                    }
-                                    else
-                                    {
-                                        @if (admin.AdminStatus == false)
-                                        {
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <label for="AdminStatus" class="btn btn-danger">
-                                                        <input type="radio" name="AdminStatus" value="false" checked>
-                                                        Not activated
-                                                    </label>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <label for="AdminStatus" class="btn btn-warning">
-                                                        <input type="radio" name="AdminStatus" value="true">
-                                                        Activated
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        }
-                                        else
-                                        {
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <label for="AdminStatus" class="btn btn-danger">
-                                                        <input type="radio" name="AdminStatus" value="false">
-                                                        Not activated
-                                                    </label>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <label for="AdminStatus" class="btn btn-warning">
-                                                        <input type="radio" name="AdminStatus" value="true" checked>
-                                                        Activated
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        }
-                                    }
-
                                 </div>
                             </div>
                             <div class="card-footer">

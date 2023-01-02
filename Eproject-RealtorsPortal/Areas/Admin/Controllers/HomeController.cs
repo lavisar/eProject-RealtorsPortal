@@ -116,7 +116,7 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 UsersAddress = model.UsersAddress,
                 UsersImage = "defaultImage.jpg",
                 UsersStatus = false,
-                PackagesId = 2
+                PackagesId = 1
 
             };
             Random random = new Random();
@@ -157,6 +157,10 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
 
         public IActionResult AdminAuthenticationForm()
         {
+            if (HttpContext.Session.GetString("AdminConfirmEmail") == null)
+            {
+                return RedirectToAction("LoginAdmin", "Home");
+            }
             return View();
         }
 
@@ -253,7 +257,7 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 if (dbContext.SaveChanges() >= 1)
                 {
                     ViewBag.msg = "Update successful.";
-                    return RedirectToAction("ViewUser","Home",model);
+                    return RedirectToAction("ViewUser", "Home", model);
                 }
                 ViewBag.msg = "Status update failed !";
                 return View();
@@ -420,10 +424,11 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 {
                     await AdminImage.CopyToAsync(stream);
                 }
-                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, AdminRole, AdminStatus);
+                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, AdminRole);
+
                 return View();
             }
-            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, AdminRole, AdminStatus);
+            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, AdminRole);
             return View();
         }
 
@@ -444,7 +449,7 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AccountProfile(long AdminId, string AdminName, IFormFile AdminImage, bool AdminStatus, string AdminRole)
+        public async Task<IActionResult> AccountProfile(long AdminId, string AdminName, IFormFile AdminImage, string AdminRole)
         {
             if (HttpContext.Session.GetString("adminId") == null)
             {
@@ -470,11 +475,14 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 {
                     await AdminImage.CopyToAsync(stream);
                 }
-                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, AdminRole, AdminStatus);
+                ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, fileName, AdminRole);
+                HttpContext.Session.SetString("adminName", AdminName);
+                HttpContext.Session.SetString("adminImage", fileName);
                 ViewBag.sg = "Update successful.";
                 return View();
             }
-            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, AdminRole, AdminStatus);
+            ViewBag.admins = admin.ChangeInfor(AdminId, AdminName, null, AdminRole);
+            HttpContext.Session.SetString("adminName", AdminName);
             ViewBag.sg = "Update successful.";
             return View();
         }
@@ -483,6 +491,10 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
         public IActionResult AdminAuthenticationEmail()
         {
             if (HttpContext.Session.GetString("adminId") == null)
+            {
+                return RedirectToAction("LoginAdmin", "Home");
+            }
+            if (HttpContext.Session.GetString("AdminConfirmEmail") == null)
             {
                 return RedirectToAction("LoginAdmin", "Home");
             }
@@ -554,11 +566,11 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 ViewBag.result = "The current password is not correct! ";
                 return View();
             }
-            if (newPassword.Length > 20 || newPassword.Length <6 || ConfirmNewPassword.Length > 20 ||ConfirmNewPassword.Length < 6)
+            if (newPassword.Length > 20 || newPassword.Length < 6 || ConfirmNewPassword.Length > 20 || ConfirmNewPassword.Length < 6)
             {
                 ViewBag.result = "Password must be between 6-20 characters!";
                 return View();
-            }     
+            }
             if (oldPassword == newPassword)
             {
                 ViewBag.result = "Password must be different from your recent password !";
@@ -584,7 +596,7 @@ namespace Eproject_RealtorsPortal.Areas.Admin.Controllers
                 HttpContext.Session.Remove("adminId");
                 HttpContext.Session.Remove("adminImage");
 
-                return RedirectToAction("LoginAdmin","Home");
+                return RedirectToAction("LoginAdmin", "Home");
             }
         }
     }

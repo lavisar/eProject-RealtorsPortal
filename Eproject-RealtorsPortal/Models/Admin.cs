@@ -56,7 +56,7 @@ namespace Eproject_RealtorsPortal.Models
         public bool AdminStatus { get; set; } = false;
 
 
-        public Admin ChangeInfor(long AdminId, string AdminName, string fileName, string AdminRole, bool AdminStatus)
+        public Admin ChangeInfor(long AdminId, string AdminName, string fileName, string AdminRole)
         {
             using (var connect = new LQHVContext())
             {

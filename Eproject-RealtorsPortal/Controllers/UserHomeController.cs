@@ -56,7 +56,7 @@ namespace Eproject_RealtorsPortal.Controllers
                 UsersAddress = model.UsersAddress,
                 UsersImage = "defaultImage.jpg",
                 UsersStatus = false,
-                PackagesId = 2
+                PackagesId = 1
 
             };
             user.ConfirmEmail = random.Next().ToString();
@@ -131,7 +131,7 @@ namespace Eproject_RealtorsPortal.Controllers
                     Package package = dbContext.Packages.Where(p => p.PackagesId == user.PackagesId).FirstOrDefault();
                     PackageType packageTypes = dbContext.PackageTypes.Where(p => p.PackageTypeId == package.PackageTypeId).FirstOrDefault();
 
-                    if (package != null && packageTypes.PackageTypeName.Contains("account"))
+                    if (package != null && packageTypes.PackageTypeId.Equals(2))
                     {
                         HttpContext.Session.SetString("User", user.UsersEmail + "_" + UsersPassword);
                         HttpContext.Session.SetString("UserAccount", user.UsersEmail);
@@ -150,7 +150,7 @@ namespace Eproject_RealtorsPortal.Controllers
                         HttpContext.Session.SetString("UserName", user.UsersFullname);
                         HttpContext.Session.SetString("UserImage", user.UsersImage);
                         //saleler
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "UserHome");
                     }
                 }
             }
