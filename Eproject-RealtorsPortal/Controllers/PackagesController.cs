@@ -24,7 +24,7 @@ namespace Eproject_RealtorsPortal.Controllers
             else
             {
                 //Hiển thị trạng thái khi trạng thái == true / đã kích hoạt
-                indexBox = LQHVContext.Packages.Where(s => s.PackagesStatus == true).ToList();
+                indexBox = LQHVContext.Packages.Where(s => s.PackagesStatus == true && s.PackageTypeId == 2).ToList();
                 return View("Index", indexBox);
             }
 

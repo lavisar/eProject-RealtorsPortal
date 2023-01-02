@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Eproject_RealtorsPortal.Models.Product>
+
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<h1>List Ads</h1>
+<table class="table table-hover ml-2">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                TITLE
+            </th>
+            <th>
+                PRICE
+            </th>
+            <th>
+                PACKAGE 
+            </th>
+            <th>
+                CATEGORY
+            </th>
+            <th>
+                STATUS
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductTitle)
+            </td>  
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductPrice)
+            </td>               
+            <td>
+                @Html.DisplayFor(modelItem => item.PackagesId)
+            </td>            
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryId)
+            </td>           
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+
+
+                <td class="project-actions text-right">
+                    <a class="btn btn-primary btn-sm" href="@Url.Action("detailForList", "Ads", new { id=item.ProductId })">
+                        <i class="fas fa-folder"></i>Details
+                    </a>
+                    <a class="btn btn-danger btn-sm" 
+                        onclick="return confirm('You dont have permision to delete @Html.DisplayFor(modelItem => item.ProductTitle )!');" 
+                        href="@Url.Action("listAds", "Ads")">
+                            <i class="fas fa-trash"></i>Delete
+                    </a>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>

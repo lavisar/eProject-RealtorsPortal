@@ -14,7 +14,7 @@
 
             <div class="form-group">
                 Category Name
-                <input asp-for="CategoryName" class="form-control" />
+                <input asp-for="CategoryName" class="form-control" required/>
                 <span asp-validation-for="CategoryName" class="text-danger"></span>
             </div>
 
@@ -26,7 +26,7 @@
 
             <div class="form-group">
                 Business Types Id
-                <input asp-for="BusinessTypesId" class="form-control" />
+                <input asp-for="BusinessTypesId" class="form-control" min="1" max="3" required/>
                 <span asp-validation-for="BusinessTypesId" class="text-danger"></span>
             </div>
 

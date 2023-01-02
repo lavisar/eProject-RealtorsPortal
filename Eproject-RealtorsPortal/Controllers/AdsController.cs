@@ -22,6 +22,7 @@ namespace Eproject_RealtorsPortal.Controllers
         List<Region> region;
         List<Country> country;
         ProductAdd productAdd;
+        
         public IActionResult Sell()
         {
             sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.Status == "active")
@@ -307,5 +308,35 @@ namespace Eproject_RealtorsPortal.Controllers
             .ToList();
             return View("Search", sell);
         }
+
+
+        public IActionResult listAds()
+        {
+            var indexList = LQHVContext.Products.ToList();
+            return View("listAds", indexList);
+        }
+        public IActionResult DeleteList(long id)
+        {
+            var ForDelete = LQHVContext.Products.Where(p => p.ProductId == id).FirstOrDefault();
+            if (ForDelete != null)
+            {
+                LQHVContext.Products.Remove(ForDelete);
+                if (LQHVContext.SaveChanges() > 0)
+                {
+                    return RedirectToAction("listAds", "Ads");
+                }
+            }
+
+            List<Product> list = LQHVContext.Products.ToList();
+            return View("listAds", list);
+        }
+        public IActionResult detailForList(long ID)
+        {
+            //Link qua trang details dựa theo ID
+            var detail = LQHVContext.Products.Where(s => s.ProductId == ID).FirstOrDefault();
+            return View("detailForList", detail);
+        }
+
+
     }
 }
