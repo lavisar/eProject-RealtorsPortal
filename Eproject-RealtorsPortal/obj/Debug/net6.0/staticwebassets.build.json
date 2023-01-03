@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "c8FCYxT8mRlCmD9xmfSWu+3/GhVtMA6b7I0Xb7Br3hg=",
+  "Hash": "fITz+IUs8QH0EB4T7bWgiTaNDKle2yAAmhRsUHFipjs=",
   "Source": "Eproject-RealtorsPortal",
   "BasePath": "_content/Eproject-RealtorsPortal",
   "Mode": "Default",
@@ -47462,6 +47462,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\News\\đại diện.jpg",
+      "SourceId": "Eproject-RealtorsPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "BasePath": "_content/Eproject-RealtorsPortal",
+      "RelativePath": "News/đại diện.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\News\\đại diện.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\News\\Hinh-anh-du-an-dat-nen-dep-11.jpg",
+      "SourceId": "Eproject-RealtorsPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "BasePath": "_content/Eproject-RealtorsPortal",
+      "RelativePath": "News/Hinh-anh-du-an-dat-nen-dep-11.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\News\\Hinh-anh-du-an-dat-nen-dep-11.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\News\\pexels-foteros-783745.jpg",
+      "SourceId": "Eproject-RealtorsPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "BasePath": "_content/Eproject-RealtorsPortal",
+      "RelativePath": "News/pexels-foteros-783745.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\News\\pexels-foteros-783745.jpg"
     }
   ]
 }

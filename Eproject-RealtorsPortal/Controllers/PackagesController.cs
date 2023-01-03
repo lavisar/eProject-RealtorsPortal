@@ -36,6 +36,8 @@ namespace Eproject_RealtorsPortal.Controllers
 
             HttpContext.Session.SetString("PackagesId", package.PackagesId.ToString());
             HttpContext.Session.SetString("PackagesPrice", package.PackagesPrice.ToString());
+            HttpContext.Session.SetString("PackageName", package.PackagesName.ToString());
+            HttpContext.Session.SetString("Total", ((package.PackagesPrice)*30).ToString());
 
             return RedirectToAction("Pay","Payment");
         }

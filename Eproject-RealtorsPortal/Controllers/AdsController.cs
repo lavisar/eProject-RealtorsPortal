@@ -159,7 +159,7 @@ namespace Eproject_RealtorsPortal.Controllers
             city = LQHVContext.Cities.ToList();
             region = LQHVContext.Regions.ToList();
             country = LQHVContext.Countries.ToList();
-            return View(new ProductAdd { Package = package,Categories = category, Countries = country, Areas = areas, Cities = city });
+            return View(new ProductAdd { Package = package,Categories = category, Countries = country, Areas = areas, Cities = city ,Regions = region});
         }
         [HttpPost]
         public IActionResult CreateAds(ProductAdd model)

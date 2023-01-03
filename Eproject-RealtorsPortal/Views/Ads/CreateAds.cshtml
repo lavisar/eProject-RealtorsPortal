@@ -38,36 +38,54 @@
             </div>
 
             <div class="form-group">
+                <label asp-for="CountryName" class="control-label">Country</label>
+                <select asp-for="CountryName" list="country" class="form-control" onkeyup="filterRegion()">
+                <datalist id="country">
+                        <option value=" "></option>
+                    @foreach (var item in Model.Countries)
+                    {
+                        <option value="@item.CountriesName" id="Country @item.CountriesId">
+                            @item.CountriesName
+                        </option>
+                    }
+                </datalist>
+                </select>
+                 <label asp-for="RegionName" class="control-label">Region</label>
+                <select asp-for="RegionName" list="city" class="form-control" onkeyup="filterCity()">
+                <datalist id="city">
+                         <option value=" "></option>
+                    @foreach (var item in Model.Regions)
+                    {
+                        <option value="@item.RegionsName" class="Region @item.CountriesId" id="Region @item.RegionsId" style="display:none">
+                            @item.RegionsName
+                        </option>
+                    }
+                </datalist>
+                </select>
+                <label asp-for="CityName" class="control-label">City</label>
+                <select asp-for="CityName" list="city" class="form-control" onkeyup="filterArea()">
+                <datalist id="city">                       
+                    <option value=" "></option>
+                    @foreach (var item in Model.Cities)
+                    {
+                        <option value="@item.CitiesName" class=" Region @item.RegionsId" id="City @item.CitiesId"  style="display:none">
+                            @item.CitiesName
+                        </option>
+                    }
+                </datalist>
+                </select>
                 <label asp-for="AreaName" class="control-label">Area</label>
-                <input asp-for="AreaName" list="area" class="form-control"/>
+                <select asp-for="AreaName" list="area" class="form-control">
                     <datalist id="area">
-                        @foreach (var item in @Model.Areas)
+                        <option value=" "></option>
+                        @foreach (var item in Model.Areas)
                         {
-                            <option value="@item.AreasName">
+                            <option value="@item.AreasName" class="City @item.CitiesId" id="Area @item.AreasId" style="display:none">
                                 @item.AreasName
                             </option>
                         }
                     </datalist>
-                <label asp-for="CityName" class="control-label">City</label>
-                <input asp-for="CityName" list="city" class="form-control"/>
-                    <datalist id="city">
-                        @foreach (var item in @Model.Cities)
-                        {
-                            <option value="@item.CitiesName">
-                                @item.CitiesName
-                            </option>
-                        }
-                    </datalist>
-                <label asp-for="CountryName" class="control-label">Country</label>
-                <input asp-for="CountryName" list="country" class="form-control"/>
-                    <datalist id="country">
-                        @foreach (var item in @Model.Countries)
-                        {
-                            <option value="@item.CountriesName">
-                                @item.CountriesName
-                            </option>
-                        }
-                    </datalist>
+                </select>
             </div>
             <div class="form-group">
                 <label asp-for="ProductAddress" class="control-label">Address</label>
@@ -122,8 +140,22 @@
                 <span asp-validation-for="NumDays" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="PackagesId" class="control-label">Category: </label>
+                <select asp-for="PackagesId" list="package" class="form-control">
+                    <datalist id="package">
+                        @foreach (var item in Model.Package)
+                        {
+                            <option value="@item.PackagesId">
+                                @item.PackagesName
+                            </option>
+                        }
+                    </datalist>
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="StartDate" class="control-label">Start Date</label>
-                <input asp-for="StartDate" class="form-control" />
+                <input asp-for="StartDate" class="form-control" value="@String.Format("{0:yyyy/MM/ddTHH:mm}",DateTime.Today)" />
                 <span asp-validation-for="StartDate" class="text-danger"></span>
             </div>
             @if (Context.Session.GetString("UserAccount") != null)
@@ -138,7 +170,7 @@
                 <label asp-for="CategoryId" class="control-label">Category: </label>
                 <select asp-for="CategoryId" list="category" class="form-control">
                     <datalist id="category">
-                        @foreach (var item in @Model.Categories)
+                        @foreach (var item in Model.Categories)
                         {
                             <option value="@item.CategoryId">
                                 @item.CategoryName
@@ -209,4 +241,22 @@
         //    if(inputAddress.value)
         //}
     })
+    function filterRegion(){
+           let CountryName = document.getElementById("CountryName");
+         //let giaTri = e.options[e.selectedIndex].text;
+           let CountryId = CountryName.options[e.selectedIndex].id;
+        $('.' + CountryId).show();
+    }
+    function filterCity() {
+        let RegionName = document.getElementById("RegionName");
+        //let giaTri = e.options[e.selectedIndex].text;
+        let RegionId = RegionName.options[e.selectedIndex].id;
+        $('.' + RegionId).show();
+    }
+    function filterArea() {
+        let CityName = document.getElementById("CityName");
+        //let giaTri = e.options[e.selectedIndex].text;
+        let CityId = CityName.options[e.selectedIndex].id;
+        $('.' + CityId).show();
+    }
 </script>
