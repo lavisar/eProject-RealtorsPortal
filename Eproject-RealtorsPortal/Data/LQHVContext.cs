@@ -96,15 +96,18 @@ namespace Eproject_RealtorsPortal.Data
                     .WithMany(p => p.Images)
                     .HasForeignKey(d => d.ProductId)
                     .HasConstraintName("FK_Image_Product");
+                entity.Property(i => i.ImageId)
+                     .UseIdentityColumn();
             });
 
             modelBuilder.Entity<News>(entity =>
             {
                 entity.Property(e => e.NewsDate).HasDefaultValueSql("(getdate())");
                 entity.HasOne(n => n.Image)
-                 .WithOne(i => i.News)
-                 .HasForeignKey<Image>(i => i.NewsId)
-                 .OnDelete(DeleteBehavior.ClientSetNull);
+                   .WithOne(i => i.News)
+                   .HasForeignKey<Image>(i => i.NewsId)
+                  .IsRequired(false)
+                  .OnDelete(DeleteBehavior.SetNull);
             });
 
             modelBuilder.Entity<Package>(entity =>

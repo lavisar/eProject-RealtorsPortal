@@ -30,6 +30,24 @@ namespace Eproject_RealtorsPortal.Controllers
 
 
         }
+        public IActionResult IndexForAds()
+        {
+            var user = new User();
+            List<Package> packagesIndexAds;
+
+            if (HttpContext.Session.GetString("UserId") == null)
+            {
+                return RedirectToAction(controllerName: "UserHome", actionName: "Logout");
+            }
+            else
+            {
+                //Hiển thị trạng thái khi trạng thái == true / đã kích hoạt
+                packagesIndexAds = LQHVContext.Packages.Where(s => s.PackagesStatus == true && s.PackageTypeId == 3).ToList();
+                return View("Index", packagesIndexAds);
+            }
+
+
+        }
         public IActionResult Pay(int ID,decimal price)
         {
             package = LQHVContext.Packages.Where(s => s.PackagesId == ID && s.PackagesPrice == price).FirstOrDefault();

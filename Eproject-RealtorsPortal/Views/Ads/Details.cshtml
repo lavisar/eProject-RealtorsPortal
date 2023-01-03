@@ -13,38 +13,20 @@
                         <img class="rounded" height="400"
                              src="~/Ads/@(Model.ProductImage).jpg">
                     </div>
-                    @*<!-- img-big-wrap.// -->
+                    <!-- img-big-wrap.// -->
                     <div class="mb-4 d-flex justify-content-between overflow-hidden">
-                    <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
-                    <img class="rounded" height="96"
-                    src="./Ecommerce templates for Figma and Sketch_files/thumb1(3).webp">
-                    </a>
-                    <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
-                    <img class="rounded" height="96"
-                    src="./Ecommerce templates for Figma and Sketch_files/thumb2(3).webp">
-                    </a>
-                    <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
-                    <img class="rounded" height="96"
-                    src="./Ecommerce templates for Figma and Sketch_files/thumb3(3).webp">
-                    </a>
-                    <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
-                    <img class="rounded" height="96"
-                    src="./Ecommerce templates for Figma and Sketch_files/thumb4(3).webp">
-                    </a>
-                    <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
-                    <img class="rounded" height="96"
-                    src="./Ecommerce templates for Figma and Sketch_files/thumb5.webp">
-                    </a> <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
-                    <img class="rounded" height="96"
-                    src="./Ecommerce templates for Figma and Sketch_files/thumb6.webp">
-                    </a> <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
-                    <img class="rounded" height="96"
-                    src="./Ecommerce templates for Figma and Sketch_files/thumb5.webp">
-                    </a> <a href="https://bootstrap-ecommerce.com/components.html#" class="item-thumb me-2">
-                    <img class="rounded" height="96"
-                    src="./Ecommerce templates for Figma and Sketch_files/thumb6.webp">
-                    </a>
-                    </div>*@ <!-- thumbs-wrap.// -->
+                        if(Model.Image.Count > 0){
+                          @foreach(var item in Model.Image){
+                            <a href="" class="item-thumb me-2">
+                                <img class="rounded" height="96"
+                                 src="~/Ads/@(item.ImagePath)">
+                            </a>
+                        }
+                        }
+
+
+                    
+                    </div> <!-- thumbs-wrap.// -->
                 </article> <!-- gallery-wrap .end// -->
                 <article>
                     <h5>Detailed info</h5>

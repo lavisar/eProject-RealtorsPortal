@@ -102,6 +102,7 @@ namespace Eproject_RealtorsPortal.Controllers
         }
         public IActionResult Details(long ID)
         {
+            List<Image> image = LQHVContext.Images.Where(p => p.ProductId == ID).ToList();
             product = LQHVContext.Products
                 .Where(s => s.ProductId == ID)
                 .Join(
@@ -144,7 +145,8 @@ namespace Eproject_RealtorsPortal.Controllers
                 ContactEmail = s.Product.ContactEmail,
                 BalconyOrientation = s.Product.BalconyOrientation,
                 HomeOrientation = s.Product.HomeOrientation,
-                BusinessTypeID = s.BusinessTypeID
+                BusinessTypeID = s.BusinessTypeID,
+                Image = image
             }).FirstOrDefault();
             return View("Details", product);
         }

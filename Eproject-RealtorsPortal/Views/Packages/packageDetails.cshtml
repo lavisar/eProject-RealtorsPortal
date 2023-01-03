@@ -46,7 +46,7 @@
     </dl>
     <div>
         <!-- Button BUY NOW-->
-        <a class="btn btn-danger mt-auto" href="#LinkToPaymentPage">Buy now</a>
+        <a class="btn btn-danger mt-auto" href="@Url.Action("Pay", "Packages", new {Id = Model.PackagesId, price = Model.PackagesPrice})">Buy now</a>
         <br />
         <!-- Back To packages list for user -->
         <div class="mt-1">
