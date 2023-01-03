@@ -16,23 +16,28 @@
             <div class="form-group">
                 <label asp-for="PaymentPrice" class="control-label">Price</label>
                 <input asp-for="PaymentPrice" class="form-control" readonly value="@Context.Session.GetString("PackagesPrice")" />
+                 <input asp-for="PaymentPrice" class="form-control" type="hidden" value="@Context.Session.GetString("PackagesPrice")" />
                 <span asp-validation-for="PaymentPrice" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PaymentTotal" class="control-label">Total</label>
                 <input asp-for="PaymentTotal" class="form-control" readonly value="@Context.Session.GetString("Total")" />
+                <input asp-for="PaymentTotal" class="form-control" type="hidden" value="@Context.Session.GetString("Total")" />
+
                 <span asp-validation-for="PaymentTotal" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PaymentDatetime" class="control-label"></label>
                 <input asp-for="PaymentDatetime" class="form-control" readonly type="datetime-local" value="@String.Format("{0:yyyy/MM/ddTHH:mm}",DateTime.Today)" />
+                <input asp-for="PaymentDatetime" class="form-control" type="hidden" type="datetime-local" value="@String.Format("{0:yyyy/MM/ddTHH:mm}",DateTime.Today)" />
+
                 <span asp-validation-for="PaymentDatetime" class="text-danger"></span>
             </div>
             @if (Context.Session.GetString("PayType") == "ads")
             {
                 <div class="form-group">
                     @*                <label asp-for="ProductId" class="control-label">Buy</label>
-                *@                <input asp-for="ProductId" class="form-control" readonly type="hidden" value="@Context.Session.GetString("ProductId")" />
+                *@  <input asp-for="ProductId" class="form-control" readonly type="hidden" value="@Context.Session.GetString("ProductId")" />
                     <span asp-validation-for="ProductId" class="text-danger"></span>
                 </div>
             }

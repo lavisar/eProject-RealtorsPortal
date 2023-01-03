@@ -15,7 +15,7 @@ namespace Eproject_RealtorsPortal.Controllers
         [HttpPost]
         public IActionResult Pay(Payment pay)
         {
-            LQHVContext.Add(pay);
+            LQHVContext.Payments.Add(pay);
             if (LQHVContext.SaveChanges() == 1)
             {
                 return RedirectToAction("Index", "Home");
