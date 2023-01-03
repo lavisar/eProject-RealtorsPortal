@@ -11,11 +11,11 @@
                 <article class="gallery-wrap">
                     <div class="img-big-wrap" style="height: auto;">
                         <img class="rounded" height="400"
-                             src="~/Ads/@(Model.ProductImage).jpg">
+                             src="~/Ads/@(Model.ProductImage)">
                     </div>
                     <!-- img-big-wrap.// -->
                     <div class="mb-4 d-flex justify-content-between overflow-hidden">
-                        if(Model.Image.Count > 0){
+                        @if(Model.Image.Count > 0){
                           @foreach(var item in Model.Image){
                             <a href="" class="item-thumb me-2">
                                 <img class="rounded" height="96"
@@ -98,7 +98,7 @@
                     @if (!String.IsNullOrEmpty(Model.BalconyOrientation))
                     {
                         <h6>
-                            &nbsp;&nbsp;&nbsp;&nbsp;Balcony Orientation: @Model.BalconyOrientation
+                            Balcony Orientation: @Model.BalconyOrientation
                         </h6>
                     }
                 <hr>
