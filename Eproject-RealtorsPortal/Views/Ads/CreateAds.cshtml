@@ -109,8 +109,8 @@
                 <input asp-for="NumOfFloors" class="form-control" />
                 <span asp-validation-for="NumOfFloors" class="text-danger"></span>
             </div>
-             @if(Context.Session.GetString(""))
-            <div class="form-group">
+@*             @if(Context.Session.GetString(""))
+*@            <div class="form-group">
                 <label asp-for="NumDays" class="control-label">Number of days</label>
                 <select asp-for="NumDays" list="days" class="form-control">
                     <datalist id="days">
@@ -126,12 +126,14 @@
                 <input asp-for="StartDate" class="form-control" />
                 <span asp-validation-for="StartDate" class="text-danger"></span>
             </div>
-            @if(Context.Session.GetString("UserAccount")!=null){
-            <div class="form-group form-check">
-                <label class="form-check-label">
+            @if (Context.Session.GetString("UserAccount") != null)
+            {
+                <div class="form-group form-check">
+                    <label class="form-check-label">
                     <input class="form-check-input" asp-for="Featured" /> @Html.DisplayNameFor(model => model.Featured)
                 </label>
             </div>
+            }
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label">Category: </label>
                 <select asp-for="CategoryId" list="category" class="form-control">
