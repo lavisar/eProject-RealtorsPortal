@@ -17,16 +17,13 @@ namespace Eproject_RealtorsPortal.Models
         [Unicode(false)]
         public string ImagePath { get; set; } = null!;
         [Column("product_id")]
-        public long ProductId { get; set; }
-
+        public long? ProductId { get; set; }
+        [Column("news_id")]
+        public long? NewsId { get; set; }
+        public virtual News News { get; set; }
         [ForeignKey("ProductId")]
         [InverseProperty("Images")]
-        public virtual Product Product { get; set; } = null!;
-        public long NewsId { get; set; }
-
-        [ForeignKey("NewsId")]
-        [InverseProperty("Images")]
-        public virtual News News { get; set; } = null!;
+        public virtual Product? Product { get; set; }
     }
     public class ManyImage
     {

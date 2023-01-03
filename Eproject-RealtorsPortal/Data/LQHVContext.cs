@@ -37,6 +37,7 @@ namespace Eproject_RealtorsPortal.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=LQHV;Trusted_Connection=True;");
             }
         }
@@ -45,9 +46,9 @@ namespace Eproject_RealtorsPortal.Data
         {
             modelBuilder.Entity<Admin>(entity =>
             {
-                entity.Property(e => e.AdminRole).HasDefaultValueSql("((0))");
+                entity.Property(e => e.AdminImage).HasDefaultValueSql("('defaultImage.jpg')");
 
-                entity.Property(e => e.AdminStatus).HasDefaultValueSql("((1))");
+                entity.Property(e => e.AdminRole).HasDefaultValueSql("('Staff')");
             });
 
             modelBuilder.Entity<Area>(entity =>
@@ -94,13 +95,16 @@ namespace Eproject_RealtorsPortal.Data
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.Images)
                     .HasForeignKey(d => d.ProductId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Image_Product");
             });
 
             modelBuilder.Entity<News>(entity =>
             {
                 entity.Property(e => e.NewsDate).HasDefaultValueSql("(getdate())");
+                entity.HasOne(n => n.Image)
+                 .WithOne(i => i.News)
+                 .HasForeignKey<Image>(i => i.NewsId)
+                 .OnDelete(DeleteBehavior.ClientSetNull);
             });
 
             modelBuilder.Entity<Package>(entity =>
@@ -121,7 +125,6 @@ namespace Eproject_RealtorsPortal.Data
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.Payments)
                     .HasForeignKey(d => d.ProductId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Payment_product_id");
 
                 entity.HasOne(d => d.Users)
@@ -129,12 +132,6 @@ namespace Eproject_RealtorsPortal.Data
                     .HasForeignKey(d => d.UsersId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Payment_users_id");
-
-                entity.HasOne(d => d.Package)
-                .WithMany(p => p.Payments)
-                .HasForeignKey(d => d.PackageId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Payment_packages_id");
             });
 
             modelBuilder.Entity<Product>(entity =>
@@ -172,12 +169,13 @@ namespace Eproject_RealtorsPortal.Data
 
             modelBuilder.Entity<User>(entity =>
             {
-                entity.Property(e => e.UsersStatus).HasDefaultValueSql("((1))");
+                entity.Property(e => e.PackagesId).HasDefaultValueSql("((1))");
+
+                entity.Property(e => e.UsersImage).HasDefaultValueSql("('defaultImage.jpg')");
 
                 entity.HasOne(d => d.Packages)
                     .WithMany(p => p.Users)
                     .HasForeignKey(d => d.PackagesId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_User_Package_id");
             });
 

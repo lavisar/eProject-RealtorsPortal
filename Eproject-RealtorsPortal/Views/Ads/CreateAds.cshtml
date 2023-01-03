@@ -39,7 +39,7 @@
 
             <div class="form-group">
                 <label asp-for="CountryName" class="control-label">Country</label>
-                <select asp-for="CountryName" list="country" class="form-control" onkeyup="filterRegion()">
+                <select asp-for="CountryName" list="country" class="form-control" onchange="filterRegions()">
                 <datalist id="country">
                         <option value=" "></option>
                     @foreach (var item in Model.Countries)
@@ -51,24 +51,24 @@
                 </datalist>
                 </select>
                  <label asp-for="RegionName" class="control-label">Region</label>
-                <select asp-for="RegionName" list="city" class="form-control" onkeyup="filterCity()">
+                <select asp-for="RegionName" list="city" class="form-control" onchange="filterCities()">
                 <datalist id="city">
                          <option value=" "></option>
                     @foreach (var item in Model.Regions)
                     {
-                        <option value="@item.RegionsName" class="Region @item.CountriesId" id="Region @item.RegionsId" style="display:none">
+                        <option value="@item.RegionsName" class="Region @item.CountriesId" id="Region @item.RegionsId">
                             @item.RegionsName
                         </option>
                     }
                 </datalist>
                 </select>
                 <label asp-for="CityName" class="control-label">City</label>
-                <select asp-for="CityName" list="city" class="form-control" onkeyup="filterArea()">
+                <select asp-for="CityName" list="city" class="form-control" onchange="filterAreas()">
                 <datalist id="city">                       
                     <option value=" "></option>
                     @foreach (var item in Model.Cities)
                     {
-                        <option value="@item.CitiesName" class=" Region @item.RegionsId" id="City @item.CitiesId"  style="display:none">
+                        <option value="@item.CitiesName" class=" Region @item.RegionsId" id="City @item.CitiesId">
                             @item.CitiesName
                         </option>
                     }
@@ -80,7 +80,7 @@
                         <option value=" "></option>
                         @foreach (var item in Model.Areas)
                         {
-                            <option value="@item.AreasName" class="City @item.CitiesId" id="Area @item.AreasId" style="display:none">
+                            <option value="@item.AreasName" class="City @item.CitiesId" id="Area @item.AreasId">
                                 @item.AreasName
                             </option>
                         }
@@ -224,39 +224,89 @@
             var selValue = b.options[b.selectedIndex].value;
             $("#EndDate").text(a + b);
         })
-        //var c = document.getElementById("Area").value;
-        //var d = document.getElementById("Cities").value;
-        //var e = document.getElementById("Country").value;
-        //var textAddress = document.getElementById("ProductAddress").value;
-        //$("#Areas").keyup(function (event) {
-        //    var c = document.getElementById("Areas").value;
-        //    textAddress += c;
-        //    $("#ProductAddress").text(textAddress);
-        //})
-        //function CopyArea(){
-        //    var area = document.getElementById("Areas");
-        //    var inputAddress= document.getElementById("ProductAddress");
-        //    var selValue = area.options[area.selectedIndex].value;
-        //    inputAddress.value += ","+selValue
-        //    if(inputAddress.value)
-        //}
     })
-    function filterRegion(){
-           let CountryName = document.getElementById("CountryName");
-         //let giaTri = e.options[e.selectedIndex].text;
-           let CountryId = CountryName.options[e.selectedIndex].id;
-        $('.' + CountryId).show();
+    function filterRegions() {
+        var selectedOption = document.querySelector('.form-control option:selected');
+        var country = selectedOption.id;
+        // Get the selected country value
+        //var country = this.id;
+
+        // Get all the region options
+        var regionOptions = document.querySelectorAll('.form-control option.Region');
+
+        // Loop through the region options
+        for (var i = 0; i < regionOptions.length; i++) {
+            var option = regionOptions[i];
+
+            // If the option's parent country is the selected country, show the option
+            if (option.classList.contains('Region ' + country)) {
+                option.style.display = 'block';
+            } else {
+                // Otherwise, hide the option
+                option.style.display = 'none';
+            }
+        }
+
+        // Reset the selected value of the region dropdown list
+        document.querySelector('.form-control[list=region]').value = '';
+
+        // Hide all the city options
+        var cityOptions = document.querySelectorAll('.form-control option.City');
+        for (var i = 0; i < cityOptions.length; i++) {
+            cityOptions[i].style.display = 'none';
+        }
     }
-    function filterCity() {
-        let RegionName = document.getElementById("RegionName");
-        //let giaTri = e.options[e.selectedIndex].text;
-        let RegionId = RegionName.options[e.selectedIndex].id;
-        $('.' + RegionId).show();
-    }
-    function filterArea() {
-        let CityName = document.getElementById("CityName");
-        //let giaTri = e.options[e.selectedIndex].text;
-        let CityId = CityName.options[e.selectedIndex].id;
-        $('.' + CityId).show();
+    function filterCities() {
+        var selectedOption = document.querySelector('.form-control option:selected');
+        var region = selectedOption.id;
+        // Get the selected region value
+        //var region = this.id;
+
+        // Get all the city options
+        var cityOptions = document.querySelectorAll('.form-control option.City');
+
+        // Loop through the city options
+        for (var i = 0; i < cityOptions.length; i++) {
+            var option = cityOptions[i];
+
+            // If the option's parent region is the selected region, show the option
+            if (option.classList.contains('City ' + region)) {
+                option.style.display = 'block';
+            } else {
+                // Otherwise, hide the option
+                option.style.display = 'none';
+            }
+        }
+
+        // Reset the selected value of the city dropdown list
+        document.querySelector('.form-control[list=city]').value = '';
+
+        // Hide all the area options
+        var areaOptions = document.querySelectorAll('.form-control option.Area');
+        for (var i = 0; i < areaOptions.length; i++) {
+            areaOptions[i].style.display = 'none';
+        }
+    } 
+    function filterAreas() {
+        var selectedOption = document.querySelector('.form-control option:selected');
+        var city = selectedOption.id;
+        // Get the selected city value
+        //var city = this.id;
+
+        // Get all the area options
+        var areaOptions = document.querySelectorAll('.form-control option.Area');
+
+        // Loop through the area options
+        for (var i = 0; i < areaOptions.length; i++) {
+            var option = areaOptions[i];
+
+            // If the option's parent city is the selected city, show the option
+            if (option.classList.contains('Area ' + city)) {
+                option.style.display = 'block';
+            } else {
+                // Otherwise, hide the option
+                option.style.display = 'none';
+            }
+        }
     }
 </script>

@@ -12,12 +12,45 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Views\Shared\_layout_UserHome.cshtml~RFab24ed.TMP" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <None Include="Areas\Admin\Views\Home\AccountProfile.cshtml" />
+    <None Include="Areas\Admin\Views\Home\AddAdmin.cshtml" />
+    <None Include="Areas\Admin\Views\Home\AddUser.cshtml" />
+    <None Include="Areas\Admin\Views\Home\AdminAuthenticationEmail.cshtml" />
+    <None Include="Areas\Admin\Views\Home\AdminAuthenticationForm.cshtml" />
+    <None Include="Areas\Admin\Views\Home\ChangePassword.cshtml" />
+    <None Include="Areas\Admin\Views\Home\DetailsAdmin.cshtml" />
+    <None Include="Areas\Admin\Views\Home\DetailsUser.cshtml" />
+    <None Include="Areas\Admin\Views\Home\EditAdmin.cshtml" />
+    <None Include="Areas\Admin\Views\Home\EditUser.cshtml" />
     <None Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Home\LoginAdmin.cshtml" />
+    <None Include="Areas\Admin\Views\Home\ViewAdmin.cshtml" />
+    <None Include="Areas\Admin\Views\Home\ViewUser.cshtml" />
+    <None Include="Areas\Admin\Views\Location\AddArea.cshtml" />
+    <None Include="Areas\Admin\Views\Location\AddCity.cshtml" />
+    <None Include="Areas\Admin\Views\Location\AddCountry.cshtml" />
+    <None Include="Areas\Admin\Views\Location\AddRegion.cshtml" />
+    <None Include="Areas\Admin\Views\Location\EditArea.cshtml" />
+    <None Include="Areas\Admin\Views\Location\EditCity.cshtml" />
+    <None Include="Areas\Admin\Views\Location\EditCountry.cshtml" />
+    <None Include="Areas\Admin\Views\Location\EditRegion.cshtml" />
+    <None Include="Areas\Admin\Views\Location\ViewArea.cshtml" />
+    <None Include="Areas\Admin\Views\Location\ViewCity.cshtml" />
+    <None Include="Areas\Admin\Views\Location\ViewCountry.cshtml" />
+    <None Include="Areas\Admin\Views\Location\ViewRegion.cshtml" />
     <None Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Ads\AllOwnAds.cshtml" />
+    <None Include="Views\Ads\Box.cshtml" />
+    <None Include="Views\Ads\CreateAds.cshtml" />
+    <None Include="Views\Ads\detailForList.cshtml" />
+    <None Include="Views\Ads\Details.cshtml" />
+    <None Include="Views\Ads\listAds.cshtml" />
+    <None Include="Views\Ads\Rent.cshtml" />
+    <None Include="Views\Ads\Search.cshtml" />
+    <None Include="Views\Ads\Sell.cshtml" />
+    <None Include="Views\Cate\cateList.cshtml" />
+    <None Include="Views\Cate\Create.cshtml" />
+    <None Include="Views\Cate\Update.cshtml" />
     <None Include="Views\Contact\Index.cshtml" />
     <None Include="Views\Contact\listContact.cshtml" />
     <None Include="Views\Home\AboutUs.cshtml" />
@@ -30,12 +63,28 @@
     <None Include="Views\News\Index.cshtml" />
     <None Include="Views\News\listNews.cshtml" />
     <None Include="Views\News\updateNews.cshtml" />
+    <None Include="Views\Packages\Box.cshtml" />
+    <None Include="Views\Packages\createPackage.cshtml" />
+    <None Include="Views\Packages\Index.cshtml" />
+    <None Include="Views\Packages\listPackage.cshtml" />
+    <None Include="Views\Packages\packageDetails.cshtml" />
+    <None Include="Views\Packages\updatePackage.cshtml" />
+    <None Include="Views\Payment\Pay.cshtml" />
+    <None Include="Views\Payment\TransactionHistory.cshtml" />
+    <None Include="Views\Report\Index.cshtml" />
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_layout_UserHome.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
     <None Include="Views\UserHome\AuthenticationForm.cshtml" />
     <None Include="Views\UserHome\ChangePassword.cshtml" />
     <None Include="Views\UserHome\ForgotPassword.cshtml" />
     <None Include="Views\UserHome\Index.cshtml" />
     <None Include="Views\UserHome\Login.cshtml" />
     <None Include="Views\UserHome\Register.cshtml" />
+    <None Include="Views\UserHome\ViewAccountProfile.cshtml" />
+    <None Include="Views\_ViewImports.cshtml" />
+    <None Include="Views\_ViewStart.cshtml" />
     <None Include="wwwroot\admin\dist\css\adminlte.css.map" />
     <None Include="wwwroot\admin\dist\css\adminlte.min.css.map" />
     <None Include="wwwroot\admin\dist\css\alt\adminlte.components.css.map" />
@@ -1948,8 +1997,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="wwwroot\News\" />
   </ItemGroup>
 

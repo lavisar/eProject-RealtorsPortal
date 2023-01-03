@@ -112,8 +112,8 @@ namespace Eproject_RealtorsPortal.Controllers
                         };
                         Image image = new Image
                         {
-                            ImagePath = ManyImage.FileName,
-                            NewsId = long.Parse(HttpContext.Session.GetString("NewsId"))
+                            ImagePath = ManyImage.FileName
+                            //NewsId = long.Parse(HttpContext.Session.GetString("NewsId"))
 
                         };
                         // Insert the image into the database

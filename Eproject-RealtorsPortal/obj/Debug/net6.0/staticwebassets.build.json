@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fITz+IUs8QH0EB4T7bWgiTaNDKle2yAAmhRsUHFipjs=",
+  "Hash": "wU4li6xHHT/kmLP9pVesRYbwIt/PygOwhFn3t2sKwfg=",
   "Source": "Eproject-RealtorsPortal",
   "BasePath": "_content/Eproject-RealtorsPortal",
   "Mode": "Default",
@@ -561,6 +561,23 @@
       "OriginalItemSpec": "wwwroot\\admin\\dist\\img\\avatar2.png"
     },
     {
+      "Identity": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\avatar2233611650.png",
+      "SourceId": "Eproject-RealtorsPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "BasePath": "_content/Eproject-RealtorsPortal",
+      "RelativePath": "admin/dist/img/avatar2233611650.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\dist\\img\\avatar2233611650.png"
+    },
+    {
       "Identity": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\avatar235828986.png",
       "SourceId": "Eproject-RealtorsPortal",
       "SourceType": "Discovered",
@@ -661,6 +678,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\dist\\img\\avatar4230833512.png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\avatar4233728919.png",
+      "SourceId": "Eproject-RealtorsPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\",
+      "BasePath": "_content/Eproject-RealtorsPortal",
+      "RelativePath": "admin/dist/img/avatar4233728919.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\dist\\img\\avatar4233728919.png"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\source\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\wwwroot\\admin\\dist\\img\\avatar4235721351.png",

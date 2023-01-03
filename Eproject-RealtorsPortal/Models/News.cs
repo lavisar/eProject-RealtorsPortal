@@ -8,6 +8,7 @@ namespace Eproject_RealtorsPortal.Models
 {
     public partial class News
     {
+
         [Key]
         [Column("news_id")]
         public long NewsId { get; set; }
@@ -28,7 +29,8 @@ namespace Eproject_RealtorsPortal.Models
         [StringLength(150)]
         [Unicode(false)]
         public string? NewsImage { get; set; }
-        public virtual ICollection<Image>? Images { get; set; }
+        public virtual Image Image { get; set; }
+
     }
 
     public class NewsAdd
