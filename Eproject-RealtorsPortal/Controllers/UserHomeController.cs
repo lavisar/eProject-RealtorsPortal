@@ -95,7 +95,7 @@ namespace Eproject_RealtorsPortal.Controllers
 
         }
 
-        [HttpGet]
+        [HttpGet] 
         public IActionResult Login()
         {
 
