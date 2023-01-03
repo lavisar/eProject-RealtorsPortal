@@ -155,6 +155,10 @@ namespace Eproject_RealtorsPortal.Controllers
             //productAdd.Categories = LQHVContext.Categories.ToList();
             //productAdd.Packages = LQHVContext.Packages.ToList();
 
+            if (HttpContext.Session.GetString("UserId") == null)
+            {
+                return RedirectToAction(controllerName: "UserHome", actionName: "Logout");
+            }
             package = LQHVContext.Packages.Where(pac => pac.PackageTypeId == 2).ToList();
             category = LQHVContext.Categories.ToList();
             areas = LQHVContext.Areas.ToList();

@@ -10,6 +10,11 @@ namespace Eproject_RealtorsPortal.Controllers
         List<Payment> payments;
         public IActionResult Pay()
         {
+
+            if (HttpContext.Session.GetString("UserId") == null)
+            {
+                return RedirectToAction(controllerName: "UserHome", actionName: "Logout");
+            }
             return View("Pay",new Payment());
         }
         [HttpPost]
@@ -24,6 +29,11 @@ namespace Eproject_RealtorsPortal.Controllers
         }
         public IActionResult TransactionHistory()
         {
+
+            if (HttpContext.Session.GetString("UserId") == null)
+            {
+                return RedirectToAction(controllerName: "UserHome", actionName: "Logout");
+            }
             long userID = long.Parse(HttpContext.Session.GetString("UserId"));
             payments = LQHVContext.Payments.Where(s => s.PaymentStatus == true && s.UsersId == userID).ToList();
             return View("TransactionHistory",payments);
