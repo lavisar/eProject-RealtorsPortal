@@ -1,0 +1,106 @@
+﻿@model IEnumerable<Eproject_RealtorsPortal.Models.Area>
+
+@{
+    ViewData["Title"] = "ViewArea";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@using Eproject_RealtorsPortal.Models;
+@using Eproject_RealtorsPortal.Data;
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="text-blue">Areas management</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Home</li>
+                    <li class="breadcrumb-item active">Areas List</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="row">
+        <div class=" col-12 col-auto">
+            <div class="card">
+                <a class="btn btn-primary btn-sm col-2 mt-3 ml-3" href="@Url.Action("AddArea", "Location")">
+                    <i class="fas fa-folder"></i> Create New
+                </a>
+                @if (@ViewBag.sg != null)
+                {
+                    <p style="color: green; font-weight:bold">@ViewBag.sg</p>
+                }
+                <div class="card-body">
+                    <table id="table" class="table table-bordered table-striped dataTable dtr-inline">
+                        <thead>
+                            <tr>
+                                <th style="width: 20%">
+                                    @Html.DisplayNameFor(model => model.AreasId)
+                                </th>
+                                <th style="width: 30%">
+                                    @Html.DisplayNameFor(model => model.AreasName)
+                                </th>
+                                <th style="width: 25%">
+                                    @Html.DisplayNameFor(model => model.CitiesId)
+                                </th>
+                                <th style="width: 25%">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AreasId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AreasName)
+                                    </td>
+                                    <td>
+                                        @if (item.CitiesId != null)
+                                        {
+                                            LQHVContext db = new LQHVContext();
+                                            City city = db.Cities.Where(a => a.CitiesId == item.CitiesId).FirstOrDefault();
+                                            @Html.DisplayFor(modelItem => city.CitiesName)
+                                        }
+
+                                    </td>
+                                    <td class="project-actions ">
+                                        <a class="btn btn-info btn-sm" href="@Url.Action("EditArea", "Location", new { id=item.AreasId })">
+                                            <i class="fas fa-edit"></i>Edit
+                                        </a>
+                                        <a class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete?');" href="@Url.Action("DeleteArea", "Location", new {  id=item.AreasId  })">
+                                            <i class="fas fa-trash"></i>Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+
+<script>
+    $(function () {
+        $('#table').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": true,
+            "responsive": true,
+        });
+    });
+</script>
