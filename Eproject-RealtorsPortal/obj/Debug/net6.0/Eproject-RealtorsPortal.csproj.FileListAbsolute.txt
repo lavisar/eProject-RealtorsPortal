@@ -265,3 +265,8 @@ C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\obj\Debug\
 C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\obj\Debug\net6.0\Eproject-RealtorsPortal.pdb
 C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\obj\Debug\net6.0\Eproject-RealtorsPortal.genruntimeconfig.cache
 C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\obj\Debug\net6.0\ref\Eproject-RealtorsPortal.dll
+C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\bin\Debug\net6.0\Chart.Mvc.Core.dll
+C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ADMIN\source\eProject-RealtorsPortal\Eproject-RealtorsPortal\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

@@ -40,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Chart.js": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            },
+            "ChartJS.Core.MVC": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.11, )"

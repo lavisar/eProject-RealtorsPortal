@@ -10,14 +10,14 @@
     .product {
         display: inline /*-block*/;
     }
+    #products {
+        padding-top:50px;
+    }
+
 
     .card {
         display: inline-block;
         margin-left: 50px;
-    }
-
-    #products {
-        position: relative;
     }
 
         #products .card {
@@ -100,7 +100,24 @@
                     border-radius: 4px;
                     cursor: pointer;
                 }
+                    .split {
+      height: 100%;
+      width: 50%;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
 
+    /* Control the left side */
+    .left {
+      left: 0;
+    }
+
+    /* Control the right side */
+    .right {
+      right: 0;
+    }
 </style>
 <style>
     .filter {
@@ -170,42 +187,43 @@
 </style>
 
 <div id="products">
-    <div class="product">
-        <div class="card card-body" style="width:230px;height:600px">
-            @using(Html.BeginForm("Search","Ads")){
-                <p>Type</p>
-                <ul class="filter" style="list-style-type:none,">
-                    <li class="label">
-                        <select type="text" name="Type" id="Type" class="form-control">
-                            <option value="1">Rent</option>
-                            <option value="2">Sell</option>
-                        </select>
-                    </li>
-                </ul>
-                <hr>
-                <b>District:</b>
-                <ul class="filter" style="list-style-type:none,">
-                    <li class="label">
-                        <input type="text" name="Area" id="Area">
-                    </li>
-                </ul>
-                <ul class="filter" style="list-style-type:none">
-                    <li class="label">
-                        <b>City: </b>
-                        <input type="text" name="City" id="City">
-                    </li>
-                </ul>
-                <hr>
-                <b>Price: </b>
-                <ul class="filter" style="list-style-type:none">
-                    <li class="label">
-                        Start Price: <input type="text" name="StartPrice" id="StartPrice" value="1"/>End Price: <input name="EndPrice" type="text" id="EndPrice" value="1000000000000"/>
-                    </li>
-                </ul>
-                <button class="btn btn-md btn-success" type="submit">Apply</button>
-            }
+    <aside class="card card-body" id="filter" style="display:inline-block;height:430px">
+        @using (Html.BeginForm("Search", "Ads"))
+        {
+            <p>Type</p>
+            <ul class="filter" style="list-style-type:none,">
+                <li class="label">
+                    <select type="text" name="Type" id="Type" class="form-control">
+                        <option value="1">Rent</option>
+                        <option value="2">Sell</option>
+                    </select>
+                </li>
+            </ul>
+            <b>District:</b>
+            <ul class="filter" style="list-style-type:none,">
+                <li class="label">
+                    <input type="text" name="Area" id="Area" class="form-control">
+                </li>
+            </ul>
+            <ul class="filter" style="list-style-type:none">
+                <li class="label">
+                    <b>City: </b>
+                    <input type="text" name="City" id="City" class="form-control">
+                </li>
+            </ul>
+            <b>Price: </b>
+            <ul class="filter" style="list-style-type:none">
+                <li class="label">
+                    Start Price: <input type="text" name="StartPrice" id="StartPrice" value="1" class="form-control" />End Price: <input name="EndPrice" type="text" id="EndPrice" value="1000000000000" class="form-control" />
+                </li>
+            </ul>
+            <hr />
+            <button class="btn btn-md btn-success" type="submit">Apply</button>
+        }
 
-        </div>
+    </aside>
+    <div class="product" style="width:50%">
+
         @foreach (var item in Model)
         {
             @Html.Partial("Box", item)
