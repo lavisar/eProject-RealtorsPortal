@@ -50,12 +50,19 @@ namespace Eproject_RealtorsPortal.Controllers
         }
         public IActionResult Pay(int ID,decimal price)
         {
-            package = LQHVContext.Packages.Where(s => s.PackagesId == ID && s.PackagesPrice == price).FirstOrDefault();
+            if (HttpContext.Session.GetString("UserId") == null)
+            {
+                return RedirectToAction(controllerName: "UserHome", actionName: "Logout");
+            }
+            else
+            {
+                package = LQHVContext.Packages.Where(s => s.PackagesId == ID && s.PackagesPrice == price).FirstOrDefault();
 
-            HttpContext.Session.SetString("PackagesId", package.PackagesId.ToString());
-            HttpContext.Session.SetString("PackagesPrice", package.PackagesPrice.ToString());
+                HttpContext.Session.SetString("PackagesId", package.PackagesId.ToString());
+                HttpContext.Session.SetString("PackagesPrice", package.PackagesPrice.ToString());
 
-            return RedirectToAction("Pay","Payment");
+                return RedirectToAction("Pay", "Payment");
+            }
         }
 
         /// <summary>
@@ -65,9 +72,16 @@ namespace Eproject_RealtorsPortal.Controllers
         /// <returns>details of package</returns>
         public IActionResult packageDetails(long ID)
         {
-            //Link qua trang details dựa theo ID
-            package = LQHVContext.Packages.Where(s => s.PackagesId == ID).FirstOrDefault();
-            return View("packageDetails", package);
+            if (HttpContext.Session.GetString("UserId") == null)
+            {
+                return RedirectToAction(controllerName: "UserHome", actionName: "Logout");
+            }
+            else
+            {
+                //Link qua trang details dựa theo ID
+                package = LQHVContext.Packages.Where(s => s.PackagesId == ID).FirstOrDefault();
+                return View("packageDetails", package);
+            }
         }
 
         /// <summary>
@@ -76,7 +90,7 @@ namespace Eproject_RealtorsPortal.Controllers
         /// <returns>list of package</returns>
         public IActionResult createPackage()
         {
-            return View(new Package());
+                return View(new Package());
         }
         [HttpPost]
         public IActionResult createPackage(Package model)
