@@ -311,9 +311,9 @@ namespace Eproject_RealtorsPortal.Controllers
             .ToList();
             return View(allOwnAds);
         }
-        public IActionResult SearchRent(string Area, string City, long StartPrice, long EndPrice)
+        public IActionResult Search(string Area, string City, long StartPrice, long EndPrice)
         {
-            rent = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductAddress.Contains(Area) && d.ProductAddress.Contains(City) && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice && d.Status == "active")
+            rent = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice && d.Status == "active")
             .Join(
              LQHVContext.Categories,
              p => p.CategoryId,
@@ -345,41 +345,6 @@ namespace Eproject_RealtorsPortal.Controllers
                 })
             .ToList();
             return View("Search",rent);
-        }
-        public IActionResult SearchSell(string Area, string City, long StartPrice, long EndPrice)
-        {
-            sell = LQHVContext.Products.Where(d => d.StartDate <= DateTime.Today && d.EndDate > DateTime.Today && d.ProductAddress.Contains(Area) && d.ProductAddress.Contains(City) && d.ProductPrice >= StartPrice && d.ProductPrice <= EndPrice && d.Status == "active")
-            .Join(
-             LQHVContext.Categories,
-             p => p.CategoryId,
-             c => c.CategoryId,
-            (p, c) => new
-            {
-                Product = p,
-                Category = c
-            })
-            .Join(
-             LQHVContext.BusinessTypes.Where(s => s.BusinessTypesId == 2),
-            ca => ca.Category.BusinessTypesId,
-           bu => bu.BusinessTypesId,
-           (ca, bu) => new
-           {
-               ca.Product,
-               ca.Category,
-               BusinessTypeID = bu.BusinessTypesId
-           })
-            .Select(s => new ProductBox
-            {
-                ProductID = s.Product.ProductId,
-                ProductTitle = s.Product.ProductTitle,
-                ProductPrice = s.Product.ProductPrice,
-                ProductArea = s.Product.ProductArea,
-                ProductAddress = s.Product.ProductAddress,
-                ProductImage = s.Product.ProductImage,
-                BusinessTypeID = s.BusinessTypeID
-            })
-            .ToList();
-            return View("Search", sell);
         }
 
 

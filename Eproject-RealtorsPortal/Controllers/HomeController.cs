@@ -49,6 +49,7 @@ namespace Eproject_RealtorsPortal.Controllers
                ProductPrice = s.Product.ProductPrice,
                ProductArea = s.Product.ProductArea,
                ProductAddress = s.Product.ProductAddress,
+               ProductImage = s.Product.ProductImage,
                BusinessTypeID = s.BusinessTypeID
            })
            .ToList();
