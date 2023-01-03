@@ -16,16 +16,13 @@ namespace Eproject_RealtorsPortal.Controllers
         int listing;
 
         DateTime yesterday = DateTime.Today.AddDays(-2);
-        DateTime Today = DateTime.Today;
+        DateTime Today = DateTime.Now.Date;
         public IActionResult Index()
         {
 
             if (LQHVContext.Payments != null)
             {
-                payment = LQHVContext.Payments
-                .Where(p => p.PaymentDatetime > yesterday && p.PaymentDatetime < Today)
-                .Select(s => s.PaymentTotal)
-                .Sum();
+                payment = LQHVContext.Payments.Sum(x => x.PaymentTotal);                
             }
 
             category = LQHVContext.Categories.Count();

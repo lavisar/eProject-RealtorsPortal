@@ -1,0 +1,312 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Eproject_RealtorsPortal
+build_property.RootNamespace = Eproject_RealtorsPortal
+build_property.ProjectDir = D:\APTECH\SEM3-Eproject\Eproject-RealtorsPortal\Eproject-RealtorsPortal\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\APTECH\SEM3-Eproject\Eproject-RealtorsPortal\Eproject-RealtorsPortal
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/AccountProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBY2NvdW50UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/AddAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZGRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/AddUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZGRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/AdminAuthenticationEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZG1pbkF1dGhlbnRpY2F0aW9uRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/AdminAuthenticationForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZG1pbkF1dGhlbnRpY2F0aW9uRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/DetailsAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxEZXRhaWxzQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/DetailsUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxEZXRhaWxzVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/EditAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxFZGl0QWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxFZGl0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/LoginAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxMb2dpbkFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/ViewAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxWaWV3QWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Home/ViewUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxWaWV3VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/AddArea.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cQWRkQXJlYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/AddCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cQWRkQ2l0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/AddCountry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cQWRkQ291bnRyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/AddRegion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cQWRkUmVnaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/EditArea.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cRWRpdEFyZWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/EditCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cRWRpdENpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/EditCountry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cRWRpdENvdW50cnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/EditRegion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cRWRpdFJlZ2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/ViewArea.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cVmlld0FyZWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/ViewCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cVmlld0NpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/ViewCountry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cVmlld0NvdW50cnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Location/ViewRegion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9jYXRpb25cVmlld1JlZ2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/AllOwnAds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXEFsbE93bkFkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Box.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXEJveC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/CreateAds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXENyZWF0ZUFkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/detailForList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXGRldGFpbEZvckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/listAds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXGxpc3RBZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Rent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXFJlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Ads/Sell.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRzXFNlbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Cate/cateList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZVxjYXRlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Cate/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Cate/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZVxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Contact/listContact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxsaXN0Q29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/Box.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCb3guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/News/createNews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xjcmVhdGVOZXdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/News/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/News/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/News/listNews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xsaXN0TmV3cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/News/updateNews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1x1cGRhdGVOZXdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Packages/Box.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNcQm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Packages/createPackage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNcY3JlYXRlUGFja2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Packages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Packages/IndexForAds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNcSW5kZXhGb3JBZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Packages/listPackage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNcbGlzdFBhY2thZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Packages/packageDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNccGFja2FnZURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Packages/updatePackage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNcdXBkYXRlUGFja2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Payment/Pay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Payment/TransactionHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxUcmFuc2FjdGlvbkhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Report/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/_layout_UserHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sYXlvdXRfVXNlckhvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/AuthenticationForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcQXV0aGVudGljYXRpb25Gb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcRm9yZ290UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/UserHome/ViewAccountProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckhvbWVcVmlld0FjY291bnRQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/SEM3-Eproject/Eproject-RealtorsPortal/Eproject-RealtorsPortal/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4wimllx6hz

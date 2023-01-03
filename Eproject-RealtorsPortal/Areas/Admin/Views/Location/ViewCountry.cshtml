@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Eproject_RealtorsPortal.Models.Country>
+
+@{
+    ViewData["Title"] = "ViewCountry";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="text-blue">Country management</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Home</li>
+                    <li class="breadcrumb-item active">Country List</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="row">
+        <div class=" col-12 col-auto">
+            <div class="card">
+                <a class="btn btn-primary btn-sm col-2 mt-3 ml-3" href="@Url.Action("AddCountry", "Location")">
+                    <i class="fas fa-folder"></i> Create New
+                </a>
+                @if (@ViewBag.sg != null)
+                {
+                    <p style="color: green; font-weight:bold ml-3 mt-1">@ViewBag.sg</p>
+                }
+                <div class="card-body">
+                    <table id="table" class="table table-bordered table-striped dataTable dtr-inline">
+                        <thead>
+                            <tr>
+                                <th style="width: 25%">
+                                    @Html.DisplayNameFor(model => model.CountriesId)
+                                </th>
+                                <th style="width: 45%">
+                                    @Html.DisplayNameFor(model => model.CountriesName)
+                                </th>
+                                <th style="width: 30%">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CountriesId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CountriesName)
+                                    </td>
+                                    <td class="project-actions ">
+                                        <a class="btn btn-info btn-sm" href="@Url.Action("EditCountry", "Location", new { id=item.CountriesId })">
+                                            <i class="fas fa-edit"></i>Edit
+                                        </a>
+                                        <a class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete?');" href="@Url.Action("DeleteCountry", "Location", new {  id=item.CountriesId  })">
+                                            <i class="fas fa-trash"></i>Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+
+<script>
+    $(function () {
+        $('#table').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": true,
+            "responsive": true,
+        });
+    });
+</script>

@@ -130,28 +130,28 @@
                     }
                 </div>
 
+                <!-- SidebarSearch Form -->
+                <div class="form-inline">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+                                <i class="fas fa-search fa-fw"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Sidebar Menu -->
                 <nav class="mt-2 pb-5">
                     <ul class="nav nav-pills nav-sidebar pb-2 flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                              with font-awesome or any other icon font library -->
-                        <li class="nav-item menu-open">
-<<<<<<< HEAD
-                            <a href="@Url.Action("Index","Report",new{area = ""})" class="nav-link active">
-=======
-                            <a href="#" class="nav-link">
->>>>>>> 6fcbcd88c7f8b854e18ccbf9f83dc8a92a2683d9
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Dashboard
-                                </p>
-                            </a>
-                        </li>
                         <li class="nav-item has-treeview">
                             <a href="@Url.Action("Index","Report",new{area = ""})" class="nav-link">
                                 <i class="nav-icon fas fa-chart-pie"></i>
                                 <p>
-                                    Report
+                                    Dashboard
                                 </p>
                             </a>
                         </li>
@@ -288,13 +288,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="pages/forms/general.html" class="nav-link">
+                                    <a href="@Url.Action("listNews","News",new{area = ""})" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>News list</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/forms/advanced.html" class="nav-link">
+                                    <a href="@Url.Action("createNews","News",new{area = ""})" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Add news</p>
                                     </a>
@@ -458,13 +458,13 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="{{ url('admin/slider/index') }}" class="nav-link ">
+                                        <a href="@Url.Action("ViewCountry", "Location", new {area = "Admin"})" class="nav-link ">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p> Country list</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ url('admin/slider/create') }}" class="nav-link ">
+                                        <a href="@Url.Action("AddCountry", "Location", new {area = "Admin"})" class="nav-link ">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Add Country</p>
                                         </a>
@@ -481,13 +481,13 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="{{ url('admin/slider/index') }}" class="nav-link ">
+                                        <a href="@Url.Action("ViewRegion", "Location", new {area = "Admin"})" class="nav-link ">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Region list</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ url('admin/slider/create') }}" class="nav-link ">
+                                        <a href="@Url.Action("AddRegion", "Location", new {area = "Admin"})" class="nav-link ">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Add Region</p>
                                         </a>
@@ -504,13 +504,13 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="{{ url('admin/slider/index') }}" class="nav-link ">
+                                        <a href="@Url.Action("ViewCity", "Location", new {area = "Admin"})" class="nav-link ">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>City list</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ url('admin/slider/create') }}" class="nav-link ">
+                                        <a href="@Url.Action("AddCity", "Location", new {area = "Admin"})" class="nav-link ">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Add City</p>
                                         </a>
@@ -527,13 +527,13 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="{{ url('admin/slider/index') }}" class="nav-link ">
+                                        <a href="@Url.Action("ViewArea", "Location", new {area = "Admin"})" class="nav-link ">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Area list</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ url('admin/slider/create') }}" class="nav-link ">
+                                        <a href="@Url.Action("AddArea", "Location", new {area = "Admin"})" class="nav-link ">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Add Area</p>
                                         </a>
@@ -593,7 +593,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ route('admin.feedback')}}" class="nav-link">
+                                    <a href="@Url.Action("listContact","Contact",new{area = ""})" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Contact list</p>
                                     </a>

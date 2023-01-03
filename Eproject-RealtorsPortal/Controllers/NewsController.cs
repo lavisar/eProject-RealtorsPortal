@@ -9,8 +9,8 @@ namespace Eproject_RealtorsPortal.Controllers
     {
         LQHVContext LQHVContext = new LQHVContext();
         List<News> indexList;
-        News news;
         News ForDeleteNews;
+        ManyImage ManyImage;
         public IActionResult Index()
         {
             List<News> list = LQHVContext.News.ToList();
@@ -34,16 +34,96 @@ namespace Eproject_RealtorsPortal.Controllers
         /// <returns></returns>
         public IActionResult createNews()
         {
-            return View(new News());
+            return View(new NewsAdd());
         }
         [HttpPost]
-        public IActionResult createNews(News model)
+        public IActionResult createNews(NewsAdd model)
         {
-            LQHVContext.News.Add(model);
+            if (HttpContext.Request.Method == "POST")
+            {
+                // Get the uploaded files
+                IFormFileCollection files = HttpContext.Request.Form.Files;
+
+                // Iterate through the files and save each one to a file and the database
+                if (files.Count > 0)
+                {
+                    IFormFile file = files[0];
+                    string fileName = Path.GetFileName(file.FileName);
+                    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "News", fileName);
+
+                    // Use the FileStream class to save the file to a file on the server
+                    using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                    {
+                        file.CopyTo(fs);
+                    }
+                    // Read the file data into a byte array
+                    byte[] data = System.IO.File.ReadAllBytes(filePath);
+
+
+                    // Create a new Image instance
+                    ManyImage = new ManyImage
+                    {
+                        FileName = fileName,
+                        Data = data
+                    };
+                }
+
+                // Insert the image into the database
+            }
+            News news = new News
+            {
+                NewsId = model.NewsId,
+                NewsTitle = model.NewsTitle,
+                NewsDate = model.NewsDate,
+                NewsDesc = model.NewsDesc,
+                NewsContent = model.NewsContent,
+                NewsImage = ManyImage.FileName
+            };
+            LQHVContext.News.Add(news);
             if (LQHVContext.SaveChanges() == 1)
             {
+                if (HttpContext.Request.Method == "POST")
+                {
+                    // Get the uploaded files
+                    IFormFileCollection files = HttpContext.Request.Form.Files;
+
+                    // Iterate through the files and save each one to a file and the database
+                    for (int i = 1; i < files.Count; i++)
+                    {
+                        IFormFile file = files[i];
+                        string fileName = Path.GetFileName(file.FileName);
+                        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "News", fileName);
+
+                        // Use the FileStream class to save the file to a file on the server
+                        using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                        {
+                            file.CopyTo(fs);
+                        }
+
+                        // Read the file data into a byte array
+                        byte[] data = System.IO.File.ReadAllBytes(filePath);
+
+
+                        // Create a new Image instance
+                        ManyImage ManyImage = new ManyImage
+                        {
+                            FileName = fileName,
+                            Data = data
+                        };
+                        Image image = new Image
+                        {
+                            ImagePath = ManyImage.FileName,
+                            NewsId = long.Parse(HttpContext.Session.GetString("NewsId"))
+
+                        };
+                        // Insert the image into the database
+                        LQHVContext.Images.Add(image);
+                        LQHVContext.SaveChanges();
+                    }
+                }
                 return RedirectToAction("listNews", "News");
             }
+
             return View("createNews", model);
         }
         public IActionResult listNews()
@@ -72,21 +152,6 @@ namespace Eproject_RealtorsPortal.Controllers
             return View("listNews", indexList);
         }
 
-        public void UploadImage(HttpContext context)
-        {
-            if (context.Request.Method == "POST")
-            {
-                var file = context.Request.Form.Files[0];
-                if (file != null)
-                {
-                    // Read the file and save it to a desired location
-                    using (var stream = new FileStream("path/to/save/file.jpg", FileMode.Create))
-                    {
-                        file.CopyTo(stream);
-                    }
-                }
-            }
-        }
 
         public IActionResult updateNews(long ID)
         {

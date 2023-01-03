@@ -22,7 +22,7 @@
                         ID
                     </th>
                     <th>
-                        Name
+                        Title
                     </th>
                     <th>
                         Date
@@ -56,8 +56,11 @@
                         <td>
                             @Html.DisplayFor(modelItem => item.NewsDesc)
                         </td>                     
-                        <td>
+                        <td style="weight:100">
                             @Html.Raw(item.NewsContent)
+                        </td>
+                        <td>
+                            <img class="rounded" height="400" src="~/News/@(item.NewsImage)">
                         </td>
                         <td class="project-actions text-right">
                             <a class="btn btn-primary btn-sm" href="@Url.Action("updateNews", "News", new { id=item.NewsId })">

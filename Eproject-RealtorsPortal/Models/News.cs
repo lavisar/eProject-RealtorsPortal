@@ -28,5 +28,16 @@ namespace Eproject_RealtorsPortal.Models
         [StringLength(150)]
         [Unicode(false)]
         public string? NewsImage { get; set; }
+        public virtual ICollection<Image>? Images { get; set; }
+    }
+
+    public class NewsAdd
+    {
+        public long NewsId { get; set; }
+        public string NewsTitle { get; set; } = null!;
+        public string NewsContent { get; set; } = null!;
+        public string NewsDesc { get; set; } = null!;
+        public DateTime NewsDate { get; set; }
+        public string? NewsImage { get; set; }
     }
 }
