@@ -1994,6 +1994,18 @@
           }
         }
       },
+      "SmartBreadcrumbs/3.6.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/SmartBreadcrumbs.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/SmartBreadcrumbs.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -6194,6 +6206,18 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
+    "SmartBreadcrumbs/3.6.1": {
+      "sha512": "+GTqVp0EyaOQ1dxL5dDB/l5YE1w+q4D7a1EBN/O1eNQO+1WU91I9bGrhMV0bUyOaPJPZJ/acdRYUe4hmadcDTg==",
+      "type": "package",
+      "path": "smartbreadcrumbs/3.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/SmartBreadcrumbs.dll",
+        "smartbreadcrumbs.3.6.1.nupkg.sha512",
+        "smartbreadcrumbs.nuspec"
+      ]
+    },
     "System.AppContext/4.3.0": {
       "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
       "type": "package",
@@ -10015,23 +10039,24 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.11",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.11"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.11",
+      "SmartBreadcrumbs >= 3.6.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ngoc Huyen\\.nuget\\packages\\": {}
+    "C:\\Users\\Quan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
+      "projectUniqueName": "D:\\Aptech\\Sem3\\5.Project\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
       "projectName": "Eproject-RealtorsPortal",
-      "projectPath": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
-      "packagesPath": "C:\\Users\\Ngoc Huyen\\.nuget\\packages\\",
-      "outputPath": "D:\\1.FPT_APTECH\\HK3\\7.EPJ_3\\2.Pull\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\",
+      "projectPath": "D:\\Aptech\\Sem3\\5.Project\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\Eproject-RealtorsPortal.csproj",
+      "packagesPath": "C:\\Users\\Quan\\.nuget\\packages\\",
+      "outputPath": "D:\\Aptech\\Sem3\\5.Project\\eProject-RealtorsPortal\\Eproject-RealtorsPortal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ngoc Huyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Quan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10080,6 +10105,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.11, )"
+          },
+          "SmartBreadcrumbs": {
+            "target": "Package",
+            "version": "[3.6.1, )"
           }
         },
         "imports": [
@@ -10101,7 +10130,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

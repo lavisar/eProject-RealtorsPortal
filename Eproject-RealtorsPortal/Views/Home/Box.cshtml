@@ -2,25 +2,31 @@
     Layout = null;
 }
 @model Eproject_RealtorsPortal.Models.ProductBox
-<div class="col mb-5">
-    <div class="card h-100">
+@*<div class="col mb-5">
+*@    <div class="card h-100">
         <!-- Product image-->
-        <img class="card-img-top" src="@Model.ProductImage" alt="..." />
+        <img class="card-img-top" src="~/Ads/@(Model.ProductImage)" width="318" height="211" alt="..." />
         <!-- Product details-->
         <div class="card-body p-4">
             <div class="text-center">
                 <!-- Product name-->
                 <h5 class="fw-bolder">@Model.ProductTitle</h5>
                 <!-- Product price-->
-@*                @if (@Model.GetBusinessTypeID(Model) == 1)
-*@                    @string.Format("{0:n}", @Model.ProductPrice) / tháng
-@*                @if (@Model.GetBusinessTypeID(Model) == 2)
-*@                    @string.Format("{0:n}", @Model.ProductPrice)|@Model.ProductArea / m &sup2;
+                @if (@Model.BusinessTypeID == 1){
+                    <p>
+                        @(@Model.ProductPrice) USD/month
+                    </p><br />
+                }
+                @if(@Model.BusinessTypeID == 2){
+                    <p>
+                        @(@Model.ProductPrice) USD<br>@(Model.ProductArea)/m&sup2;
+                    </p>
+                }
                 </div>
         </div>
             <!-- Product actions-->
             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="@Url.Action("Detail", "Product", new {id = Model.ProductID})">View details</a></div>
+            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="@Url.Action("Details", "Ads", new {id = Model.ProductID})">View details</a></div>
             </div>
     </div>
-</div>
+@*</div>*@

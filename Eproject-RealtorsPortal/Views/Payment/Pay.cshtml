@@ -14,37 +14,38 @@
         <form asp-action="Pay" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                @*                <label asp-for="PaymentPrice" class="control-label">Price</label>
-                *@ <input asp-for="PaymentPrice" class="form-control" type="hidden" value="@Context.Session.GetString("PackagePrice")" />
+                 <label asp-for="PaymentPrice" class="control-label">Price</label>
+                 <input asp-for="PaymentPrice" class="form-control" readonly value="@Context.Session.GetString("PackagePrice")" />
                 <span asp-validation-for="PaymentPrice" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PaymentTotal" class="control-label">Total</label>
-                <input asp-for="PaymentTotal" class="form-control" value=""/>
+@*                <label asp-for="PaymentTotal" class="control-label">Total</label>
+*@                <input asp-for="PaymentTotal" class="form-control" readonly/>
                 <span asp-validation-for="PaymentTotal" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PaymentDatetime" class="control-label"></label>
-                <input asp-for="PaymentDatetime" class="form-control" type="hidden" value="@DateTime.Today" />
+@*                <label asp-for="PaymentDatetime" class="control-label"></label>
+*@                <input asp-for="PaymentDatetime" class="form-control" readonly value="@DateTime.Today" />
                 <span asp-validation-for="PaymentDatetime" class="text-danger"></span>
             </div>
             @if (Context.Session.GetString("PayType") == "ads")
             {
                 <div class="form-group">
-                @*<label asp-for="ProductId" class="control-label"></label>
-                *@<input asp-for="ProductId" class="form-control" type="hidden" value="@Context.Session.GetString("ProductId")" />
+@*                <label asp-for="ProductId" class="control-label">Buy</label>
+*@                <input asp-for="ProductId" class="form-control" readonly type="hidden" value="@Context.Session.GetString("ProductId")" />
                     <span asp-validation-for="ProductId" class="text-danger"></span>
                 </div>
             }
 
             <div class="form-group">
-                @*<label asp-for="UsersId" class="control-label"></label>
-                *@<input asp-for="UsersId" class="form-control" type="hidden" value="@Context.Session.GetString("UserId")" />
+@*                <label asp-for="UsersId" class="control-label"></label>
+*@                <input asp-for="UsersId" class="form-control" type="hidden" value="@Context.Session.GetString("UserId")" />
                 <span asp-validation-for="UsersId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                @*<label asp-for="UsersId" class="control-label"></label>
-                *@<input asp-for="PackageId" class="form-control" type="hidden" value="@Context.Session.GetString("PackageID")" />
+                <label asp-for="PackageId" class="control-label">Package</label>
+                <input asp-for="PackageId" class="form-control" type="hidden" value="@Context.Session.GetString("PackageID")" />
+                <input id="package" class="form-control" type="text" readonly value="@Context.Session.GetString("PackageName")" />
                 <span asp-validation-for="PackageId" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -55,6 +56,6 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="AllOwnAds">Back to List</a>
 </div>
 
