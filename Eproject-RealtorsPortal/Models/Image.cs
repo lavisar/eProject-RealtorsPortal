@@ -22,6 +22,11 @@ namespace Eproject_RealtorsPortal.Models
         [ForeignKey("ProductId")]
         [InverseProperty("Images")]
         public virtual Product Product { get; set; } = null!;
+        public long NewsId { get; set; }
+
+        [ForeignKey("NewsId")]
+        [InverseProperty("Images")]
+        public virtual News News { get; set; } = null!;
     }
     public class ManyImage
     {
