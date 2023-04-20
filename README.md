@@ -17,7 +17,7 @@ Realtors Portal is a real estate website developed using C# and SQL Server. This
 
 ### Installation
 * Clone repository
-* Open solution file in Visual Studio 2019
+* Open solution file in Visual Studio
 * Build and run the project
 
 ## Usage
